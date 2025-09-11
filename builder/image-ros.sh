@@ -19,6 +19,8 @@ set -ex # exit on error, echo commands
 ROS_DISTRO=noetic
 . /etc/os-release # set $VERSION_CODENAME to Debian release code name
 export ROS_OS_OVERRIDE=debian:$VERSION_CODENAME
+export PIP_BREAK_SYSTEM_PACKAGES=1
+export ROS_PYTHON_VERSION=3
 
 # https://gist.github.com/letmaik/caa0f6cc4375cbfcc1ff26bd4530c2a3
 # https://github.com/travis-ci/travis-build/blob/master/lib/travis/build/templates/header.sh

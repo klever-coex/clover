@@ -52,6 +52,8 @@ get_image() {
   fi
 
   echo "--- Unzipping Linux distribution image"
+  sed -i s/deb.debian.org/archive.debian.org/g /etc/apt/sources.list
+  sed -i s/security.debian.org/archive.debian.org/g /etc/apt/sources.list
   apt-get update --allow-releaseinfo-change
   apt-get install -y xz-utils
   unxz --stdout ${BUILD_DIR}/${RPI_ZIP_NAME} > $1
