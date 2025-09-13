@@ -2,5 +2,5 @@
     <arg name="simulator" default="false"/>
 
     <!-- OLED display selfcheck -->
-    <node name="display_selfcheck" pkg="clover" type="display_selfcheck.py" output="screen" if="$(eval not simulator)" respawn="true"/></node>
+    <node name="display_selfcheck" pkg="clover" type="display_selfcheck.py" output="screen" if="$(eval not simulator)" respawn="true"/>
 </launch>
