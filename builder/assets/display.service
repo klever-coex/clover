@@ -1,0 +1,16 @@
+[Unit]
+Description=Display Self Check ROS package
+Requires=roscore.service
+
+[Service]
+User=pi
+ExecStart=/bin/bash -c ". /home/pi/catkin_ws/devel/setup.sh; \
+                      ROS_HOSTNAME=`hostname`.local ROS_OS_OVERRIDE=debian:bookworm exec stdbuf -o L roslaunch clover display.launch --wait --screen --skip-log-check \
+                      2> >(tee /tmp/display.err)"
+
+ExecStartPre=+rm /var/log/display.log
+StandardOutput=file:/var/log/display.log
+StandardError=file:/var/log/display.log
+
+[Install]
+WantedBy=multi-user.target
