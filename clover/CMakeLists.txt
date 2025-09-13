@@ -277,6 +277,11 @@ catkin_install_python(PROGRAMS src/led_driver
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
+# OLED display selfcheck node
+catkin_install_python(PROGRAMS src/display_selfcheck.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 
 install(DIRECTORY examples DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
