@@ -1,8 +1,9 @@
 <launch>
-    <arg name="ws281x" default="true"/>
+    <arg name="ws281x" default="false"/>
+    <arg name="ws281x_new" default="true"/>
     <arg name="led_effect" default="true"/>
     <arg name="led_notify" default="true"/>
-    <arg name="led_count" default="72"/>
+    <arg name="led_count" default="10"/>
     <arg name="gpio_pin" default="21"/>
 
     <arg name="simulator" default="false"/>
@@ -18,6 +19,12 @@
         <param name="target_frequency" value="800000"/>
         <param name="dma" value="10"/>
         <param name="invert" value="false"/>
+    </node>
+
+    <!-- ws281x led strip RPi5 driver -->
+    <node pkg="clover" name="led" type="led_driver" clear_params="true" output="screen" if="$(eval ws281x_new and not simulator)">
+        <param name="led_count" value="$(arg led_count)"/>
+        <param name="brightness" value="10"/>
     </node>
 
     <!-- high level led effects control, events notification with leds -->
