@@ -2,3 +2,4 @@ flask
 geopy
 smbus2
 VL53L1X
+adafruit-circuitpython-neopixel-spi

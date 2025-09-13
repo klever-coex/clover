@@ -1,0 +1,125 @@
+#!/usr/bin/env python
+
+import board
+import rospy
+import threading
+from led_msgs.srv import SetLED, SetLEDResponse, SetLEDs, SetLEDsResponse
+from led_msgs.msg import LEDState, LEDStateArray
+
+try:
+    import neopixel_spi
+except ImportError:
+    rospy.logwarn("neopixel_spi library not found. Running in simulation mode.")
+    exit(-1)
+
+class LEDDriver:
+    def __init__(self):
+        rospy.init_node('led_driver')
+        
+        self.num_leds = rospy.get_param('~num_leds', 10)
+        self.brightness = (rospy.get_param('~brightness', 0.2) / 255)
+
+        self.spi_dev = board.SPI()
+        self.led_strip = None
+        self.led_state = [(0, 0, 0)] * self.num_leds
+        self.lock = threading.Lock()
+        
+        try:
+            self.led_strip = neopixel_spi.NeoPixel_SPI(
+                spi=self.spi_dev,
+                n=self.num_leds,
+                brightness=self.brightness,
+                auto_write=False
+            )
+            rospy.loginfo(f"Initialized LED strip with {self.num_leds} LEDs on {self.spi_dev}")
+        except Exception as e:
+            rospy.logerr(f"Failed to initialize LED strip: {e}")
+            exit(-1)
+
+        self.set_led_service = rospy.Service('~set_led', SetLED, self.handle_set_led)
+        self.set_leds_service = rospy.Service('~set_leds', SetLEDs, self.handle_set_leds)
+
+        self.state_publisher = rospy.Publisher('~state', LEDStateArray, queue_size=10)
+        
+        rospy.loginfo("LED Controller node started")
+    
+    def set_pixel(self, index, r, g, b):
+        """Set a single pixel color"""
+        if index < 0 or index >= self.num_leds:
+            return False, f"LED index {index} out of range (0-{self.num_leds-1})"
+        
+        with self.lock:
+            self.led_state[index] = (r, g, b)
+
+            try:
+                self.led_strip[index] = (r, g, b)
+                self.led_strip.show()
+            except Exception as e:
+                return False, f"Failed to set LED: {e}"
+            
+            return True, f"LED {index} set to RGB({r},{g},{b})"
+    
+    def set_pixels(self, led_states):
+        """Set multiple pixels at once"""
+        with self.lock:
+            for led in led_states:
+                if led.index < 0 or led.index >= self.num_leds:
+                    return False, f"LED index {led.index} out of range (0-{self.num_leds-1})"
+
+            for led in led_states:
+                self.led_state[led.index] = (led.r, led.g, led.b)
+
+            try:
+                for led in led_states:
+                    self.led_strip[led.index] = (led.r, led.g, led.b)
+                self.led_strip.show()
+            except Exception as e:
+                return False, f"Failed to set LEDs: {e}"
+            
+            return True, f"Set {len(led_states)} LEDs successfully"
+    
+    def handle_set_led(self, req):
+        """Service handler for setting a single LED"""
+        rospy.logdebug(f"Setting LED {req.index} to RGB({req.r},{req.g},{req.b})")
+        success, message = self.set_pixel(req.index, req.r, req.g, req.b)
+
+        self.publish_state()
+        
+        return SetLEDResponse(success, message)
+    
+    def handle_set_leds(self, req):
+        """Service handler for setting multiple LEDs"""
+        rospy.logdebug(f"Setting {len(req.leds)} LEDs")
+        success, message = self.set_pixels(req.leds)
+
+        self.publish_state()
+        
+        return SetLEDsResponse(success, message)
+    
+    def publish_state(self):
+        """Publish current LED state"""
+        led_array = LEDStateArray()
+        for i, (r, g, b) in enumerate(self.led_state):
+            led_state = LEDState()
+            led_state.index = i
+            led_state.r = r
+            led_state.g = g
+            led_state.b = b
+            led_array.leds.append(led_state)
+        
+        self.state_publisher.publish(led_array)
+    
+    def run(self):
+        """Main loop"""
+        rate = rospy.Rate(1)
+        
+        while not rospy.is_shutdown():
+            self.publish_state()
+            rate.sleep()
+
+if __name__ == "__main__":
+    try:
+        driver = LEDDriver()
+        driver.run()
+    except rospy.ROSInterruptException:
+        pass
