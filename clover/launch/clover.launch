@@ -80,9 +80,6 @@
         <arg name="simulator" value="$(arg simulator)"/>
     </include>
 
-    <!-- OLED display selfcheck -->
-    <node name="display_selfcheck" pkg="clover" type="display_selfcheck.py" output="screen" if="$(eval not simulator)" respawn="true"/>
-
     <!-- Clover Blocks -->
     <node name="clover_blocks" pkg="clover_blocks" type="clover_blocks" output="screen" if="$(arg blocks)"/>
 
