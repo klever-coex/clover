@@ -3,7 +3,7 @@
     <arg name="ws281x_new" default="true"/>
     <arg name="led_effect" default="true"/>
     <arg name="led_notify" default="true"/>
-    <arg name="led_count" default="10"/>
+    <arg name="led_count" default="72"/>
     <arg name="gpio_pin" default="21"/>
 
     <arg name="simulator" default="false"/>
