@@ -52,3 +52,4 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="26ac", ATTRS{idProduct}=="1022", ATTRS{produ
 SUBSYSTEM=="tty", ATTRS{idVendor}=="26ac", ATTRS{idProduct}=="0088", ATTRS{product}=="mRo x2.1-777", SYMLINK+="px4fmu"
 SUBSYSTEM=="tty", ATTRS{idVendor}=="35a7", ATTRS{idProduct}=="0002", ATTRS{product}=="FCC-R1", SYMLINK+="px4fmu"
 SUBSYSTEM=="tty", ATTRS{idVendor}=="35a7", ATTRS{idProduct}=="0001", ATTRS{product}=="FCC-K1", SYMLINK+="px4fmu"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1b8c", ATTRS{idProduct}=="0036", SYMLINK+="px4fmu"
