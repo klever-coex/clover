@@ -638,20 +638,25 @@ def check_optical_flow():
 @check('Rangefinder')
 def check_rangefinder():
     # TODO: check FPS!
-    rng = False
+    rpi_rng = False
+    px4_rng = False
     try:
         rospy.wait_for_message('rangefinder/range', Range, timeout=4)
-        rng = True
+        rpi_rng = True
+        info('Found rangefinder from raspberry')
     except rospy.ROSException:
-        failure('no rangefinder data from Raspberry')
+        pass
 
     try:
         rospy.wait_for_message('mavros/distance_sensor/rangefinder', Range, timeout=4)
-        rng = True
+        px4_rng = True
+        info('Found rangefinder from PX4')
     except rospy.ROSException:
-        failure('no rangefinder data from PX4')
+        pass
 
+    rng = rpi_rng or px4_rng
     if not rng:
+        failure('Rangefinder not found.')
         return
 
     hgt = get_param('EKF2_HGT_REF', strict=False)
