@@ -3,3 +3,5 @@ geopy
 smbus2
 VL53L1X
 adafruit-circuitpython-neopixel-spi
+adafruit-circuitpython-ssd1306
+Pillow
