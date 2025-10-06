@@ -16,7 +16,7 @@ class LEDDriver:
     def __init__(self):
         rospy.init_node('led_driver')
         
-        self.num_leds = rospy.get_param('~num_leds', 10)
+        self.num_leds = rospy.get_param('~led_count', 10)
         self.brightness = (rospy.get_param('~brightness', 0.2) / 255)
 
         self.spi_dev = board.SPI()

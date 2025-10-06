@@ -2,7 +2,7 @@
     <!-- article about camera setup: https://clover.coex.tech/camera_setup -->
 
     <arg name="direction_z" default="down"/> <!-- direction the camera points: down, up -->
-    <arg name="direction_y" default="backward"/> <!-- direction the camera cable points: backward, forward -->
+    <arg name="direction_y" default="forward"/> <!-- direction the camera cable points: backward, forward -->
     <arg name="type" default="libcamera"/> <!-- camera interface: libcamera, v4l2 -->
     <arg name="camera_id" default="0"/> <!-- libcamera camera id -->
     <arg name="device" default="/dev/video0"/> <!-- v4l2 device path -->

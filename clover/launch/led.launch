@@ -1,9 +1,12 @@
 <launch>
-    <arg name="ws281x" default="false"/>
-    <arg name="ws281x_new" default="true"/>
+    <arg name="led_driver_type" default="neopixel_spi"/> <!-- select one of: neopixel_spi, ws281x -->
+
+    <!-- Generic led config-->
     <arg name="led_effect" default="true"/>
     <arg name="led_notify" default="true"/>
     <arg name="led_count" default="72"/>
+
+    <!-- ws281x specific config -->
     <arg name="gpio_pin" default="21"/>
 
     <arg name="simulator" default="false"/>
@@ -11,7 +14,7 @@
     <!-- For additional help go to https://clover.coex.tech/led -->
 
     <!-- ws281x led strip driver -->
-    <node pkg="ws281x" name="led" type="ws281x_node" clear_params="true" output="screen" if="$(eval ws281x and not simulator)">
+    <node pkg="ws281x" name="led" type="ws281x_node" clear_params="true" output="screen" if="$(eval led_driver_type == 'ws281x' and not simulator)">
         <param name="led_count" value="$(arg led_count)"/>
         <param name="gpio_pin" value="$(arg gpio_pin)"/>
         <param name="brightness" value="64"/>
@@ -22,9 +25,9 @@
     </node>
 
     <!-- ws281x led strip RPi5 driver -->
-    <node pkg="clover" name="led" type="led_driver" clear_params="true" output="screen" if="$(eval ws281x_new and not simulator)">
+    <node pkg="clover" name="led" type="led_driver" clear_params="true" output="screen" if="$(eval led_driver_type == 'neopixel_spi' and not simulator)">
         <param name="led_count" value="$(arg led_count)"/>
-        <param name="brightness" value="10"/>
+        <param name="brightness" value="128"/>
     </node>
 
     <!-- high level led effects control, events notification with leds -->

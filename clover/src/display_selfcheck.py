@@ -351,7 +351,7 @@ class CloverStatusDisplay:
                     statuses['service_/navigate'] = 'OK' if service_ok('navigate', 1.0) else 'NO'
                     statuses['service_/get_telemetry'] = 'OK' if service_ok('get_telemetry', 1.0) else 'NO'
                     # Rangefinder topic
-                    statuses['rangefinder'] = 'OK' if topic_ok('rangefinder/range', 1.0) else 'NO'
+                    statuses['rangefinder'] = 'OK' if topic_ok('rangefinder/range', 1.0) or topic_ok('mavros/distance_sensor/rangefinder', 1.0) else 'NO'
 
                 self.last_update = datetime.now()
                 return statuses
