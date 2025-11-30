@@ -53,7 +53,6 @@ class LEDDriver:
 
             try:
                 self.led_strip[index] = (r, g, b)
-                self.led_strip.show()
             except Exception as e:
                 return False, f"Failed to set LED: {e}"
             
@@ -72,7 +71,6 @@ class LEDDriver:
             try:
                 for led in led_states:
                     self.led_strip[led.index] = (led.r, led.g, led.b)
-                self.led_strip.show()
             except Exception as e:
                 return False, f"Failed to set LEDs: {e}"
             
@@ -111,9 +109,10 @@ class LEDDriver:
     
     def run(self):
         """Main loop"""
-        rate = rospy.Rate(1)
+        rate = rospy.Rate(10)
         
         while not rospy.is_shutdown():
+            self.led_strip.show()
             self.publish_state()
             rate.sleep()
 
