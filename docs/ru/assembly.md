@@ -5,6 +5,10 @@
 <table class=versions>
      <tr><th>Версия</th><th>Изображение</th></tr>
      <tr>
+          <td><a href="assemble_5.md">Клевер&nbsp;5</a></td>
+          <td><a href="assemble_5.md"><img src="../assets/versions/clover_5.jpg" width=200></a></td>
+     </tr>
+     <tr>
           <td>
                <a href="assemble_4_2.md">Клевер&nbsp;4.2</a>
                <div class=subversion>

@@ -4,6 +4,7 @@
 * [Глоссарий](glossary.md)
 * [Безопасность](safety.md)
 * [Сборка](assembly.md)
+  * [Клевер 5](assemble_5.md)
   * [Клевер 4.2 Pro](assemble_4_2_pro.md)
   * [Клевер 4.2](assemble_4_2.md)
   * [Клевер 4.2 WorldSkills](assemble_4_2_ws.md)

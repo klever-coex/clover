@@ -4,6 +4,7 @@
 * [Glossary](glossary.md)
 * [Safety tips](safety.md)
 * [Assembly](assembly.md)
+  * [Clover 5 assembly](assemble_5.md)
   * [Clover 4.2 assembly](assemble_4_2.md)
   * [Clover 4.2 WorldSkills](assemble_4_2_ws.md)
   * [Clover 4 assembly](assemble_4.md)
