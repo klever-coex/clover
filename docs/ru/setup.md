@@ -10,22 +10,14 @@
 
 См. также [основную документацию по QGroundControl](https://docs.qgroundcontrol.com/en/).
 
-## MicroSD-карта
-
-Подготовьте MicroSD-карту для полетного контроллера.
-
-<img src="../assets/pix-sd.png" alt="Pixracer и MicroSD-карта" class="zoom center" width=400>
-
-1. Установите карту в компьютер (используйте адаптер при необходимости).
-2. Отформатируйте карту в файловую систему FAT32. Для этого кликните на значок SD-карты в "Проводнике" и нажмите "Форматирование" в Windows. Используйте "Дисковую утилиту" в macOS.
-3. Выполните "Безопасное извлечение" карты, извлеките карту.
-4. Установите карту в полетный контроллер.
-
 ## Загрузка прошивки в полетный контроллер
 
-Наиболее оттестированной, в особенности для осуществления автономных полетов, является [версия прошивки с патчами COEX](firmware.md). Скачайте актуальную версию прошивки на GitHub — **<a class="latest-firmware v4" href="https://github.com/CopterExpress/Firmware/releases">скачать</a>**.
+Скачайте актуальную стабильную версию прошивки на GitHub — **<a class="latest-firmware v4" href="https://github.com/PX4/PX4-Autopilot/releases">скачать</a>**.
 
-Для использования всех наиболее актуальных функций PX4 вы также можете использовать последнюю официальную версию прошивки (в экспериментальном режиме).
+- Для полётного контроллера micoair_h743-v2 - micoair_h743-v2_default.px4  
+- Для полётного контроллера pixracer_R15 - px4fmu-v4_default.px4
+
+Инструкция по прошивке:
 
 1. Отключите полетный контроллер от компьютера (если он подключен).
 2. Запустите программу QGroundControl.
@@ -35,19 +27,16 @@
 
    <img src="../assets/qgc-firmware.png" alt="QGroundControl firmware upload" class="zoom">
 
-6. Для загрузки **прошивки COEX**:
+6. Для выбора и загрузки файла прошивки:
 
    * Выберите *Advanced settings*.
    * В выпадающем меню выберите *Custom firmware file...*
    * Нажмите *OK* и выберите скаченный файл прошивки.
 
-   Для загрузки последней версии **стандартной прошивки** сразу нажмите *OK*.
-
 Дождитесь, пока QGroundControl загрузит прошивку и выполнит перезагрузку полетного контроллера.
 
 > **Warning** Не отключайте полетный контроллер от компьютера в процессе загрузки прошивки.
 
-Дополнительную информацию о прошивке читайте в статье "[Прошивка Pixhawk](firmware.md)".
 
 ## Настройка полетного контроллера
 
@@ -66,55 +55,70 @@
 
 <img src="../assets/qgc-frame-apply-clover4.png" alt="QGroundControl frame selection" class="zoom">
 
-1. Зайдите во вкладку *Vehicle Setup*.
+1. Перейдите во вкладку *Vehicle Setup*.
 2. Выберите меню *Airframe*.
 3. Выберите тип рамы *Quadrotor X*.
-4. Для Клевера 4 выберите подтипа рамы *COEX Clover 4*. В ином случае – *Generic Quadrotor X*.
+4. Для Клевера 4 выберите подтип рамы *COEX Clover 4*. Для Клевера 5 – *Generic Quadrotor X*.
 5. Переместитесь в начало списка и нажмите кнопку *Apply and Restart*, подтвердите нажатием *Apply*.
 6. Дождитесь применения настроек и перезагрузки полетного контроллера.
 
 ### Параметры
 
-Для настройки параметров полетного контроллера войдите во вкладку *Vehicle Setup* и выберите меню *Parameters*. Вы можете использовать поле *Search* для поиска параметров по имени. Рекомендуемые параметры для Клевера приведены в дальнейшей документации а также в соответствующей [сводной статье](parameters.md).
+Для настройки параметров полетного контроллера войдите во вкладку *Vehicle Setup* и выберите меню *Parameters*. Вы можете использовать поле *Search* для поиска параметров по имени. Рекомендуемые параметры для Клевера приведены в дальнейшей документации.
 
 <img src="../assets/qgc-parameters.png" alt="QGroundControl parameters" class="zoom">
 
 После установки параметра необходимо нажать кнопку *Save*. При необходимости – перезагрузить полетный контроллер, нажав кнопку *Tools*, затем *Reboot vehicle*.
 
+
+#### Файлы с параметрами
+
+Вы можете загрузить настроенный пресет через меню во вкладке *Parameters*, для этого нажмите на кнопку *Tools*, после чего в всплывающем окне выберете *Load from file...* и выберете файл ``.params``.  
+
+- Параметры для clover-4 - [clover-4.params](https://drive.google.com/file/d/1lPq6y8CVDUKBxo5hVujcWUJAfzTqqCx1/view?usp=sharing)  
+- Параметры для clover-5 - [clover-5.params](https://drive.google.com/file/d/1z8tDCJZqSyJtySgBizllgdF7DIC28A9C/view?usp=sharing)
+
+
 #### Настройка PID-регуляторов
 
-> **Info** Использование типа рамы *COEX Clover 4* не требует ввода коэффициентов PID.
+
+##### Усредненные коэффициенты PID для Клевера 5
+
+* `MC_PITCHRATE_P` = 0.176  
+* `MC_PITCHRATE_I` = 0.213  
+* `MC_PITCHRATE_D` = 0.0018  
+* `MC_ROLLRATE_P` = 0.176  
+* `MC_ROLLRATE_I` = 0.213  
+* `MC_ROLLRATE_D` = 0.0018  
+* `MC_YAWRATE_P` = 0.25  
+* `MC_YAWRATE_I` = 0.09  
+* `MPC_XY_P` = 1.8  
+* `MPC_Z_P` = 1.5  
+* `MPC_XY_VEL_P_ACC` = 3.45  
+* `MPC_XY_VEL_D_ACC` = 0.15  
+* `MPC_XY_VEL_I_ACC` = 1.0  
+* `MPC_Z_VEL_P_ACC` = 5.5  
+* `MPC_Z_VEL_I_ACC` = 2.3  
+* `MPC_THR_HOVER` = 0.4  
+* `MPC_ACC_DOWN_MAX` = 2.0  
 
 ##### Усредненные коэффициенты PID для Клевера 4
 
-* `MC_PITCHRATE_P` = 0.087
+* `MC_PITCHRATE_P` = 0.072
 * `MC_PITCHRATE_I` = 0.037
-* `MC_PITCHRATE_D` = 0.0044
+* `MC_PITCHRATE_D` = 0.0021
 * `MC_PITCH_P` = 8.5
-* `MC_ROLLRATE_P` = 0.087
+* `MC_ROLLRATE_P` = 0.072
 * `MC_ROLLRATE_I` = 0.037
-* `MC_ROLLRATE_D` = 0.0044
+* `MC_ROLLRATE_D` = 0.0021
 * `MC_ROLL_P` = 8.5
-* `MPC_XY_VEL_P` = 0.11
-* `MPC_XY_VEL_D` = 0.013
-* `MPC_XY_P` = 1.1
-* `MPC_Z_VEL_P` = 0.24
+* `MPC_XY_VEL_P_ACC` = 2.2
+* `MPC_XY_VEL_D_ACC` = 0.26
+* `MPC_XY_P` = 0.9
+* `MPC_Z_VEL_P_ACC` = 4.8
 * `MPC_Z_P` = 1.2
 
-##### Усредненные коэффициенты PID для Клевера 3
-
-* `MC_PITCHRATE_P` = 0.145
-* `MC_PITCHRATE_I` = 0.050
-* `MC_PITCHRATE_D` = 0.0025
-* `MC_ROLLRATE_P` = 0.145
-* `MC_ROLLRATE_I` = 0.050
-* `MC_ROLLRATE_D` = 0.0025
 
 > **Hint** Необходимо учитывать, что для идеального полета параметры PID-регуляторов подбираются вручную для каждого конкретного собранного квадрокоптера. Вы можете узнать больше об этом в статье "[Настройка PID-регуляторов](pid_tuning.md)".
-
-#### Параметры Circuit breaker
-
-1. Чтобы коптер мог летать с подключением по USB, установите параметр `CBRK_USB_CHK` в 197848.
-2. Отключите проверку Safety Switch: `CBRK_IO_SAFETY` = 22027.
 
 **Далее**: [Калибровка датчиков](calibration.md).

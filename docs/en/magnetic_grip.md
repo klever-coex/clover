@@ -1,126 +1,222 @@
-# Assembling and setting up the electromagnetic gripper
+# Working with Magnetic Gripper
 
-The magnetic gripper can be assembled in various ways according to the wiring diagram.
+## Contents
+1. [Module Assembly and Installation](#module-assembly-and-installation)
+2. [Testing the Setup](#testing-the-setup)
+3. [Controlling the Magnetic Gripper via RC Transmitter](#controlling-the-magnetic-gripper-via-rc-transmitter)
+   - [Reading RC Channel Values](#reading-rc-channel-values)
+   - [Magnetic Gripper Control Code Examples](#magnetic-gripper-control-code-examples)
 
-<img src="../assets/magnet_grip/scheme.jpg" width=300 class="zoom border center">
+## Module Assembly and Installation
 
-The following is an example of assembling an electromagnetic capture circuit on a breadboard.
+1. Solder the magnetic gripper module according to the wiring diagram. The wire ends should have Dupont female connectors (wire length ~10-15cm).
 
-> **Info** It is recommended to lay the wiring between the elements on the back side of the board (in the following images, the wiring is done over the diagram for illustrative purpose).
+<div align="center"><img src="../assets/magnet_grip/en/datasheet.jpg" width="900" class="zoom border center"></div>
 
-1. Place the Schottky diode, 10K resistor, and transistor on the soldering board.
+<div align="center"><em>Electronics wiring diagram</em></div>
 
-    <img src="../assets/magnet_grip/magnet1.png" width=300 class="zoom border center">
+2. Mount the magnetic gripper deck using M3x6 screws and M3 nuts.
 
-2. Solder the contacts on the other side of the board and bite off the remaining element legs.
-3. Connect the pins of the resistor and the two outer legs of the transistor.
+<div align="center"><img src="../assets/magnet_grip/en/assemble/step_1.png" width="700" class="zoom border center"></div>
 
-    <img src="../assets/magnet_grip/magnet2.png" width=300 class="zoom border center">
+3. Install the electromagnet module onto the gripper deck using M2x6 screws.
 
-4. Connect the center leg of the transistor and the leg of the Schottky diode (opposite to the gray marking strip).
+<div align="center"><img src="../assets/magnet_grip/en/assemble/step_2.png" width="700" class="zoom border center"></div>
 
-    <img src="../assets/magnet_grip/magnet3.png" width=300 class="zoom border center">
+4. Attach the electromagnet to the gripper deck using an M4x6 screw.
 
-5. Cut the required amount of magnetic grab wire and solder it to the pins of the Schottky diode.
+<div align="center"><img src="../assets/magnet_grip/en/assemble/step_3.png" width="700" class="zoom border center"></div>
 
-    <img src="../assets/magnet_grip/magnet4.png" width=300 class="zoom border center">
+5. Assembled magnetic gripper.
 
-6. Solder the *Dupont* - male wires to the transistor and diode leg (red, black wires), and the *Dupont* - fmale wire to the opposite transistor leg (white wire).
+<div align="center"><img src="../assets/magnet_grip/magnet_grip.png" width="700" class="zoom border center"></div>
 
-    <img src="../assets/magnet_grip/magnet5.png" width=300 class="zoom border center">
+6. Connect the magnetic gripper to Raspberry Pi according to the electronics wiring diagram (see step 1).
 
-## Checking the operation of the electromagnetic gripper
+## Testing the Setup
 
-In order to check the operation of the gripper, apply a voltage of 5V to the signal wire. You can use the *Dupont* dad-dad wire for that.
+1. Upload the sample code to test the magnetic gripper functionality.
 
-<img src="../assets/magnet_grip/magnet_check.png" width=300 class="zoom border center">
+```python
+from rpi_hardware_pwm import HardwarePWM
+import time
 
-After applying voltage, the magnet should turn on.
 
-## Connecting to Raspberry Pi
+# pwmchip0, channel 1
+pwm = HardwarePWM(pwm_channel=1, hz=50, chip=0)
 
-Connect the magnetic gripper to a Raspberry Pi for software activation.
 
-<img src="../assets/magnet_grip/magnet_raspberry.png" width=300 class="zoom border center">
+def control_magnet(on_time=2, off_time=2):
+    try:
+        pwm.start(0)
+        while True:
+            print("ON")
+            pwm.change_duty_cycle(100)
+            time.sleep(on_time)
+            print("OFF")
+            pwm.change_duty_cycle(0)
+            time.sleep(off_time)
+    finally:
+        pwm.stop()
 
-An example of the code activating the magnetic gripper can be found [here](gpio.md#connecting-an-electromagnet).
 
-## Connecting to Arduino
-
-Connect the gripper to the Arduino Nano board in order to control it manually.
-
-It is convenient to place it on the same soldering board — insert it into the appropriate holes and solder it from the back to the board.
-
-<img src="../assets/magnet_grip/magnet_arduino1.png" width=300 class="zoom border center">
-
-Then connect the signal output of the circuit to the selected port and solder the *Dupont* female wire to the selected signal port on the board.
-
-<img src="../assets/magnet_grip/magnet_arduino2.png" width=300 class="zoom border center">
-
-## Installation of electromagnetic gripper
-
-1. Install an electromagnet into the center hole on the gripper deck.
-2. Use a zip tie to pull the assembled circuit to the back of the deck.
-3. Plug the Arduino *D11* signal pin into one of the *AUX* pins on the flight controller.
-4. Plug the power wire of the electromagnetic gripper to JST 5V.
-
-## Setting up electromagnetic gripper
-
-To control the magnet through Arduino Nano, use the following code:
-
-```cpp
-void setup() {
-  pinMode(11, INPUT);
-  pinMode(13, OUTPUT);
-}
-
-void loop() {
-  if (int duration = pulseIn(11, HIGH) > 1200) {
-    digitalWrite(13, HIGH);
-  } else {
-    digitalWrite(13, LOW);
-  }
-}
+if __name__ == "__main__":
+    control_magnet(on_time=2, off_time=2)
 ```
 
-To monitor the status of the electromagnetic gripper, you can connect the *ws281x* LED strip (included to Clover kit). Connect it to power +5v – 5v, ground GND – GND, and signal wire DIN – Arduino D12.
+## Controlling the Magnetic Gripper via RC Transmitter
 
-To control the magnet and monitor it using the LED strip, use the following code:
+### Reading RC Channel Values
 
-```cpp
-#include <Adafruit_NeoPixel.h>
-#define NUMPIXELS 72
-#define PIN 12
-int pin = 11;
-int led = 13;
+> For MAVROS topics documentation, see the [link](https://clover.coex.tech/en/mavros.html).
 
-unsigned long duration;
-Adafruit_NeoPixel strip (NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+Sample code for reading channel values when toggling a switch:
 
-void setup() {
-  strip.begin();
-  strip.setBrightness(10);
-  Serial.begin(9600);
-  pinMode(pin, INPUT);
-  pinMode(led, OUTPUT);
-}
+```python
+import rospy
+from mavros_msgs.msg import RCIn
 
-void loop() {
-  duration = pulseIn(pin, HIGH);
-  Serial.println(duration);
-  delay(100);
-  if (duration >= 1500) {
-    digitalWrite(led, HIGH);
-    for (int i = -1; i < NUMPIXELS; i++) {
-      strip.setPixelColor(i, strip.Color(255, 0, 0));
-      strip.show();
-    }
-  } else {
-    digitalWrite(led, LOW);
-    for (int i = -1; i < NUMPIXELS; i++) {
-      strip.setPixelColor(i, strip.Color(0, 255, 0));
-      strip.show();
-    }
-  }
-}
+
+last_state = None
+
+
+def rc_callback(data: RCIn):
+    global last_state
+
+    if len(data.channels) <= 6:
+        return
+
+    ch = data.channels[6]
+
+    if ch < 1000:
+        state = 'ARMING'
+    elif ch > 1900:
+        state = 'DISARMED'
+    else:
+        state = None
+
+    if state is not None and state != last_state:
+        print(state)
+        last_state = state
+
+
+def main():
+    rospy.init_node('rc_reader')
+    rospy.Subscriber('mavros/rc/in', RCIn, rc_callback)
+    rospy.spin()
+
+
+if __name__ == '__main__':
+    main()
+```
+
+Example output in topic and terminal:
+<div align="center">
+    <img src="../assets/magnet_grip/example_1.png" height="350" class="zoom border center">
+    <img src="../assets/magnet_grip/example_2.png" height="350" class="zoom border center">
+</div>
+
+### Magnetic Gripper Control Code Examples
+
+Sample code for controlling the magnetic gripper via RC transmitter:
+
+```python
+import rospy
+from mavros_msgs.msg import RCIn
+from rpi_hardware_pwm import HardwarePWM
+
+
+pwm = None
+magnet_on = False
+
+
+def rc_callback(data: RCIn):
+    global magnet_on
+
+    if 6 >= len(data.channels):
+        return
+
+    ch = data.channels[6]
+
+    if ch < 1000 and magnet_on:
+        rospy.loginfo("OFF")
+        pwm.change_duty_cycle(0)
+        magnet_on = False
+    elif ch > 1900 and not magnet_on:
+        rospy.loginfo("ON")
+        pwm.change_duty_cycle(100)
+        magnet_on = True
+
+
+def main():
+    global pwm
+
+    rospy.init_node('magnet_rc')
+    pwm = HardwarePWM(pwm_channel=1, hz=50, chip=0)
+    pwm.start(0)
+    rospy.Subscriber('mavros/rc/in', RCIn, rc_callback)
+    rospy.loginfo("magnet_rc start")
+    rospy.spin()
+    pwm.stop()
+
+
+if __name__ == '__main__':
+    main()
+```
+
+Sample code for smooth payload pickup using a servo:
+
+```python
+import rospy
+from mavros_msgs.msg import RCIn
+from rpi_hardware_pwm import HardwarePWM
+
+pwm = None
+
+S1_INDEX = 8 
+
+RC_MIN = 1000
+RC_MAX = 2000
+
+ANGLE_MIN = 0.0
+ANGLE_MAX = 90.0
+
+DUTY_MIN = 3
+DUTY_MAX = 12
+
+def rc_callback(msg: RCIn):
+    if len(msg.channels) <= S1_INDEX:
+        return
+
+    ch = msg.channels[S1_INDEX]
+
+    if ch < RC_MIN:
+        ch = RC_MIN
+    elif ch > RC_MAX:
+        ch = RC_MAX
+
+    k = float(ch - RC_MIN) / float(RC_MAX - RC_MIN)
+
+    angle = ANGLE_MIN + (ANGLE_MAX - ANGLE_MIN) * k
+
+    duty = DUTY_MIN + (DUTY_MAX - DUTY_MIN) * (angle / ANGLE_MAX)
+
+    pwm.change_duty_cycle(duty)
+
+def main():
+    global pwm
+
+    rospy.init_node('servo_from_slider')
+
+    pwm = HardwarePWM(pwm_channel=1, hz=50, chip=0)
+    pwm.start(DUTY_MIN)
+
+    rospy.Subscriber('mavros/rc/in', RCIn, rc_callback)
+    rospy.loginfo('servo_from_slider start')
+    rospy.spin()
+
+    pwm.stop()
+
+if __name__ == '__main__':
+    main()
 ```
