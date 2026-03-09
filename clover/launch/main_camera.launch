@@ -43,8 +43,17 @@
         <param name="resolution/width" value="$(arg width)"/>
         <param name="resolution/height" value="$(arg height)"/>
 
+        <remap from="/main_camera/image_raw" to="/main_camera/private_image_raw"/>
+
         <!-- see: https://github.com/ctu-mrs/libcamera_ros/blob/b3645/config/param.yaml#L19 -->
         <param name="control/fps" value="$(arg fps)"/>
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="image_proxy" args="load clover/image_proxy main_camera_nodelet_manager" output="screen">
+
+        <param name="input" value="/main_camera/private_image_raw"/>
+        <param name="output" value="/main_camera/image_raw"/>
+
     </node>
 
     <!-- old camera node for v4l2 (cv_camera) -->

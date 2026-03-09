@@ -2,4 +2,7 @@
    <class name="clover/optical_flow" type="OpticalFlow" base_class_type="nodelet::Nodelet">
       <description/>
    </class>
+   <class name="clover/image_proxy" type="ImageProxyNodelet" base_class_type="nodelet::Nodelet">
+      <description/>
+   </class>
 </library>
