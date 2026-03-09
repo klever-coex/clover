@@ -6,67 +6,46 @@
 
 <img src="../assets/qgc.png" alt="QGroundControl" class="zoom">
 
-Download and install the version for your operating system [from the official QGroundControl website](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html). When asked, agree to install additional drivers.
+Download and install the installer for Windows/Linux/macOS [from the official QGroundControl website](http://qgroundcontrol.com/downloads/). Agree to install additional drivers if prompted.
 
-Consult the [official QGroundControl user guide](https://docs.qgroundcontrol.com/en/) if anything goes wrong.
-
-## Preparing the MicroSD card
-
-Prepare the MicroSD card for your flight controller.
-
-<img src="../assets/pix-sd.png" alt="Pixracer and MicroSD-card" class="zoom center" width=400>
-
-* Put the card into your computer (use an adapter if necessary).
-* Format the card to FAT32 filesystem. Right click on the SD card icon in Windows Explorer and select "Format". Use the Disk Utility in macOS.
-* Use "Safely Remove Hardware" and unplug the card.
-* Put the card into your flight controller.
+See also the [official QGroundControl documentation](https://docs.qgroundcontrol.com/en/).
 
 ## Flashing the flight controller
 
-Main article: https://docs.qgroundcontrol.com/en/SetupView/Firmware.html
+Download the latest stable firmware version from GitHub — **[download](https://github.com/PX4/PX4-Autopilot/releases)**.
 
-> **Note** Do not connect your flight controller prior to flashing.
+- For the `micoair_h743-v2` flight controller: `micoair_h743-v2_default.px4`
+- For the `pixracer_R15` flight controller: `px4fmu-v4_default.px4`
 
-We recommend using the modified version of [PX4 with COEX patches](firmware.md) for the Clover drone, especially for autonomous flights. Download the latest stable version **<a class="latest-firmware v4" href="https://github.com/CopterExpress/Firmware/releases">from our GitHub</a>**.
+Flashing instructions:
 
-To use all the most recent PX4 functions you also can use the latest official firmware version (experimentally).
-
-Flash the flight controller with this firmware:
+1. Disconnect the flight controller from the computer (if connected).
+2. Launch QGroundControl.
+3. Go to the *Vehicle Setup* panel (click the QGroundControl logo in the top-left corner) and select the *Firmware* menu.
+4. Connect the flight controller to the computer via USB.
+5. Select *PX4 Flight Stack* in the menu that appears on the right.
 
 <img src="../assets/qgc-firmware.png" alt="QGroundControl firmware upload" class="zoom">
 
-1. Disconnect the flight controller from computer (if connected).
-2. Launch QGroundControl software.
-3. Go to *Vehicle Setup* panel (click on the QGroundControl logo in the top-left corner) and select *Firmware* menu.
-4. Connect your flight controller to your PC over USB.
-5. Select *PX4 Flight Stack* in the right bar appeared.
+6. To select and load the firmware file:
+   - Select *Advanced settings*.
+   - Choose *Custom firmware file...* from the dropdown menu.
+   - Press *OK* and select the downloaded firmware file.
 
-   <img src="../assets/qgc-firmware.png" alt="QGroundControl firmware upload" class="zoom">
+Wait for QGroundControl to flash the firmware and reboot the flight controller.
 
-6. To use **COEX patched firmware**:
-
-   * Check *Advanced Settings* checkbox.
-   * Select *Custom firmware file...* from the dropdown list.
-   * Press *OK* and select the file that you've downloaded.
-
-   To use the latest **official stable firmware** just press *OK*.
-
-Wait for QGroundControl to finish flashing the flight controller.
-
-> **Warning** Do not unplug the flight controller during the flashing process.
-
-Read more about the firmware in the "[Pixhawk Firmware](firmware.md)" article.
+> **Warning** Do not disconnect the flight controller from the computer during the flashing process.
 
 ## Configuring the flight controller
 
-> **Hint** You can use the [Raspberry Pi to access the flight controller over Wi-Fi](gcs_bridge.md) for the rest of the setup process.
+> **Hint** All further configuration and calibration of the flight controller can be done wirelessly using [Wi-Fi access to the flight controller via Raspberry Pi](gcs_bridge.md).
 
-This is how the main QGroundControl settings window will look like:
+Overview of the main QGroundControl settings window:
 
 <img src="../assets/qgc-requires-setup.png" alt="QGroundControl overview" class="zoom">
 
-1. Parameters that require setup: *Airframe*, *Radio*, *Sensors*, *Flight Modes*.
-2. Current firmware version.
+1. Parameters requiring setup: *Airframe*, *Radio*, *Sensors*, *Flight Modes*.
+2. Current controller firmware.
 3. Current flight mode.
 4. Error messages.
 
@@ -74,55 +53,66 @@ This is how the main QGroundControl settings window will look like:
 
 <img src="../assets/qgc-frame-apply-clover4.png" alt="QGroundControl frame selection" class="zoom">
 
-1. Open the *Vehicle Setup* tab.
+1. Go to the *Vehicle Setup* tab.
 2. Select the *Airframe* menu.
-3. Select the *Quadrotor X* airframe type.
-4. For Clover 4 select *COEX Clover 4* from the dropdown menu. Otherwise select *Generic Quadrotor X*.
-5. Return to the top of the list and press *Apply and Restart* button, confirm by pressing *Apply*.
-6. Wait for the settings to be applied and for the flight controller to restart.
+3. Select the *Quadrotor X* frame type.
+4. For Clover 4, select the *COEX Clover 4* frame subtype. For Clover 5 — *Generic Quadrotor X*.
+5. Scroll to the top of the list and press *Apply and Restart*, confirm by pressing *Apply*.
+6. Wait for the settings to apply and the flight controller to reboot.
 
-### Setting parameters
+### Parameters
 
-Open the *Vehicle Setup* tab and select the *Parameters* menu. You can use the *Search* field to find parameters by name. Recommended parameters values are given in the further documentation and also in the [parameters summary article](parameters.md).
+To configure flight controller parameters, go to the *Vehicle Setup* tab and select the *Parameters* menu. Use the *Search* field to find parameters by name. Recommended parameters for Clover are provided in the further documentation.
 
 <img src="../assets/qgc-parameters.png" alt="QGroundControl parameters" class="zoom">
 
-Press the *Save* button to save the changed value to the flight controller. Changing some parameters require rebooting the flight controller. You can do that by pressing the *Tools* button and selecting the *Reboot vehicle* option.
+After setting a parameter, press *Save*. If needed, reboot the flight controller by pressing *Tools* > *Reboot vehicle*.
+
+#### Parameter files
+
+You can load a pre-configured preset via the *Parameters* tab menu: press *Tools*, then select *Load from file...* in the popup window and choose the `.params` file.
+
+- Parameters for Clover 4: [clover-4.params](https://drive.google.com/file/d/1lPq6y8CVDUKBxo5hVujcWUJAfzTqqCx1/view?usp=sharing)
+- Parameters for Clover 5: [clover-5.params](https://drive.google.com/file/d/1z8tDCJZqSyJtySgBizllgdF7DIC28A9C/view?usp=sharing)
 
 #### Configuring PID regulators
 
-> **Info** Selecting *COEX Clover 4* frame subtype doesn't require setting PID coefficients.
+##### Averaged PID coefficients for Clover 5
 
-##### Averaged PID coefficients for the Clover 4 drone
+* `MC_PITCHRATE_P` = 0.176
+* `MC_PITCHRATE_I` = 0.213
+* `MC_PITCHRATE_D` = 0.0018
+* `MC_ROLLRATE_P` = 0.176
+* `MC_ROLLRATE_I` = 0.213
+* `MC_ROLLRATE_D` = 0.0018
+* `MC_YAWRATE_P` = 0.25
+* `MC_YAWRATE_I` = 0.09
+* `MPC_XY_P` = 1.8
+* `MPC_Z_P` = 1.5
+* `MPC_XY_VEL_P_ACC` = 3.45
+* `MPC_XY_VEL_D_ACC` = 0.15
+* `MPC_XY_VEL_I_ACC` = 1.0
+* `MPC_Z_VEL_P_ACC` = 5.5
+* `MPC_Z_VEL_I_ACC` = 2.3
+* `MPC_THR_HOVER` = 0.4
+* `MPC_ACC_DOWN_MAX` = 2.0
 
-* `MC_PITCHRATE_P` = 0.087
+##### Averaged PID coefficients for Clover 4
+
+* `MC_PITCHRATE_P` = 0.072
 * `MC_PITCHRATE_I` = 0.037
-* `MC_PITCHRATE_D` = 0.0044
+* `MC_PITCHRATE_D` = 0.0021
 * `MC_PITCH_P` = 8.5
-* `MC_ROLLRATE_P` = 0.087
+* `MC_ROLLRATE_P` = 0.072
 * `MC_ROLLRATE_I` = 0.037
-* `MC_ROLLRATE_D` = 0.0044
+* `MC_ROLLRATE_D` = 0.0021
 * `MC_ROLL_P` = 8.5
-* `MPC_XY_VEL_P` = 0.11
-* `MPC_XY_VEL_D` = 0.013
-* `MPC_XY_P` = 1.1
-* `MPC_Z_VEL_P` = 0.24
+* `MPC_XY_VEL_P_ACC` = 2.2
+* `MPC_XY_VEL_D_ACC` = 0.26
+* `MPC_XY_P` = 0.9
+* `MPC_Z_VEL_P_ACC` = 4.8
 * `MPC_Z_P` = 1.2
 
-##### Averaged PID coefficients for the Clover 3 drone
-
-* `MC_PITCHRATE_P` = 0.145
-* `MC_PITCHRATE_I` = 0.050
-* `MC_PITCHRATE_D` = 0.0025
-* `MC_ROLLRATE_P` = 0.145
-* `MC_ROLLRATE_I` = 0.050
-* `MC_ROLLRATE_D` = 0.0025
-
-> **Hint** Note that you should fine-tune the PID parameters for each drone individually.  <!-- TODO: add PID article link -->
-
-#### Circuit breaker parameters
-
-1. Set `CBRK_USB_CHK` to 197848 to allow flights with the USB cable connected.
-2. Disable safety switch check: `CBRK_IO_SAFETY` = 22027.
+> **Hint** Note that PID regulator parameters should be tuned manually for each specific assembled quadcopter for ideal flight. Learn more in the "[PID tuning](pid_tuning.md)" article.
 
 **Next**: [Sensor calibration](calibration.md).

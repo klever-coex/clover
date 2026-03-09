@@ -5,6 +5,14 @@ This section contains articles describing the assembly of each version of Clover
 <table class=versions>
      <tr><th>Version</th><th>Image</th></tr>
      <tr>
+          <td><a href="assemble_5_fpv.md">Clover&nbsp;5&nbsp;FPV</a></td>
+          <td><a href="assemble_5_fpv.md"><img src="../assets/versions/clover_5_fpv.jpg" width=200></a></td>
+     </tr>
+     <tr>
+               <td><a href="assemble_5_dev.md">Clover&nbsp;5&nbsp;DEV</a></td>
+               <td><a href="assemble_5_dev.md"><img src="../assets/versions/clover_5_dev.jpg" width=200></a></td>
+          </tr>
+     <tr>
           <td><a href="assemble_5.md">Clover&nbsp;5</a></td>
           <td><a href="assemble_5.md"><img src="../assets/versions/clover_5.jpg" width=200></a></td>
      </tr>
@@ -18,14 +26,6 @@ This section contains articles describing the assembly of each version of Clover
      <tr>
           <td><a href="assemble_4.md">Clover&nbsp;4</a></td>
           <td><a href="assemble_4.md"><img src="../assets/versions/clover_4.jpg" width=200></a></td>
-     </tr>
-     <tr>
-          <td><a href="assemble_3.md">Clover&nbsp;3</a></td>
-          <td><a href="assemble_3.md"><img src="../assets/versions/clover_3.jpg" width=200></a></td>
-     </tr>
-     <tr>
-          <td><a href="assemble_2.md">Clover&nbsp;2</a></td>
-          <td><a href="assemble_2.md"><img src="../assets/versions/clover_2.jpg" width=200></a></td>
      </tr>
 </table>
 

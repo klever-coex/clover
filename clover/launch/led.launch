@@ -4,7 +4,7 @@
     <!-- Generic led config-->
     <arg name="led_effect" default="true"/>
     <arg name="led_notify" default="true"/>
-    <arg name="led_count" default="72"/>
+    <arg name="led_count" default="80"/>
     <arg name="brightness" default="64"/>
 
     <!-- ws281x specific config -->

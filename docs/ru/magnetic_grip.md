@@ -1,126 +1,222 @@
-# Сборка и настройка электромагнитного захвата
+# Работа с магнитным захватом
 
-Магнитный захват можно собрать различными способами в соответствии с электрической схемой.
+## Содержание
+1. [Сборка и установка модуля](#сборка-и-установка-модуля)
+2. [Проверка работоспособности](#проверка-работоспособности)
+3. [Управление магнитным захватом с помощью аппаратуры](#управление-магнитным-захватом-с-помощью-аппаратуры)
+   - [Чтение значений каналов RC](#чтение-значений-каналов-rc)
+   - [Пример кода управления магнитным захватом](#пример-кода-управления-магнитным-захватом)
 
-<img src="../assets/magnet_grip/scheme.jpg" width=300 class="zoom border center">
+## Сборка и установка модуля
 
-Ниже представлен пример сборки схемы электромагнитного захвата на макетной плате.
+1. Спаяйте модуль магнитного захвата согласно схеме подключения. Провода на концах должны быть с разъемами Dupont female (длина проводов ~10-15см).
 
-> **Info** Рекомендуется проложить проводку между элементами с обратной стороны платы (на дальнейших изображениях проводка сделана поверх схемы, для наглядности).
+<div align="center"><img src="../assets/magnet_grip/ru/datasheet.jpg" width="900" class="zoom border center"></div>
 
-1. На паечной плате разместите диод Шоттки, резистор на 10 кОм и транзистор.
+<div align="center"><em>Схема подключения электроники</em></div>
 
-    <img src="../assets/magnet_grip/magnet1.png" width=300 class="zoom border center">
+2. Установите деку магнитного захвата при помощи винтов M3x6 и гаек М3.
 
-2. Припаяйте контакты с другой стороны платы и откусите оставшиеся ножки элементов.
-3. Соедините контакты резистора и двух крайних ножек транзистора.
+<div align="center"><img src="../assets/magnet_grip/ru/assemble/step_1.png" width="700" class="zoom border center"></div>
 
-    <img src="../assets/magnet_grip/magnet2.png" width=300 class="zoom border center">
+3. Установите модуль электромагнита на деку захвата с помощью винтов M2x6.
 
-4. Соедините центральную ножку транзистора и ножку диода Шоттки (противоположную серой маркировочной полоске).
+<div align="center"><img src="../assets/magnet_grip/ru/assemble/step_2.png" width="700" class="zoom border center"></div>
 
-    <img src="../assets/magnet_grip/magnet3.png" width=300 class="zoom border center">
+4. Установите электромагнит на деку захвата при помощи винта M4x6.
 
-5. Обрежьте необходимое количество провода магнитного захвата и припаяйте его к контактам диода Шоттки.
+<div align="center"><img src="../assets/magnet_grip/ru/assemble/step_3.png" width="700" class="zoom border center"></div>
 
-    <img src="../assets/magnet_grip/magnet4.png" width=300 class="zoom border center">
+5. Магнитный захват в сборе.
 
-6. Припаяйте провода *Dupont*-папа к ножке транзистора и диода (красный, черный провода), а также провод *Dupont*-мама на противоположную ножку транзистора (белый провод).
+<div align="center"><img src="../assets/magnet_grip/magnet_grip.png" width="700" class="zoom border center"></div>
 
-    <img src="../assets/magnet_grip/magnet5.png" width=300 class="zoom border center">
+6. Подключите магнитный захват к Raspberry Pi согласно схеме подключения электроники (см. пункт 1).
 
-## Проверка работы электромагнитного захвата
+## Проверка работоспособности
 
-Для того, чтобы проверить работу захвата, подайте на сигнальный провод напряжение 5В. Для этого можно использовать провод *Dupont* папа-папа.
+1. Загрузите пример кода для работы с магнитным захватом чтобы проверить работоспособность.
 
-<img src="../assets/magnet_grip/magnet_check.png" width=300 class="zoom border center">
+```python
+from rpi_hardware_pwm import HardwarePWM
+import time
 
-После подачи напряжения магнит должен включиться.
 
-## Подключение к Raspberry Pi
+# pwmchip0, канал 1
+pwm = HardwarePWM(pwm_channel=1, hz=50, chip=0)
 
-Подключите магнитный захват к плате Raspberry Pi для программного использования
 
-<img src="../assets/magnet_grip/magnet_raspberry.png" width=300 class="zoom border center">
+def control_magnet(on_time=2, off_time=2):
+    try:
+        pwm.start(0)
+        while True:
+            print("ВКЛ")
+            pwm.change_duty_cycle(100)
+            time.sleep(on_time)
+            print("ВЫКЛ")
+            pwm.change_duty_cycle(0)
+            time.sleep(off_time)
+    finally:
+        pwm.stop()
 
-Пример кода, активирующего магнитный захват, можно посмотреть [тут](gpio.md#подключение-электромагнита).
 
-## Подключение к Arduino
-
-Подключите захват плате Arduino Nano, чтобы использовать его в ручном режиме.
-
-Удобно ее располагать на той же паечной плате -- вставьте ее в подходящие отверстия и припаяйте с обратной стороны к плате.
-
-<img src="../assets/magnet_grip/magnet_arduino1.png" width=300 class="zoom border center">
-
-Затем подключите сигнальный выход схемы к выбранному порту и припаяйте провод *Dupont*-мама к выбранному сигнальному порту на плате.
-
-<img src="../assets/magnet_grip/magnet_arduino2.png" width=300 class="zoom border center">
-
-## Установка электромагнитного захвата
-
-1. В центральное отверстие на деке захвата установите электромагнит.
-2. Стяжкой притяните собранную схему к обратной стороне деки.
-3. Сигнальный вывод Arduino *D11* вставьте в один из выводов *AUX* на полетном контроллере.
-4. Вставьте силовой вывод электромагнитного захвата в JST 5В.
-
-## Настройка электромагнитного захвата
-
-Для управления магнитом через плату Arduino Nano, используйте код ниже:
-
-```cpp
-void setup() {
-  pinMode(11, INPUT);
-  pinMode(13, OUTPUT);
-}
-
-void loop() {
-  if (int duration = pulseIn(11, HIGH) > 1200) {
-    digitalWrite(13, HIGH);
-  } else {
-    digitalWrite(13, LOW);
-  }
-}
+if __name__ == "__main__":
+    control_magnet(on_time=2, off_time=2)
 ```
 
-Для однозначного определения статуса магнитного захвата, можно подключить светодиодную ленту типа *ws281x* (входит в наборы "Клевер"). Подключите ее к питанию +5v – 5v, земле GND – GND и сигнальный контакт DIN – Arduino D12.
+## Управление магнитным захватом с помощью аппаратуры
 
-Для управления магнитным захватом со светодиодной лентой через плату Arduino Nano используйте код ниже:
+### Чтение значений каналов RC
 
-```cpp
-#include <Adafruit_NeoPixel.h>
-#define NUMPIXELS 72
-#define PIN 12
-int pin = 11;
-int led = 13;
+> Информацию по топикам MAVROS см. по [ссылке](https://clover.coex.tech/ru/mavros.html).
 
-unsigned long duration;
-Adafruit_NeoPixel strip (NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+Пример кода для считывания значений с каналов при переключении тумблера:
 
-void setup() {
-  strip.begin();
-  strip.setBrightness(10);
-  Serial.begin(9600);
-  pinMode(pin, INPUT);
-  pinMode(led, OUTPUT);
-}
+```python
+import rospy
+from mavros_msgs.msg import RCIn
 
-void loop() {
-  duration = pulseIn(pin, HIGH);
-  Serial.println(duration);
-  delay(100);
-  if (duration >= 1500) {
-    digitalWrite(led, HIGH);
-    for (int i = -1; i < NUMPIXELS; i++) {
-      strip.setPixelColor(i, strip.Color(255, 0, 0));
-      strip.show();
-    }
-  } else { 
-    digitalWrite(led, LOW);
-    for (int i = -1; i < NUMPIXELS; i++) {
-      strip.setPixelColor(i, strip.Color(0, 255, 0));
-      strip.show();
-    }
-  }
-}
+
+last_state = None
+
+
+def rc_callback(data: RCIn):
+    global last_state
+
+    if len(data.channels) <= 6:
+        return
+
+    ch = data.channels[6]
+
+    if ch < 1000:
+        state = 'ARMING'
+    elif ch > 1900:
+        state = 'DISARMED'
+    else:
+        state = None
+
+    if state is not None and state != last_state:
+        print(state)
+        last_state = state
+
+
+def main():
+    rospy.init_node('rc_reader')
+    rospy.Subscriber('mavros/rc/in', RCIn, rc_callback)
+    rospy.spin()
+
+
+if __name__ == '__main__':
+    main()
+```
+
+Пример вывода в топике и терминале:
+<div align="center">
+    <img src="../assets/magnet_grip/example_1.png" height="350" class="zoom border center">
+    <img src="../assets/magnet_grip/example_2.png" height="350" class="zoom border center">
+</div>
+
+### Пример кода управления магнитным захватом
+
+Пример кода управления магнитным захватом через аппаратуру:
+
+```python
+import rospy
+from mavros_msgs.msg import RCIn
+from rpi_hardware_pwm import HardwarePWM
+
+
+pwm = None
+magnet_on = False
+
+
+def rc_callback(data: RCIn):
+    global magnet_on
+
+    if 6 >= len(data.channels):
+        return
+
+    ch = data.channels[6]
+
+    if ch < 1000 and magnet_on:
+        rospy.loginfo("OFF")
+        pwm.change_duty_cycle(0)
+        magnet_on = False
+    elif ch > 1900 and not magnet_on:
+        rospy.loginfo("ON")
+        pwm.change_duty_cycle(100)
+        magnet_on = True
+
+
+def main():
+    global pwm
+
+    rospy.init_node('magnet_rc')
+    pwm = HardwarePWM(pwm_channel=1, hz=50, chip=0)
+    pwm.start(0)
+    rospy.Subscriber('mavros/rc/in', RCIn, rc_callback)
+    rospy.loginfo("magnet_rc start")
+    rospy.spin()
+    pwm.stop()
+
+
+if __name__ == '__main__':
+    main()
+```
+
+Пример кода для плавного захвата груза с помощью сервопривода:
+
+```python
+import rospy
+from mavros_msgs.msg import RCIn
+from rpi_hardware_pwm import HardwarePWM
+
+pwm = None
+
+S1_INDEX = 8 
+
+RC_MIN = 1000
+RC_MAX = 2000
+
+ANGLE_MIN = 0.0
+ANGLE_MAX = 90.0
+
+DUTY_MIN = 3
+DUTY_MAX = 12
+
+def rc_callback(msg: RCIn):
+    if len(msg.channels) <= S1_INDEX:
+        return
+
+    ch = msg.channels[S1_INDEX]
+
+    if ch < RC_MIN:
+        ch = RC_MIN
+    elif ch > RC_MAX:
+        ch = RC_MAX
+
+    k = float(ch - RC_MIN) / float(RC_MAX - RC_MIN)
+
+    angle = ANGLE_MIN + (ANGLE_MAX - ANGLE_MIN) * k
+
+    duty = DUTY_MIN + (DUTY_MAX - DUTY_MIN) * (angle / ANGLE_MAX)
+
+    pwm.change_duty_cycle(duty)
+
+def main():
+    global pwm
+
+    rospy.init_node('servo_from_slider')
+
+    pwm = HardwarePWM(pwm_channel=1, hz=50, chip=0)
+    pwm.start(DUTY_MIN)
+
+    rospy.Subscriber('mavros/rc/in', RCIn, rc_callback)
+    rospy.loginfo('servo_from_slider start')
+    rospy.spin()
+
+    pwm.stop()
+
+if __name__ == '__main__':
+    main()
 ```

@@ -315,42 +315,6 @@ set_mode = rospy.ServiceProxy('mavros/set_mode', SetMode)
 set_mode(custom_mode='STABILIZED')
 ```
 
-### # {#flip}
-
-Флип:
-
-```python
-import math
-
-PI_2 = math.pi / 2
-
-def flip():
-    start = get_telemetry()  # memorize starting position
-
-    set_rates(thrust=1)  # bump up
-    rospy.sleep(0.2)
-
-    set_rates(pitch_rate=30, thrust=0.2)  # pitch flip
-    # set_rates(roll_rate=30, thrust=0.2)  # roll flip
-
-    while True:
-        telem = get_telemetry()
-        flipped = abs(telem.roll) > PI_2 or abs(telem.pitch) > PI_2
-        if flipped:
-            break
-
-    rospy.loginfo('finish flip')
-    set_position(x=start.x, y=start.y, z=start.z, yaw=start.yaw)  # finish flip
-
-print(navigate(z=2, speed=1, frame_id='body', auto_arm=True))  # take off
-rospy.sleep(10)
-
-rospy.loginfo('flip')
-flip()
-```
-
-Необходимо использование [специальной сборки PX4 для Клевера](firmware.md#прошивка-для-клевера). Перед выполнением флипа необходимо принять все меры безопасности.
-
 ### # {#calibrate-gyro}
 
 Произвести калибровку гироскопа:
