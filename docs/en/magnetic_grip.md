@@ -11,31 +11,31 @@
 
 1. Solder the magnetic gripper module according to the wiring diagram. The wire ends should have Dupont female connectors (wire length ~10-15cm).
 
-<div align="center"><img src="../assets/magnet_grip/en/datasheet.jpg" width="900" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/en/datasheet.jpg" width="900" class="zoom border center"></div>
 
-<div align="center"><em>Electronics wiring diagram</em></div>
+    <div align="center"><em>Electronics wiring diagram</em></div>
 
 2. Mount the magnetic gripper deck using M3x6 screws and M3 nuts.
 
-<div align="center"><img src="../assets/magnet_grip/en/assemble/step_1.png" width="700" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/en/assemble/step_1.png" width="700" class="zoom border center"></div>
 
 3. Install the electromagnet module onto the gripper deck using M2x6 screws.
 
-<div align="center"><img src="../assets/magnet_grip/en/assemble/step_2.png" width="700" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/en/assemble/step_2.png" width="700" class="zoom border center"></div>
 
 4. Attach the electromagnet to the gripper deck using an M4x6 screw.
 
-<div align="center"><img src="../assets/magnet_grip/en/assemble/step_3.png" width="700" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/en/assemble/step_3.png" width="700" class="zoom border center"></div>
 
 5. Assembled magnetic gripper.
 
-<div align="center"><img src="../assets/magnet_grip/magnet_grip.png" width="700" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/magnet_grip.png" width="700" class="zoom border center"></div>
 
 6. Connect the magnetic gripper to Raspberry Pi according to the electronics wiring diagram (see step 1).
 
 ## Testing the Setup
 
-1. Upload the sample code to test the magnetic gripper functionality.
+Upload the sample code to test the magnetic gripper functionality.
 
 ```python
 from rpi_hardware_pwm import HardwarePWM

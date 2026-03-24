@@ -11,31 +11,31 @@
 
 1. Спаяйте модуль магнитного захвата согласно схеме подключения. Провода на концах должны быть с разъемами Dupont female (длина проводов ~10-15см).
 
-<div align="center"><img src="../assets/magnet_grip/ru/datasheet.jpg" width="900" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/ru/datasheet.jpg" width="900" class="zoom border center"></div>
 
-<div align="center"><em>Схема подключения электроники</em></div>
+    <div align="center"><em>Схема подключения электроники</em></div>
 
 2. Установите деку магнитного захвата при помощи винтов M3x6 и гаек М3.
 
-<div align="center"><img src="../assets/magnet_grip/ru/assemble/step_1.png" width="700" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/ru/assemble/step_1.png" width="700" class="zoom border center"></div>
 
 3. Установите модуль электромагнита на деку захвата с помощью винтов M2x6.
 
-<div align="center"><img src="../assets/magnet_grip/ru/assemble/step_2.png" width="700" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/ru/assemble/step_2.png" width="700" class="zoom border center"></div>
 
 4. Установите электромагнит на деку захвата при помощи винта M4x6.
 
-<div align="center"><img src="../assets/magnet_grip/ru/assemble/step_3.png" width="700" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/ru/assemble/step_3.png" width="700" class="zoom border center"></div>
 
 5. Магнитный захват в сборе.
 
-<div align="center"><img src="../assets/magnet_grip/magnet_grip.png" width="700" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/magnet_grip.png" width="700" class="zoom border center"></div>
 
 6. Подключите магнитный захват к Raspberry Pi согласно схеме подключения электроники (см. пункт 1).
 
 ## Проверка работоспособности
 
-1. Загрузите пример кода для работы с магнитным захватом чтобы проверить работоспособность.
+Загрузите пример кода для работы с магнитным захватом чтобы проверить работоспособность.
 
 ```python
 from rpi_hardware_pwm import HardwarePWM

@@ -21,7 +21,7 @@ Flashing instructions:
 
 1. Disconnect the flight controller from the computer (if connected).
 2. Launch QGroundControl.
-3. Go to the *Vehicle Setup* panel (click the QGroundControl logo in the top-left corner) and select the *Firmware* menu.
+3. Go to the *Vehicle Configuration* panel (click the QGroundControl logo in the top-left corner) and select the *Firmware* menu.
 4. Connect the flight controller to the computer via USB.
 5. Select *PX4 Flight Stack* in the menu that appears on the right.
 
@@ -40,8 +40,6 @@ Wait for QGroundControl to flash the firmware and reboot the flight controller.
 
 > **Hint** All further configuration and calibration of the flight controller can be done wirelessly using [Wi-Fi access to the flight controller via Raspberry Pi](gcs_bridge.md).
 
-Overview of the main QGroundControl settings window:
-
 <img src="../assets/qgc-requires-setup.png" alt="QGroundControl overview" class="zoom">
 
 1. Parameters requiring setup: *Airframe*, *Radio*, *Sensors*, *Flight Modes*.
@@ -53,16 +51,15 @@ Overview of the main QGroundControl settings window:
 
 <img src="../assets/qgc-frame-apply-clover4.png" alt="QGroundControl frame selection" class="zoom">
 
-1. Go to the *Vehicle Setup* tab.
-2. Select the *Airframe* menu.
-3. Select the *Quadrotor X* frame type.
-4. For Clover 4, select the *COEX Clover 4* frame subtype. For Clover 5 — *Generic Quadrotor X*.
-5. Scroll to the top of the list and press *Apply and Restart*, confirm by pressing *Apply*.
-6. Wait for the settings to apply and the flight controller to reboot.
+1. Select the *Airframe* menu.
+2. Select the *Quadrotor* frame type.
+3. For Clover 4, select the *COEX Clover 4* frame subtype. For Clover 5 — *Generic Quadrotor*.
+4. Scroll to the top of the list and press *Apply and Restart*, confirm by pressing *Apply*.
+5. Wait for the settings to apply and the flight controller to reboot.
 
 ### Parameters
 
-To configure flight controller parameters, go to the *Vehicle Setup* tab and select the *Parameters* menu. Use the *Search* field to find parameters by name. Recommended parameters for Clover are provided in the further documentation.
+To configure flight controller parameters, go to the *Vehicle Configuration* tab and select the *Parameters* menu. Use the *Search* field to find parameters by name. Recommended parameters for Clover are provided in the further documentation.
 
 <img src="../assets/qgc-parameters.png" alt="QGroundControl parameters" class="zoom">
 
