@@ -1,10 +1,9 @@
 Pixracer / Pixhawk firmware flashing
 ===
 
-Pixhawk, Pixracer or [COEX Pix](coex_pix.md) firmware may be flashed using QGroundControl or command line utilities.
+Pixhawk, Pixracer or [COEX Pix](coex_pix.md) firmware may be flashed using QGroundControl or command line utilities.  
 
-> [!WARNING]
-> This guide is **ONLY** for **Pixracer / COEX Pix / Pixhawk** flight controllers.  
+> **Caution** This guide is **ONLY** for **Pixracer / COEX Pix / Pixhawk** flight controllers.  
 > If you have a **MicoAir743v2**, use the MicoAir743v2 PX4/Betaflight flashing docs instead:  
 > [Flash PX4 on MicoAir743v2](firmware_PX4_MicoAir743v2.md)  
 > [Flash Betaflight on MicoAir743v2](firmware_Betaflight_MicoAir743v2.md)

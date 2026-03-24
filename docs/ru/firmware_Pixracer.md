@@ -1,10 +1,9 @@
 Прошивка полетного контроллера
 ===
 
-Pixhawk, Pixracer и [COEX Pix](coex_pix.md) можно прошить, используя QGroundControl или утилиты командной строки.
+Pixhawk, Pixracer и [COEX Pix](coex_pix.md) можно прошить, используя QGroundControl или утилиты командной строки.  
 
-> [!WARNING]
-> Данная инструкция подходит **только для полётных контроллеров Pixracer / COEX Pix / Pixhawk**.  
+> **Caution** Данная инструкция подходит **только для полётных контроллеров Pixracer / COEX Pix / Pixhawk**.  
 > Если у вас **MicoAir743v2**, используйте документацию по прошивке PX4 или Betaflight для MicoAir743v2:  
 > [Прошивка PX4 на MicoAir743v2](firmware_PX4_MicoAir743v2.md)  
 > [Прошивка Betaflight на MicoAir743v2](firmware_Betaflight_MicoAir743v2.md)

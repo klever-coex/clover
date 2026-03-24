@@ -1,11 +1,12 @@
 # Прошивка MicoAir743v2 с PX4 на Betaflight
 
-> Документация описывает безопасную процедуру перепрошивки полётного контроллера **MicoAir743v2** между PX4 и Betaflight через DFU/bootloader.  
+> **Success** Документация описывает безопасную процедуру перепрошивки полётного контроллера **MicoAir743v2** между PX4 и Betaflight через DFU/bootloader.
 > [Документация по прошивке с Betaflight на PX4](firmware_PX4_MicoAir743v2.md)
 
-> [!WARNING]
-> Данная инструкция подходит **только для полётного контроллера MicoAir743v2**.  
-> Если у вас **Pixracer / COEX Pix / Pixhawk**, используйте документацию по прошивке PX4 для Pixracer:  
+<p/>
+
+> **Caution** Данная инструкция подходит **только для полётного контроллера MicoAir743v2**.  
+> Если у вас **Pixracer / COEX Pix / Pixhawk**, используйте документацию по прошивке PX4 для Pixracer:
 > [PX4 firmware in Pixracer](firmware_Pixracer.md)
 
 <div align="center">
@@ -33,34 +34,33 @@
 
 ## Прошивка с PX4 на Betaflight
 
-> [!WARNING]
-> **Установка программатора (STM32CubeProgrammer)**  
+> **Caution** **Установка программатора (STM32CubeProgrammer)**  
 > Перед прошивкой скачайте и установите STM32CubeProgrammer.
 
 1. Переведите полётный контроллер в режим **DFU** (зажмите кнопку BOOT и подключите по проводу USB к компьютеру). Откройте STM32CubeProgrammer, нажмите на кнопку выбора протокола подключения (UART).
-<div align="center"><img src="../assets/flight_controller_firmware/PX4/step_1.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/flight_controller_firmware/PX4/step_1.png" width=700 class="zoom border center"></div>
 
 2. Выберите протокол USB.
-<div align="center"><img src="../assets/flight_controller_firmware/PX4/step_2.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/flight_controller_firmware/PX4/step_2.png" width=700 class="zoom border center"></div>
 
 3. Обновите порт, для этого нажмите на кнопку справа от выбора порта.
 После чего автоматически выберется нужный порт (Если не выбрался, значит полётный контроллер не в режиме DFU, повторите первый пункт).
-<div align="center"><img src="../assets/flight_controller_firmware/PX4/step_3.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/flight_controller_firmware/PX4/step_3.png" width=700 class="zoom border center"></div>
 
 4. Нажмите кнопку "Connect".
-<div align="center"><img src="../assets/flight_controller_firmware/PX4/step_4.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/flight_controller_firmware/PX4/step_4.png" width=700 class="zoom border center"></div>
 
 5. Выполните полную очистку, для этого нажмите кнопку с ластиком в левом нижнем углу, во всплывающем окне подтвердите действия. Дождитесь окончания очистки.
-<div align="center"><img src="../assets/flight_controller_firmware/PX4/step_5.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/flight_controller_firmware/PX4/step_5.png" width=700 class="zoom border center"></div>
 
 6. Нажмите на кнопку **Open file** и выберите файл "MicoAir743v2_Betaflight-4.5.2.hex".
-<div align="center"><img src="../assets/flight_controller_firmware/PX4/step_6.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/flight_controller_firmware/PX4/step_6.png" width=700 class="zoom border center"></div>
 
 7. Для загрузки прошивки нажмите кнопку "Download" и дождитесь окончания загрузки.
-<div align="center"><img src="../assets/flight_controller_firmware/Betaflight/step_7.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/flight_controller_firmware/Betaflight/step_7.png" width=700 class="zoom border center"></div>
 
 8. Нажмите кнопку "Disconnect".
-<div align="center"><img src="../assets/flight_controller_firmware/Betaflight/step_8.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/flight_controller_firmware/Betaflight/step_8.png" width=700 class="zoom border center"></div>
 
 9. Откройте Betaflight Configurator и приступайте к настройке.
-<div align="center"><img src="../assets/flight_controller_firmware/Betaflight/step_9.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/flight_controller_firmware/Betaflight/step_9.png" width=700 class="zoom border center"></div>

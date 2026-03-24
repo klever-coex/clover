@@ -11,7 +11,7 @@
 
 ## Размер крепежа
 
-> **Важно!** При сборке применяются крепёжные элементы разных типоразмеров. Установка винтов или стоек несоответствующего размера может привести к повреждению квадрокоптера.
+> **Success** При сборке применяются крепёжные элементы разных типоразмеров. Установка винтов или стоек несоответствующего размера может привести к повреждению квадрокоптера.
 
 <div align="center"> <table class="type_table">
   <tr>
@@ -59,121 +59,121 @@
 
 1. Совместите 4 луча между средней и нижней декой, между ними установите проставку.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/frame/frame_step_1.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/frame/frame_step_1.png" width=700 class="zoom border center"></div>
 
 2. Установите винты M3x12 (<a href="#cell7">Ячейка 7</a>) и M3x40 (<a href="#cell6">Ячейка 6</a>) со стороны нижней деки, M3x12 (<a href="#cell7">Ячейка 7</a>) в крайние отверстия лучей, M3x40 (<a href="#cell6">Ячейка 6</a>) в центральные отверстия нижней деки.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/frame/frame_step_2.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/frame/frame_step_2.png" width=700 class="zoom border center"></div>
 
 3. На средней деке установите запрессовочные гайки М3 (<a href="#cell1">Ячейка 1</a>) и зафиксируйте их винтами.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/frame/frame_step_3.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/frame/frame_step_3.png" width=700 class="zoom border center"></div>
 
 ## Установка моторов
 
 1. Установите накладки на лучи, так, как показано на изображении.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/arm_guard_step_4.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/arm_guard_step_4.png" width=700 class="zoom border center"></div>
 
 2. Установите моторы в соответствующие отверстия в луче с помощью **винтов М3х10** (<a href="#cell13">Ячейка 13</a>).
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/motor_step_5.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/motor_step_5.png" width=700 class="zoom border center"></div>
 
-> **Важно!** Убедитесь, что моторы закреплены с помощью винтов М3х10, в противном случае может возникнуть короткое замыкание между обмотками.
+> **Caution** Убедитесь, что моторы закреплены с помощью винтов М3х10, в противном случае может возникнуть короткое замыкание между обмотками.
 
 ## Установка ESC
 1. Установите регулятор оборотов (ESC) поверх винтов M3x40 (<a href="#cell6">Ячейка 6</a>) на средней деке. Контакты питания аккумулятора должны быть направлены назад.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/esc_step_6.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/esc_step_6.png" width=700 class="zoom border center"></div>
 
 2. Приклейте защитные кожухи и проденьте в них провода моторов. Припаяйте силовые провода и конденсатор на контакты питания ESC, также припаяйте моторы на контакты моторов (см. изобр. ниже).
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/esc_step_7.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/esc_step_7.png" width=700 class="zoom border center"></div>
 
 3. Наденьте на силовые провода защитный кожух, после чего припаяйте разъём питания XT60. Защелкните защитный кожух на разъёме питания.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/xt60_step_8.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/xt60_step_8.png" width=700 class="zoom border center"></div>
 
 ## Установка полетного контроллера
 
 1. Установите полётный контроллер стрелкой вперед, после чего установите нейлоновые гайки M3 (<a href="#cell2">Ячейка 2</a>) для фиксации полетного контроллера.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/fcu_step_9.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/fcu_step_9.png" width=700 class="zoom border center"></div>
 
 2. Установите 6-пиновый шлейф между полетным контроллером и регулятором оборотов (ESC).
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/fcu_to_esc_step_10.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/fcu_to_esc_step_10.png" width=700 class="zoom border center"></div>
 
 ## Установка видеопередатчика
 
 1. Установите винты M3x10 (<a href="#cell13">Ячейка 13</a>) c нижней стороны деки, с верхней стороны установите видеопередатчик (VTX) и зафиксируйте нейлоновыми гайками M3 (<a href="#cell2">Ячейка 2</a>).
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/vtx_step_11.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/vtx_step_11.png" width=700 class="zoom border center"></div>
 
 2. Вид с установленным видеопередатчиком (VTX).
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/vtx_step_12.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/vtx_step_12.png" width=700 class="zoom border center"></div>
 
 ## Сборка квадрокоптера
 
 1. Установите алюминиевые стойки M3х30 (<a href="#cell15">Ячейка 15</a>) сверху, снизу зафиксируйте винтами M3x6 (<a href="#cell9">Ячейка 9</a>).
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/aluminium_30_step_13.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/aluminium_30_step_13.png" width=700 class="zoom border center"></div>
 
 2. Вид с установленными алюминиевыми стойками.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/aluminium_30_step_14.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/aluminium_30_step_14.png" width=700 class="zoom border center"></div>
 
 3. Установите маунт камеры на передние стойки, так, как показано на изображении снизу.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/camera_mount_step_15.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/camera_mount_step_15.png" width=700 class="zoom border center"></div>
 
 4. Установите видеокамеру в маунт на винты М2х3 (<a href="#cell20">Ячейка 20</a>) и зафиксируйте в удобном для вас наклоне камеры.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/camera_step_16.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/camera_step_16.png" width=700 class="zoom border center"></div>
 
 5. Подключите шлейф камеры в разъём для курсовой камеры в полетном контроллере, так, как показано на изображении.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/camera_step_17.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/camera_step_17.png" width=700 class="zoom border center"></div>
 
 6. Установите в маунт для антенны разъём и затяните ключом для пропеллеров (ключ на 8), после чего подключите разъём антенны в видеопередатчик и установите на задние стойки.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/backward_mount_step_18.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/backward_mount_step_18.png" width=700 class="zoom border center"></div>
 
 7. Установите радиоприемник ELRS и подключите при помощи шлейфа в порт SBUS/CRSF на полётном контроллере.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/elrs_rx_step_19.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/elrs_rx_step_19.png" width=700 class="zoom border center"></div>
 
 8. Установите защитные накладки сзади, для этого заведите крючок за стойку около полётного контроллера и защёлкните клипсу на задней стойке.
     
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/backward_guard_step_20.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/backward_guard_step_20.png" width=700 class="zoom border center"></div>
 
 9. Установите LED модули, для этого приклейте их на двухсторонний скотч на внутренние стороны лучей (см. изобр. ниже).
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/led_step_21.jpg" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/led_step_21.jpg" width=700 class="zoom border center"></div>
 
 10. Подключите LED модули в хаб, как показано на изображении. Подключите хаб в разъём LED/Buzzer на полётном контроллере.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/led_hub_step_22.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/led_hub_step_22.png" width=700 class="zoom border center"></div>
 
 11. Уложите провода от LED модулей, как показано на изображении.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/led_hub_step_23.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/led_hub_step_23.png" width=700 class="zoom border center"></div>
 
 12. Протяните стропу для аккумулятора в посадочные пазы, установите верхнюю деку используя винты М3х6 (<a href="#cell9">Ячейка 9</a>).
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/top_plate_step_24.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/top_plate_step_24.png" width=700 class="zoom border center"></div>
 
 13. Установите боковую защиту на центральные стойки, защёлкните на клипсы защиты.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/side_guard_step_25.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/side_guard_step_25.png" width=700 class="zoom border center"></div>
 
 14. Накрутите антенну видеосвязи на разъём сзади.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/vtx_antenna_step_26.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/vtx_antenna_step_26.png" width=700 class="zoom border center"></div>
 
 15. Установите пропеллеры в соответствии с обратным вращением, как представлено на изображении.
 
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/props_step_27.png" width=700 class="zoom border center"></div>
+    <div align="center"><img src="../assets/assembling_clever5_fpv/ru/props_step_27.png" width=700 class="zoom border center"></div>
 
-> **Готово** Проверьте, что ни один из компонентов не остался незакрепленным. Перед первым включением убедитесь, что пропеллеры не задевают кожух и провода.
+> **Caution** Проверьте, что ни один из компонентов не остался незакрепленным. Перед первым включением убедитесь, что пропеллеры не задевают кожух и провода.
