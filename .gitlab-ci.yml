@@ -24,8 +24,7 @@ docker-build-docs-master:
     - if: $CI_COMMIT_REF_NAME == "clover5"
   after_script:
     - export IMAGE_TAG=$(echo $CI_COMMIT_SHA | cut -c1-8)
-    - docker tag "registry.gitlab.com/coex2/clover/clover-docs:$IMAGE_TAG" \
-      registry.gitlab.com/coex2/clover/clover-docs:latest
+    - docker tag "registry.gitlab.com/coex2/clover/clover-docs:$IMAGE_TAG" "registry.gitlab.com/coex2/clover/clover-docs:latest"
     - docker push registry.gitlab.com/coex2/clover/clover-docs:latest
 
 docker-build-docs-mr:
