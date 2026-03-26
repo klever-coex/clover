@@ -1,7 +1,8 @@
 FROM billryan/gitbook AS builder
 
-COPY docs /gitbook
+COPY . /gitbook
 
+RUN gitbook install
 RUN gitbook build
 
 FROM nginx:1.29.3-alpine-slim
