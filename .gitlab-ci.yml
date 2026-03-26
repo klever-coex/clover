@@ -13,9 +13,7 @@ stages:
   stage: docs
   script:
     - export IMAGE_TAG=$(echo $CI_COMMIT_SHA | cut -c1-8)
-    - docker build \
-      -t "registry.gitlab.com/coex2/clover/clover-docs:$IMAGE_TAG" \
-      -f docker/docs/Dockerfile .
+    - docker build -t "registry.gitlab.com/coex2/clover/clover-docs:$IMAGE_TAG" -f docker/docs/Dockerfile .
     - docker push "registry.gitlab.com/coex2/clover/clover-docs:$IMAGE_TAG"
 
 docker-build-docs-master:
