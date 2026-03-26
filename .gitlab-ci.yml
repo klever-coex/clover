@@ -13,15 +13,22 @@ stages:
   stage: docs
   script:
     - export IMAGE_TAG=$(echo $CI_COMMIT_SHA | cut -c1-8)
-    - docker build -t "registry.gitlab.com/coex2/clover/clover-docs:$IMAGE_TAG" -f docker/docs/Dockerfile .
+    - docker build \
+      -t "registry.gitlab.com/coex2/clover/clover-docs:$IMAGE_TAG" \
+      -f docker/docs/Dockerfile .
     - docker push "registry.gitlab.com/coex2/clover/clover-docs:$IMAGE_TAG"
 
 docker-build-docs-master:
   extends: .docker-build-docs
   rules:
-    - if: $CI_COMMIT_REF_NAME == "master"
+    - if: $CI_COMMIT_REF_NAME == "clover5"
+  after_script:
+    - export IMAGE_TAG=$(echo $CI_COMMIT_SHA | cut -c1-8)
+    - docker tag "registry.gitlab.com/coex2/clover/clover-docs:$IMAGE_TAG" \
+      "registry.gitlab.com/coex2/clover/clover-docs:latest"
+    - docker push "registry.gitlab.com/coex2/clover/clover-docs:latest"
 
 docker-build-docs-mr:
   extends: .docker-build-docs
-  only:
-    - merge_request
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
