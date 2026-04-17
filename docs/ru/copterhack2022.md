@@ -107,15 +107,15 @@ CopterHack 2022 — это международный конкурс по ра�
 
 1. Сделайте форк репозитория Клевера:
 
-    <img src="../assets/github_application/github-fork.png" alt="GitHub Fork">
+    <img src="../assets/github_application/github-fork.webp" alt="GitHub Fork">
 
 2. На странице вашего форка зайдите в раздел `docs/ru` и создайте новый файл в формате [Markdown](https://ru.wikipedia.org/wiki/Markdown):
 
-    <img src="../assets/github_application/create_new_file.png" alt="GitHub Create New File">
+    <img src="../assets/github_application/create_new_file.webp" alt="GitHub Create New File">
 
 3. Введите название вашей статьи. Например, `new-article.md`
 
-    <img src="../assets/github_application/new_article.png" alt="GitHub New Article">
+    <img src="../assets/github_application/new_article.webp" alt="GitHub New Article">
 
 4. Оформите вашу заявку в соответствии с рекомендуемым шаблоном:
 
@@ -154,7 +154,7 @@ CopterHack 2022 — это международный конкурс по ра�
 
 5. Перейдите вниз страницы и создайте новую ветку с названием вашей статьи:
 
-    <img src="../assets/github_application/propose_new_file.png" alt="GitHub Propose New File">
+    <img src="../assets/github_application/propose_new_file.webp" alt="GitHub Propose New File">
 
     > **Note** Не добавляйте ваши изменения непосредственно в ветку `master`, создайте новую ветку.
 
@@ -162,7 +162,7 @@ CopterHack 2022 — это международный конкурс по ра�
 
 7. Сделайте Draft Pull Request вашей ветки в master Клевера:
 
-    <img src="../assets/github_application/github-pull-request-create.png" alt="GitHub Create Pull">
+    <img src="../assets/github_application/github-pull-request-create.webp" alt="GitHub Create Pull">
 
 8. В комментариях Pull Request вам будет дана обратная связь по заявке. На страничке конкурса в разделе "Проекты участников конкурса" будет опубликована ссылка на вашу заявку в вашем форке.
 

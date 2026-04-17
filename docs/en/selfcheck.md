@@ -10,7 +10,7 @@ In order to run it, enter the following command in [the Raspberry Pi console](ss
 rosrun clover selfcheck.py
 ```
 
-<img src="../assets/selfcheck.png">
+<img src="../assets/selfcheck.webp">
 
 Description of some checks:
 

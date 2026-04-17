@@ -1,6 +1,6 @@
 # Имя хоста
 
-> **Note** Документация для версий [образа](image.md), начиная с **0.20**. Для более ранних версий см. [документацию для версии **0.19**](https://github.com/CopterExpress/clover/blob/v0.19/docs/ru/hostname.md).
+<!-- > **Note** Документация для версий [образа](image.md), начиная с **0.20**. Для более ранних версий см. [документацию для версии **0.19**](https://github.com/CopterExpress/clover/blob/v0.19/docs/ru/hostname.md). -->
 
 [По умолчанию](image.md) на Клевере установлено имя хоста (hostname) `clover-xxxx`, где `xxxx` – случайные цифры. Имя хоста соответствует SSID [точки доступа Wi-Fi](wifi.md).
 

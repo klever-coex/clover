@@ -1,7 +1,7 @@
 Using rviz and rqt
 ===
 
-![rviz](../assets/rviz.png)
+![rviz](../assets/rviz.webp)
 
 The [rviz](http://wiki.ros.org/rviz) tool allows real-time visualization of all components of the robotic system —the system of coordinates, moving parts, sensors, camera images — on the 3D stage.
 
@@ -33,7 +33,7 @@ It is recommended to set the `map` frame as a reference frame. To visualize the 
 
 The result of copter and camera visualization is shown below:
 
-![rviz](../assets/copter_visualization.png)
+![rviz](../assets/copter_visualization.webp)
 
 ### Visualization of the environment
 
@@ -52,7 +52,7 @@ sudo apt-get install ros-melodic-jsk-visualization
 Starting the rqt toolkit
 ---
 
-![rqt](../assets/rqt.png)
+![rqt](../assets/rqt.webp)
 
 To start rqt for monitoring Clover status, use command:
 

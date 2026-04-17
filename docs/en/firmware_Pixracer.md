@@ -1,7 +1,7 @@
 Pixracer / Pixhawk firmware flashing
 ===
 
-Pixhawk, Pixracer or [COEX Pix](coex_pix.md) firmware may be flashed using QGroundControl or command line utilities.  
+Pixhawk, Pixracer or COEX Pix firmware may be flashed using QGroundControl or command line utilities.  
 
 > **Caution** This guide is **ONLY** for **Pixracer / COEX Pix / Pixhawk** flight controllers.  
 > If you have a **MicoAir743v2**, use the MicoAir743v2 PX4/Betaflight flashing docs instead:  
@@ -9,7 +9,7 @@ Pixhawk, Pixracer or [COEX Pix](coex_pix.md) firmware may be flashed using QGrou
 > [Flash Betaflight on MicoAir743v2](firmware_Betaflight_MicoAir743v2.md)
 
 <div align="center">
-  <img src="../assets/flight_controller_firmware/PixracerR15.png" width="350" class="zoom border center">
+  <img src="../assets/flight_controller_firmware/PixracerR15.webp" width="350" class="zoom border center">
   <br/>
   <sub>Pixracer R15 flight controller</sub>
 </div>
@@ -23,7 +23,8 @@ It is advisable to use a specialized build of PX4 with the necessary fixes and b
 <p>Latest stable release: <strong><a id="download-latest-release"></a></strong>.</p>
 
 <ul>
-<li>Firmware for COEX Pix and Pixracer (<strong>Clover 4 / Clover 3</strong>) – <a id="firmware-pixracer" href=""><code>px4fmu-v4_default.px4</code></a>.</li>
+<!-- <li>Firmware for COEX Pix and Pixracer (<strong>Clover 4 / Clover 3</strong>) – <a id="firmware-pixracer" href=""><code>px4fmu-v4_default.px4</code></a>.</li> -->
+<li>Firmware for COEX Pix and Pixracer (<strong>Clover 4</strong>) – <a id="firmware-pixracer" href=""><code>px4fmu-v4_default.px4</code></a>.</li>
 <li>Firmware for Pixhawk (<strong>Clover 2</strong>) – <a id="firmware-pixhawk" href=""><code>px4fmu-v2_lpe.px4</code></a>.</li>
 </ul>
 </div>
@@ -73,12 +74,13 @@ Firmware variants
 
 The name of the firmware file contains information about the target flight controller and build variant. For example:
 
-* `px4fmu-v4_default.px4` — firmware for COEX Pix and Pixracer with EKF2 and LPE (**Clover 3** / **Clover 4**).
+<!-- * `px4fmu-v4_default.px4` — firmware for COEX Pix and Pixracer with EKF2 and LPE (**Clover 3** / **Clover 4**). -->
+* `px4fmu-v4_default.px4` — firmware for COEX Pix and Pixracer with EKF2 and LPE (**Clover 4**).
 * `px4fmu-v2_lpe.px4` — firmware for Pixhawk with LPE (**Clover 2**).
 * `px4fmu-v2_default.px4` — firmware for Pixhawk with EKF2.
 * `px4fmu-v3_default.px4` — firmware for newer Pixhawk versions (rev. 3 chip, see Fig. + Bootloader v5) with EKF2 and LPE.
 
-![STM revision](../assets/stmrev.jpg)
+![STM revision](../assets/stmrev.webp)
 
 > **Note** In order to flash the `px4fmu-v3_default.px4` file, you may need to use the `force_upload` command in the command prompt.
 

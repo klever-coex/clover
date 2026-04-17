@@ -8,7 +8,7 @@
 
 Для просмотра видеострима нужно [подключиться к Wi-Fi](wifi.md) Клевера \(`clover-xxxx`\), перейти на страницу [http://192.168.11.1:8080/](http://192.168.11.1:8080/) и выбрать топик.
 
-![Просмотр web_video_server](../assets/web_video_server.png)
+![Просмотр web_video_server](../assets/web_video_server.webp)
 
 Если передача картинки работает слишком медленно, можно ускорить ее, указав тип передаваемых данных `mjpeg` и меняя GET-параметр `quality` (от 1 до 100), который отвечает за сжатие видеострима, например:
 
@@ -30,12 +30,12 @@ ROS_MASTER_URI=http://192.168.11.1:11311 rqt_image_view
 
 Выберите топик для просмотра, например, `/main_camera/image_raw`:
 
-![rqt_image_view](../assets/rqt_image_view.jpg)
+![rqt_image_view](../assets/rqt_image_view.webp)
 
 Для снижения нагрузки на сеть и уменьшения задержки используйте сжатый вариант топика – `/main_camera/image_raw/compressed`.
 
 Для изменения настроек сжатия используйте rqt-плагин Dynamic Reconfigure:
 
-![rqt_image_view+rqt_dynamic_reconfigure](../assets/rqt_image_view_dyn_rec.jpg)
+![rqt_image_view+rqt_dynamic_reconfigure](../assets/rqt_image_view_dyn_rec.webp)
 
 См. [подробнее об rviz и rqt](rviz.md).

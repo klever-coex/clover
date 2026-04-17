@@ -6,7 +6,7 @@ The recommended virtual machine hypervisor is [UTM app](https://mac.getutm.app/)
 
 ## Simulation installation with UTM
 
-<img src="../assets/simulation_utm.png" width=500 class="center zoom">
+<img src="../assets/simulation_utm.webp" width=500 class="center zoom">
 
 1. Download UTM App from the official site [mac.getutm.app](https://mac.getutm.app/) and install it.
 2. Download Ubuntu Linux 20.04 installation iso-file for ARM64 architecture using the link: https://clovervm.ams3.digitaloceanspaces.com/focal-desktop-arm64.iso.
@@ -27,7 +27,7 @@ The recommended virtual machine hypervisor is [UTM app](https://mac.getutm.app/)
     * Installation type: *Erase disk and install Ubuntu*.
     * Input your account parameters, for example:
 
-        <img src="../assets/simulation_ubuntu_account.png" width=400 class="center zoom">
+        <img src="../assets/simulation_ubuntu_account.webp" width=400 class="center zoom">
 
 6. Finish the installation and run the system.
 7. Install the simulation using the [native setup manual](simulation_native.md).

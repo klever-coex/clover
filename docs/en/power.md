@@ -16,7 +16,7 @@ To calibrate power-related parameters, go to the *Vehicle Setup* tab and select 
 
 If there is no voltage indicator or manual calibration is not possible, set the average voltage divider value for the Clover 4 kit (*Voltage divider* = 11), for the Clover 5 kit (*Voltage divider* = 21).
 
-<img src="../assets/qgc-voltage-divider.png" class="zoom">
+<img src="../assets/qgc-voltage-divider.webp" class="zoom">
 
 Additional information: [https://docs.qgroundcontrol.com/en/SetupView/Power.html](https://docs.qgroundcontrol.com/en/SetupView/Power.html).
 

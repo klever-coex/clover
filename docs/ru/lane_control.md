@@ -47,7 +47,7 @@ def lane_control():
 
 На данный момент, автобусы производятся в синем цвете. Поэтому, автобус у нас будет синего цвета.
 
-<img src="../assets/lane_control_without_any_color.jpg" width="75%">
+<img src="../assets/lane_control_without_any_color.webp" width="75%">
 
 Прописываем диапазоны цветов для автобуса и машины:
 
@@ -107,7 +107,7 @@ else:
 
 Данная программа будет определять машины по её оттенку. Вот что у нас в итоге получилось.
 
-<img src="../assets/lane_control_with_color.jpg" width="75%">
+<img src="../assets/lane_control_with_color.webp" width="75%">
 
 Вот примеры других цветовых диапазонов. Стоит подметить, что цветовые диапазоны вычисляются в HSV, а не в RGB:
 

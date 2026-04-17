@@ -56,17 +56,17 @@ The main manual modes are described below.
 
 1. Install the battery strap.
 
-    <img src="../assets/assembling_clever4_2/final_1.png" width=300 class="zoom border center">
+    <img src="../assets/assembling_clever4_2/final_1.webp" width=300 class="zoom border center">
 
 2. Set the propellers according to the [motor direction pattern](#prop_rotation).
 
-    <img src="../assets/assembling_clever4_2/final_3.png" width=300 class="zoom border center">
+    <img src="../assets/assembling_clever4_2/final_3.webp" width=300 class="zoom border center">
 
 3. Attach the buzzer and install the battery.
 
     <div class="image-group">
-        <img src="../assets/flight/buzzer_acb.jpg" width=200 class="zoom border">
-        <img src="../assets/assembling_clever4_2/final_4.png" width=300 class="zoom border">
+        <img src="../assets/flight/buzzer_acb.webp" width=200 class="zoom border">
+        <img src="../assets/assembling_clever4_2/final_4.webp" width=300 class="zoom border">
     </div>
 
 ### Setting the buzzer
@@ -76,8 +76,8 @@ In order not to over-discharge or damage the battery, it is recommended to use a
 To configure the buzzer, connect it to the balance connector of your battery. By pressing the button, change the minimum voltage on the cells. The optimal value for the minimum voltage is *3.5-3.6 V*.
 
 <div class="image-group">
-    <img src="../assets/flight/buzzer_connection.jpg" width=300 class="zoom border">
-    <img src="../assets/flight/buzzer.jpg" width=300 class="zoom border">
+    <img src="../assets/flight/buzzer_connection.webp" width=300 class="zoom border">
+    <img src="../assets/flight/buzzer.webp" width=300 class="zoom border">
 </div>
 
 ### Flight readiness states
@@ -93,7 +93,7 @@ There are several ways to change the copter's state to *Armed*:
 
 * Using the stick – move the left stick down to the right and wait a couple of seconds.
 
-  <img src="../assets/flight/controller_arm.jpg" width=300 class="zoom center">
+  <img src="../assets/flight/controller_arm.webp" width=300 class="zoom center">
 
 * Using the toggle switch – the Armed / Disarmed states can be set to one of the toggle switches. For more information on setting up, see the article on [flight modes](modes.md).
 * With QGC – you can arm your drone programmatically. To do this, click on the *Disarmed* label in the header and select another state.

@@ -16,21 +16,21 @@ roslaunch clover_simulation simulator.launch
 
 Это запустит Gazebo сервер и клиент, бинарные файлы PX4 и ноды Клевера. Терминал, в котором была запущена команда, будет отображать отладочные сообщения от нод и PX4, а также принимать входные данные для интерпретатора команд PX4:
 
-![Скриншот симулятора Gazebo](../assets/simulation_usage/01_running_gazebo.jpg)
+![Скриншот симулятора Gazebo](../assets/simulation_usage/01_running_gazebo.webp)
 
 Вы также можете использовать QGroundControl для настройки параметров дрона в симуляторе, планирование миссий полета (если GPS также симулируется) и управление дроном с пульта:
 
-![Gazebo и QGC](../assets/simulation_usage/02_gazebo_qgc.jpg)
+![Gazebo и QGC](../assets/simulation_usage/02_gazebo_qgc.webp)
 
 Также вы можете использовать [simplified OFFBOARD](simple_offboard.md) для управления дроном, и средства визуализации ROS, например, [rviz and rqt](rviz.md) для анализа состояния дрона:
 
-![Gazebo и RQT](../assets/simulation_usage/03_gazebo_rqt.jpg)
+![Gazebo и RQT](../assets/simulation_usage/03_gazebo_rqt.webp)
 
 ## Конфигурация симулятора
 
 Симулятор можно настроить, передав дополнительные аргументы команде `roslaunch` или изменив файл `~/catkin_ws/src/clover/clover_simulation/launch/simulator.launch`. Ноды, обеспечивающие [распознавание ArUco](aruco.md), [расчет optical flow](optical_flow.md) и другие сервисы могут быть настроены изменением соответствующих `.launch` файлов, как на реальном дроне.
 
-![Открытый в VSCode simulator.launch](../assets/simulation_usage/04_vscode_config.jpg)
+![Открытый в VSCode simulator.launch](../assets/simulation_usage/04_vscode_config.webp)
 
 ### Включение GPS
 
@@ -83,7 +83,7 @@ PX4, начиная с версии 1.9, поддерживает [принуд�
 
 Значение этой переменной должно соответствовать величине Real Time Factor (скорости симуляции по отношению к реальному времени), получаемой при использовании `throttling_camera`. Величина Real Time Factor отображается в окне Gazebo на нижней панели:
 
-![Real Time Factor](../assets/simulation_usage/05_real_time_factor.png)
+![Real Time Factor](../assets/simulation_usage/05_real_time_factor.webp)
 
 В данном случае `PX4_SIM_SPEED_FACTOR` следует выставить в значение `0.42` перед запуском симулятора:
 
@@ -92,7 +92,7 @@ PX4_SIM_SPEED_FACTOR=0.42 roslaunch clover_simulation simulator.launch
 ```
 
 > **Note** При использовании виртуальной машины удобнее добавить эту переменную в ярлык запуска Gazebo на рабочем столе. Нажмите правой кнопкой на значок Gazebo, выберите "Properties..." и добавьте `PX4_SIM_SPEED_FACTOR=0.42` в поле Command, как показано на иллюстрации:
-![Gazebo PX4 launcher command](../assets/simulation_usage/06_gazebo_px4_launcher.png)
+![Gazebo PX4 launcher command](../assets/simulation_usage/06_gazebo_px4_launcher.webp)
 
 ### Выделение ресурсов для виртуальной машины
 

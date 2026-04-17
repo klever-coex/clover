@@ -333,7 +333,7 @@ The positive direction of `yaw_rate` rotation (when viewed from the top) is coun
 
 Switch the drone to landing [mode](modes.md) (`AUTO.LAND` or similar).
 
-> **Note** Set the `COM_DISARM_LAND` [PX4 parameter](parameters.md) to a value greater than 0 to enable automatic disarm after landing.
+> **Note** Set the `COM_DISARM_LAND` [PX4 parameter](setup.md#parameters) to a value greater than 0 to enable automatic disarm after landing.
 
 Landing the drone:
 

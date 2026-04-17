@@ -9,19 +9,19 @@ Before you start, do the following:
 2. The working soldering iron is to be placed in the area of local exhaust ventilation, in a special holder.
 3. Before work, put on a protective gown, goggles, and gloves, if necessary.
 
-![stand](../assets/stand.jpg)
+![stand](../assets/stand.webp)
 
 When soldering:
 
 1. The soldering iron should be held only by the handle since the tip is hot.
 
-    ![keep](../assets/keep.png)
+    ![keep](../assets/keep.webp)
 
 2. Items are to only be moved using special tools (tweezers, pliers or other tools) that ensure safety when soldering.
 3. To avoid burns by molten solder when soldering, do not pull the soldered wires out abruptly with great effort.
 4. When soldering small and mobile items use a special holder.
 
-   ![helphand](../assets/helphand.jpg)
+   ![helphand](../assets/helphand.webp)
 
 5. Carry the soldering iron by the handle, rather than the cable or the working part. During breaks, the soldering iron is to be disconnected from the mains.
 

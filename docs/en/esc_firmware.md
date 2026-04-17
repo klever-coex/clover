@@ -20,26 +20,26 @@ Creating a programming unit on the example of Arduino Mega.
 
 1. Start BLHeliSuite and select the Make interfaces tab.
 
-   ![](../assets/BLHeliSuite_SiLabs_ESC_Setup_2.png)
+   ![](../assets/BLHeliSuite_SiLabs_ESC_Setup_2.webp)
 
 2. Connect the Arduino to a computer, if necessary, check the number of the COM port to which the circuit board is connected, in the Device Manager.
 
 3. Click on Arduino 4way-interface in tab Make Arduino Interface Boards, and select the firmware file. After the file is selected, the flashing of the controller will start.
 
-   ![](../assets/BLHeliSuite_Make_Interfaces.png)
-   ![](../assets/BLHeliSuite_Interface_Options.png)
-   ![](../assets/BLHeliSuite_Arduino_Select_Firmware.png)
+   ![](../assets/BLHeliSuite_Make_Interfaces.webp)
+   ![](../assets/BLHeliSuite_Interface_Options.webp)
+   ![](../assets/BLHeliSuite_Arduino_Select_Firmware.webp)
 
 4. After flashing the Arduino, return to tap Silabs ESC Setup and connect to Arduino, having selected the 4way-if interface of the programming device and the Arduino COM port.
 
-   ![](../assets/BLHeliSuite_4way-if_Select.png)
-   ![](../assets/BLHeliSuite_ESC_Setup_Connect.png)
+   ![](../assets/BLHeliSuite_4way-if_Select.webp)
+   ![](../assets/BLHeliSuite_ESC_Setup_Connect.webp)
 
 ## Connecting ESCs to Arduino
 
 For flashing or readjusting ESCs, connect signal ports (usually white) of ESCs to Arduino ports, after checking in the manual (see the figure below), which ports are used for connecting to ESCs. You should also connect GND of Arduino with the ground of one of the ESCs (usually black). The ESCs should be connected to power, and, if electric motors are connected to ESCs, **they should not have propellers**.
 
-![](../assets/BLHeliSuite_Arduino_Pinout_For_4way-if.png)
+![](../assets/BLHeliSuite_Arduino_Pinout_For_4way-if.webp)
 
 In the case of Arduino Mega, signal ports of the ECSs are connected to ports D43-D49 and D51.
 
@@ -47,8 +47,8 @@ In the case of Arduino Mega, signal ports of the ECSs are connected to ports D43
 
 To download information about firmware version and ESC settings, click on Check.
 
-![](../assets/BLHeliSuite_ESC_Setup_Check.png)
-![](../assets/BLHeliSuite_SiLabs_ESC_Setup_1.png)
+![](../assets/BLHeliSuite_ESC_Setup_Check.webp)
+![](../assets/BLHeliSuite_SiLabs_ESC_Setup_1.webp)
 
 The main parameters that we are interested in are:
 
@@ -60,7 +60,7 @@ The main parameters that we are interested in are:
 
 The leftmost motor in the list of motors \(Multiple ESC\) is considered the \(master\) motor. by clicking on motor numbers, you can enable or disable the possibility of writing their settings. After changing the necessary parameters, you can write settings to respective motors by clicking on Write Setup.
 
-![](../assets/BLHeliSuite_ESC_Setup_Write_Setup.png)
+![](../assets/BLHeliSuite_ESC_Setup_Write_Setup.webp)
 
 To display the settings of all ESCs simultaneously, you can use the ESC Overview tab.
 

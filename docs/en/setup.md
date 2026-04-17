@@ -4,7 +4,7 @@
 
 **QGroundControl** is a software package that can be used to flash, configure and calibrate the flight controller.
 
-<img src="../assets/qgc.png" alt="QGroundControl" class="zoom">
+<img src="../assets/qgc.webp" alt="QGroundControl" class="zoom">
 
 Download and install the installer for Windows/Linux/macOS [from the official QGroundControl website](http://qgroundcontrol.com/downloads/). Agree to install additional drivers if prompted.
 
@@ -25,7 +25,7 @@ Flashing instructions:
 4. Connect the flight controller to the computer via USB.
 5. Select *PX4 Flight Stack* in the menu that appears on the right.
 
-<img src="../assets/qgc-firmware.png" alt="QGroundControl firmware upload" class="zoom">
+<img src="../assets/qgc-firmware.webp" alt="QGroundControl firmware upload" class="zoom">
 
 6. To select and load the firmware file:
    - Select *Advanced settings*.
@@ -40,7 +40,7 @@ Wait for QGroundControl to flash the firmware and reboot the flight controller.
 
 > **Hint** All further configuration and calibration of the flight controller can be done wirelessly using [Wi-Fi access to the flight controller via Raspberry Pi](gcs_bridge.md).
 
-<img src="../assets/qgc-requires-setup.png" alt="QGroundControl overview" class="zoom">
+<img src="../assets/qgc-requires-setup.webp" alt="QGroundControl overview" class="zoom">
 
 1. Parameters requiring setup: *Airframe*, *Radio*, *Sensors*, *Flight Modes*.
 2. Current controller firmware.
@@ -49,7 +49,7 @@ Wait for QGroundControl to flash the firmware and reboot the flight controller.
 
 ### Selecting the airframe
 
-<img src="../assets/qgc-frame-apply-clover4.png" alt="QGroundControl frame selection" class="zoom">
+<img src="../assets/qgc-frame-apply-clover4.webp" alt="QGroundControl frame selection" class="zoom">
 
 1. Select the *Airframe* menu.
 2. Select the *Quadrotor* frame type.
@@ -61,7 +61,7 @@ Wait for QGroundControl to flash the firmware and reboot the flight controller.
 
 To configure flight controller parameters, go to the *Vehicle Configuration* tab and select the *Parameters* menu. Use the *Search* field to find parameters by name. Recommended parameters for Clover are provided in the further documentation.
 
-<img src="../assets/qgc-parameters.png" alt="QGroundControl parameters" class="zoom">
+<img src="../assets/qgc-parameters.webp" alt="QGroundControl parameters" class="zoom">
 
 After setting a parameter, press *Save*. If needed, reboot the flight controller by pressing *Tools* > *Reboot vehicle*.
 
@@ -110,6 +110,6 @@ You can load a pre-configured preset via the *Parameters* tab menu: press *Tools
 * `MPC_Z_VEL_P_ACC` = 4.8
 * `MPC_Z_P` = 1.2
 
-> **Hint** Note that PID regulator parameters should be tuned manually for each specific assembled quadcopter for ideal flight. Learn more in the "[PID tuning](pid_tuning.md)" article.
+> **Hint** Note that PID regulator parameters should be tuned manually for each specific assembled quadcopter for ideal flight. Learn more in the "[PID tuning](calibratePID.md)" article.
 
 **Next**: [Sensor calibration](calibration.md).

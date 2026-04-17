@@ -27,13 +27,13 @@
 
 Программное обеспечение Cortex: классифицирует сигнал мозга в эмоцию.
 
-<img src="../assets/cortex1.jpg">
+<img src="../assets/cortex1.webp">
 
-<img src="../assets/cortex2.jpg">
+<img src="../assets/cortex2.webp">
 
 Программное обеспечение BioEcho: эмуляция физической клавиатуры.
 
-<img src="../assets/bioecho.jpg">
+<img src="../assets/bioecho.webp">
 
 Далее данные поступают на клавиатуру с помощью BioEcho и предаются в ROS.
 

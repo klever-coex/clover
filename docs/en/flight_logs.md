@@ -3,7 +3,7 @@ PX4 Logs and Topics
 
 For detailed analysis of the PX4 firmware behavior, you can view flight logs. Flight logs are messages in [uORB topics](https://dev.px4.io/en/middleware/uorb.html) written to a file with extension `.ulg`. The log file can be downloaded using QGroundControl via Wi-Fi or USB in the *Download Log* tab:
 
-![Logs in QGroundControl](../assets/download-log.png)
+![Logs in QGroundControl](../assets/download-log.webp)
 
 The required `.ulg` files may also be copied directly from the MicroSD card in the flight controller.
 
@@ -14,7 +14,7 @@ The log file can be analyzed using the FlightPlot application. The current versi
 
 In the application, you can view the full list of recorded topics (*Fields List*). In the list, you will have to select the required topics, after which they will appear on the chart:
 
-![FlightPlot](../assets/flightplot.png)
+![FlightPlot](../assets/flightplot.webp)
 
 Main topics in PX4
 ---
@@ -43,7 +43,7 @@ For newer versions of the Pixhawk circuit board (`px4fmu-v3`), as well as for Pi
 
 To use it, select tab MAVLink Console in QGroundControl:
 
-![listener](../assets/listener.png)
+![listener](../assets/listener.webp)
 
 Command `list_topics` displays a list of topics available for viewing (included only in [SITL](sitl.md)).
 

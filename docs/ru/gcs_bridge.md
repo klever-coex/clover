@@ -16,7 +16,7 @@
 4. Нажмите *OK* для сохранения параметров.
 5. Выберите созданное подключение и нажмите *Connect*.
 
-<img src="../assets/qgc-bridge-tcp.png" alt="Подключение QGroundControl к Клеверу через TCP">
+<img src="../assets/qgc-bridge-tcp.webp" alt="Подключение QGroundControl к Клеверу через TCP">
 
 ## UDP
 
@@ -38,7 +38,7 @@ sudo systemctl restart clover
 1. Измените параметр `gcs_bridge` на `udp`.
 2. В QGroundControl создайте подключение со следующими настройками:
 
-    ![QGroundControl UDP connection](../assets/bridge_udp.png)
+    ![QGroundControl UDP connection](../assets/bridge_udp.webp)
 
 3. Выберите созданное подключение и нажмите *Connect*.
 

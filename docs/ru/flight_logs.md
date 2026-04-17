@@ -3,7 +3,7 @@
 
 Для детального анализа поведения прошивки PX4 можно просмотреть полетные логи. Полетные логи представляют собой сообщения в [uORB-топиках](https://dev.px4.io/en/middleware/uorb.html), записанные в файл с расширением `.ulg`. Лог-файл можно скачать с помощью QGroundControl по Wi-Fi или USB во вкладке *Log Download*:
 
-![Логи в QGroundControl](../assets/download-log.png)
+![Логи в QGroundControl](../assets/download-log.webp)
 
 Также необходимые `.ulg`-файлы можно скопировать непосредственно с MicroSD-карты, находившейся в полетном контроллере.
 
@@ -20,7 +20,7 @@
 
 В программе можно просмотреть полный список записанных топиков (*Fields List*). В нем нужно выбрать необходимые топики, после чего они появятся на графике:
 
-![FlightPlot](../assets/flightplot.png)
+![FlightPlot](../assets/flightplot.webp)
 
 Основные топики в PX4
 ---
@@ -49,7 +49,7 @@
 
 Для ее использования нужно выбрать вкладку MAVLink Console в QGroundControl:
 
-![listener](../assets/listener.png)
+![listener](../assets/listener.webp)
 
 Команда `list_topics` выводит список топиков, доступных для просмотра (включена только в [SITL](sitl.md)).
 

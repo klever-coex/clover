@@ -2,7 +2,7 @@
 
 [CopterHack-2022](copterhack2022.md), команда **С305**.
 
-<img src="../assets/c305.jpg" width=600>
+<img src="../assets/c305.webp" width=600>
 
 ## Информация о команде
 

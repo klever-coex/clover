@@ -2,14 +2,14 @@
 
 This page contains models and drawings of some of the drone parts. They can be used for 3D printing and/or laser cutting replacement parts.
 
-## Clover 4.2
+## Clover 4 CODE
 
 ### Milling
 
 <table>
     <tr><th width=150>Preview</th><th>Part</th><th width=1>Files</th></tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/deck_mount.png"></td>
+        <td><img src="../assets/dxf/4.2/deck_mount.webp"></td>
         <td>
             <b>Deck mount</b>.<br>
             Function: Deck for installing battery and Raspberry Pi<br>
@@ -23,7 +23,7 @@ This page contains models and drawings of some of the drone parts. They can be u
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/deck_mount_small.png"></td>
+        <td><img src="../assets/dxf/4.2/deck_mount_small.webp"></td>
         <td>
             <b>Deck mount small</b>.<br>
             Function: Deck for mounting FPV cameras and mounting stiffening plates.<br>
@@ -37,7 +37,7 @@ This page contains models and drawings of some of the drone parts. They can be u
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/grab_deck.png"></td>
+        <td><img src="../assets/dxf/4.2/grab_deck.webp"></td>
         <td>
             <b>Grab deck</b>.<br>
             Function: Deck for installing grippers and external peripherals (camera, rangefinder).<br>
@@ -51,7 +51,7 @@ This page contains models and drawings of some of the drone parts. They can be u
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/led_mount_plate.png"></td>
+        <td><img src="../assets/dxf/4.2/led_mount_plate.webp"></td>
         <td>
             <b>LED mount plate</b>.<br>
             Function: Fixing the LED strip.<br>
@@ -65,7 +65,7 @@ This page contains models and drawings of some of the drone parts. They can be u
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/prop_guard.png"></td>
+        <td><img src="../assets/dxf/4.2/prop_guard.webp"></td>
         <td>
             <b>Prop guard</b>.<br>
             Function: Prevent damage of propellers.<br>
@@ -79,7 +79,7 @@ This page contains models and drawings of some of the drone parts. They can be u
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/prop_guard_mount.png"></td>
+        <td><img src="../assets/dxf/4.2/prop_guard_mount.webp"></td>
         <td>
             <b>Prop guard mount</b>.<br>
             Function: Arc for securing the guard.<br>
@@ -93,7 +93,7 @@ This page contains models and drawings of some of the drone parts. They can be u
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/small_leg.png"></td>
+        <td><img src="../assets/dxf/4.2/small_leg.webp"></td>
         <td>
             <b>Small leg</b>.<br>
             Function: Standard footing element.<br>
@@ -162,14 +162,14 @@ This page contains models and drawings of some of the drone parts. They can be u
     </tr>
 </table>
 
-## Clover 4.2 WorldSkills
+## Clover 4 PRO
 
 ### Milling
 
 <table>
     <tr><th width=150>Preview</th><th>Part</th><th width=1>Files</th></tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/big_leg.png"></td>
+        <td><img src="../assets/dxf/4.2/big_leg.webp"></td>
         <td>
             <b>Big leg</b>.<br>
             Function: Extended footing element.<br>
@@ -183,7 +183,7 @@ This page contains models and drawings of some of the drone parts. They can be u
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/grip_spacer.png"></td>
+        <td><img src="../assets/dxf/4.2/grip_spacer.webp"></td>
         <td>
             <b>Grip spacer</b>.<br>
             Function: spacer for the gripper plates.<br>
@@ -219,7 +219,7 @@ Material: SBS Glass. Infill: 100%. Quantity: 1 pcs.
 
 ## Contributed models for Clover 4
 
-Reinforced mounting plate for [Jetson Nano](jetson_nano.md) and additional equipment by [Vyacheslav Buzov](https://t.me/buzyakabarbuzyaka).
+Reinforced mounting plate for Jetson Nano and additional equipment by [Vyacheslav Buzov](https://t.me/buzyakabarbuzyaka).
 
 ### Laser cut
 
@@ -227,6 +227,7 @@ Reinforced mounting plate for [Jetson Nano](jetson_nano.md) and additional equip
 * Reinforced plate rib – [`reinforced_plate_rib.dxf`](https://github.com/CopterExpress/clover/raw/master/docs/assets/dxf/reinforced_plate_rib.dxf) (x2)
 * Camera pad for reinforced plate – [`reinforced_plate_camera_pad.dxf`](https://github.com/CopterExpress/clover/raw/master/docs/assets/dxf/reinforced_plate_camera_pad.dxf)
 
+<!--
 ## Clover 3
 
 ### 3D print
@@ -251,3 +252,4 @@ Reinforced mounting plate for [Jetson Nano](jetson_nano.md) and additional equip
 
 * Central plate – [`central_plate.dxf`](https://github.com/CopterExpress/clover/raw/master/docs/assets/dxf/central_plate.dxf).
 * Arm – [`arm.dxf`](https://github.com/CopterExpress/clover/raw/master/docs/assets/dxf/arm.dxf).
+-->

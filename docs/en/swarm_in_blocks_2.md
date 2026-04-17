@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD041 -->
 
-<a name="logo" href="https://swarm-in-blocks.gitbook.io/swarm-in-blocks/introduction/swarm-in-blocks"><img align="center" src="../assets/swarm_in_blocks_2/capa_swarm_23_banner.png" alt="Swarm in Blocks" style="width:100%;height:100%"/></a>
+<a name="logo" href="https://swarm-in-blocks.gitbook.io/swarm-in-blocks/introduction/swarm-in-blocks"><img align="center" src="../assets/swarm_in_blocks_2/capa_swarm_23_banner.webp" alt="Swarm in Blocks" style="width:100%;height:100%"/></a>
 
 <h1 align="center" style="display: block; font-size: 2.5em; margin-block-start: 1em; margin-block-end: 1em;">
   Swarm in Blocks

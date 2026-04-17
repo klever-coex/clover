@@ -11,25 +11,25 @@
 
 1. Спаяйте модуль магнитного захвата согласно схеме подключения. Провода на концах должны быть с разъемами Dupont female (длина проводов ~10-15см).
 
-    <div align="center"><img src="../assets/magnet_grip/ru/datasheet.jpg" width="900" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/ru/datasheet.webp" width="900" class="zoom border center"></div>
 
     <div align="center"><em>Схема подключения электроники</em></div>
 
 2. Установите деку магнитного захвата при помощи винтов M3x6 и гаек М3.
 
-    <div align="center"><img src="../assets/magnet_grip/ru/assemble/step_1.png" width="700" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/ru/assemble/step_1.webp" width="700" class="zoom border center"></div>
 
 3. Установите модуль электромагнита на деку захвата с помощью винтов M2x6.
 
-    <div align="center"><img src="../assets/magnet_grip/ru/assemble/step_2.png" width="700" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/ru/assemble/step_2.webp" width="700" class="zoom border center"></div>
 
 4. Установите электромагнит на деку захвата при помощи винта M4x6.
 
-    <div align="center"><img src="../assets/magnet_grip/ru/assemble/step_3.png" width="700" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/ru/assemble/step_3.webp" width="700" class="zoom border center"></div>
 
 5. Магнитный захват в сборе.
 
-    <div align="center"><img src="../assets/magnet_grip/magnet_grip.png" width="700" class="zoom border center"></div>
+    <div align="center"><img src="../assets/magnet_grip/magnet_grip.webp" width="700" class="zoom border center"></div>
 
 6. Подключите магнитный захват к Raspberry Pi согласно схеме подключения электроники (см. пункт 1).
 
@@ -112,8 +112,8 @@ if __name__ == '__main__':
 
 Пример вывода в топике и терминале:
 <div align="center">
-    <img src="../assets/magnet_grip/example_1.png" height="350" class="zoom border center">
-    <img src="../assets/magnet_grip/example_2.png" height="350" class="zoom border center">
+    <img src="../assets/magnet_grip/example_1.webp" height="350" class="zoom border center">
+    <img src="../assets/magnet_grip/example_2.png.webp" height="350" class="zoom border center">
 </div>
 
 ### Пример кода управления магнитным захватом

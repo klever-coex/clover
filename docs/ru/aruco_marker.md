@@ -1,6 +1,6 @@
 # Распознавание ArUco-маркеров
 
-> **Note** Документация для версий [образа](image.md), начиная с версии **0.22**. Для более ранних версий см. [документацию для версии **0.20**](https://github.com/CopterExpress/clover/blob/v0.20/docs/ru/aruco_marker.md).
+<!-- > **Note** Документация для версий [образа](image.md), начиная с версии **0.22**. Для более ранних версий см. [документацию для версии **0.20**](https://github.com/CopterExpress/clover/blob/v0.20/docs/ru/aruco_marker.md). -->
 
 <!-- -->
 
@@ -54,13 +54,13 @@
 * ось **<font color=green>y</font>** указывает кверху маркера;
 * ось **<font color=blue>z</font>** указывает от плоскости маркера.
 
-<img src="../assets/aruco-axis.png" width="300">
+<img src="../assets/aruco-axis.webp" width="300">
 
 ## Работа с распознанными маркерами
 
 Наглядно распознанные маркеры можно видеть в топике `aruco_detect/debug`. Просмотреть его можно с помощью [`rqt_image_view`](rviz.md) или через [web_video_server](web_video_server.md) по ссылке http://192.168.11.1:8080/snapshot?topic=/aruco_pose/debug:
 
-<img src="../assets/aruco-detect-debug.png" width=600>
+<img src="../assets/aruco-detect-debug.webp" width=600>
 
 Распознанные маркеры и их позиции публикуются в топик `aruco_detect/markers`. Чтение топика из Bash:
 

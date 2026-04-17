@@ -12,7 +12,7 @@
 
 Для калибровки камеры с использованием ROS-пакета camera_calibration необходим компьютер с установленным ОС GNU/Linux и [ROS Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu).
 
-<img src="../assets/camera_calibration.png" alt="ROS Camera Calibrator" class="zoom center" width=600>
+<img src="../assets/camera_calibration.webp" alt="ROS Camera Calibrator" class="zoom center" width=600>
 
 1. Используя Терминал, установите на компьютер пакет `camera_calibration`:
 

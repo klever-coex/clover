@@ -2,4 +2,4 @@
 
 This section contains articles that are not included in the main sections, as well as articles by the users on various subjects related to UAV.
 
-To learn more about publishing text in this section, see the article "[Contributing to Clover](contributing.md)".
+To publish materials in this section, edit the documentation in the [GitHub repository](https://github.com/CopterExpress/clover) and open a pull request.

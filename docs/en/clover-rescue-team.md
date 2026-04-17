@@ -36,7 +36,7 @@ The idea of this project came immediately, it lies on the surface. A system that
 
 [Link to the website](https://48c5-94-29-124-254.eu.ngrok.io)
 
-<img src="../assets/clover-rescue-team/mockup.png">
+<img src="../assets/clover-rescue-team/mockup.webp">
 
 ## How It Works {#hiw}
 
@@ -53,13 +53,13 @@ You can learn more about how it works by visiting the repositories.
 
 ## Required Hardware {#rh}
 
-All you need is COEX Clover 3/4, Raspberry Pi 3/4, USB WIFI Modem and RPi Camera!
+<!-- All you need is COEX Clover 3/4, Raspberry Pi 3/4, USB WIFI Modem and RPi Camera! -->
 
 ## Operating Instructions {#oi}
 
 Firstly, users need to register on our website.
 
-<img src="../assets/clover-rescue-team/signup.png">
+<img src="../assets/clover-rescue-team/signup.webp">
 
 After registration the main control panel and installation instructions open.
 
@@ -75,55 +75,55 @@ When the software is installed, the server will automatically start. After insta
 
 ## Work Example, Functions {#functions}
 
-<img src="../assets/clover-rescue-team/main.png">
+<img src="../assets/clover-rescue-team/main.webp">
 
 On the website there are several commands for controlling the drone. “Get photo” allows you to get an image from the drone camera. The “Land” button lands the drone. The "Return" command returns drone to the operator, according to GPS coordinates (this requires a stable connection of the drone with 10 or more satellites). "Hover" makes the drone hover in the air. "Disarm" instantly disables the drone's motors, so you need to be careful with this command. The “Choose Code” and “Upload & Run” buttons allow users to select a code written in Python, upload it to the drone and run it. Also, users will see output of their code and all its errors. There is also interactive map with markers, blue marker the is location of the user, purple marker is the location of his drone. Also, as you can see, there is a real-time visualization of the Clover’s airborne position, as well as its altitude and the average voltage between the battery cells.
 
 ## Settings {#settings}
 
-<img src="../assets/clover-rescue-team/allsettings.png">
+<img src="../assets/clover-rescue-team/allsettings.webp">
 
 In the settings users can set speed and altitude of the return.
 
-<img src="../assets/clover-rescue-team/s1.png">
+<img src="../assets/clover-rescue-team/s1.webp">
 
 Users can choose an action after return (hover or land).
 
-<img src="../assets/clover-rescue-team/s2.png">
+<img src="../assets/clover-rescue-team/s2.webp">
 
 ...And the place where the drone will return (User coordinates or takeoff coordinates).
 
-<img src="../assets/clover-rescue-team/s3.png">
+<img src="../assets/clover-rescue-team/s3.webp">
 
 Users can also set the period for automatically receiving photos from the drone.
 
-<img src="../assets/clover-rescue-team/s4.png">
+<img src="../assets/clover-rescue-team/s4.webp">
 
 At the top of the website is the status of your drone (Disconnected/Connected, disarmed, Connected, in flight).
 
-<img src="../assets/clover-rescue-team/status.png">
+<img src="../assets/clover-rescue-team/status.webp">
 
 ## Mobile Version {#mobile}
 
 The mobile version of the site has absolutely the same functionality (swipe to the right/left to move between control panels).
 
-<img src="../assets/clover-rescue-team/m1.jpg" width="200px">
-<img src="../assets/clover-rescue-team/m2.jpg" width="200px">
-<img src="../assets/clover-rescue-team/m3.jpg" width="200px">
-<img src="../assets/clover-rescue-team/m4.jpg" width="200px">
-<img src="../assets/clover-rescue-team/m5.jpg" width="200px">
+<img src="../assets/clover-rescue-team/m1.webp" width="200px">
+<img src="../assets/clover-rescue-team/m2.webp" width="200px">
+<img src="../assets/clover-rescue-team/m3.webp" width="200px">
+<img src="../assets/clover-rescue-team/m4.webp" width="200px">
+<img src="../assets/clover-rescue-team/m5.webp" width="200px">
 
 ## Bots on the social networks and messengers {#bots}
 
 Bots on the social networks is an example of what you can do based on our project. They have the main functionality of our website and The Clover Rescue Team is still working on their features.
 
-<img src="../assets/clover-rescue-team/bot3.jpg" width="200px">
-<img src="../assets/clover-rescue-team/bot1.jpg" width="200px">
-<img src="../assets/clover-rescue-team/bot4.png" width="200px">
-<img src="../assets/clover-rescue-team/bot2.png" width="200px">
-<img src="../assets/clover-rescue-team/bot6.jpg" width="200px">
-<img src="../assets/clover-rescue-team/bot5.jpg" width="290px">
-<img src="../assets/clover-rescue-team/bot7.jpg" width="288.5px">
+<img src="../assets/clover-rescue-team/bot3.webp" width="200px">
+<img src="../assets/clover-rescue-team/bot1.webp" width="200px">
+<img src="../assets/clover-rescue-team/bot4.webp" width="200px">
+<img src="../assets/clover-rescue-team/bot2.webp" width="200px">
+<img src="../assets/clover-rescue-team/bot6.webp" width="200px">
+<img src="../assets/clover-rescue-team/bot5.webp" width="290px">
+<img src="../assets/clover-rescue-team/bot7.webp" width="288.5px">
 
 [VK Bot Repository](https://github.com/Astel2022/CRTVkbot)
 

@@ -10,4 +10,4 @@ The *Safety* panel allows you to configure actions that should be performed when
     * *Terminate* – set all outputs to their failsafe values.
 3. Set the timeout value before RC Loss triggers in the *RC Loss Timeout* field. We recommend setting it to 2 s.
 
-<img src="../assets/qgc-failsafe.png" alt="QGroundControl failsafe" class="zoom">
+<img src="../assets/qgc-failsafe.webp" alt="QGroundControl failsafe" class="zoom">

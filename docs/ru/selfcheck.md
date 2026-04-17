@@ -8,7 +8,7 @@
 rosrun clover selfcheck.py
 ```
 
-<img src="../assets/selfcheck.png">
+<img src="../assets/selfcheck.webp">
 
 Описание некоторых проверок:
 

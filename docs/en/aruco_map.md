@@ -1,6 +1,6 @@
 # Map-based navigation with ArUco markers
 
-> **Note** The following applies to [image versions](image.md) **0.22** and up. Older documentation is still available for [for version **0.20**](https://github.com/CopterExpress/clover/blob/v0.20/docs/en/aruco_map.md).
+<!-- > **Note** The following applies to [image versions](image.md) **0.22** and up. Older documentation is still available for [for version **0.20**](https://github.com/CopterExpress/clover/blob/v0.20/docs/en/aruco_map.md). -->
 
 <!-- -->
 
@@ -8,7 +8,7 @@
 
 <!-- -->
 
-> **Hint** We recommend using our [custom PX4 firmware](firmware.md).
+> **Hint** We recommend using our [custom PX4 firmware](firmware_Pixracer.md).
 
 `aruco_map` module detects whole ArUco-based maps. Map-based navigation is possible using vision position estimate (VPE).
 
@@ -67,19 +67,18 @@ rosrun aruco_pose genmap.py 0.33 2 4 1 1 0 -o test_map.txt
 
 Additional information on the utility can be obtained using `-h` key: `rosrun aruco_pose genmap.py -h`.
 
-<!-- You can also use the [online map editor](arucogenmap.md) to create ArUco maps. -->
 
 ### Checking the map
 
 The currently active map is posted in the `/aruco_map/image` ROS topic. It can be viewed using [web_video_server](web_video_server.md) by opening the following link: http://192.168.11.1:8080/snapshot?topic=/aruco_map/image
 
-<img src="../assets/aruco-map.png" width=600>
+<img src="../assets/aruco-map.webp" width=600>
 
 Current estimated pose (relative to the detected map) is published in the `aruco_map/pose` ROS topic. If the VPE is disabled, the `aruco_map` [TF frame](frames.md) is created; otherwise, the `aruco_map_detected` frame is created instead. Visualization for the current map is also posted in the `aruco_map/visualization` ROS topic; it may be visualized in [rviz](rviz.md).
 
 An easy to understand detected map visualization is posted in the `aruco_map/debug` ROS topic (live view is available on http://192.168.11.1:8080/stream_viewer?topic=/aruco_map/debug):
 
-<img src="../assets/aruco-map-debug.png" width=600>
+<img src="../assets/aruco-map-debug.webp" width=600>
 
 ## Coordinate system
 
@@ -89,11 +88,11 @@ The marker map adheres to the [ROS coordinate system convention](http://www.ros.
 * the **<font color=green>y</font>** axis points to the top side of the map;
 * the **<font color=blue>z</font>** axis points outwards from the plane of the marker
 
-<img src="../assets/aruco-map-axis.png" width="600">
+<img src="../assets/aruco-map-axis.webp" width="600">
 
 ## VPE setup
 
-In order to enable vision position estimation you should use the following [PX4 parameters](parameters.md).
+In order to enable vision position estimation you should use the following [PX4 parameters](setup.md#parameters).
 
 If you're using **LPE** (`SYS_MC_EST_GROUP` parameter is set to `local_position_estimator,attitude_estimator_q`):
 
@@ -116,7 +115,7 @@ If you're using **EKF2** estimator (`SYS_MC_EST_GROUP` parameter is set to `ekf2
 
 You may use [the `selfcheck.py` utility](selfcheck.md) to check your settings.
 
-> **Hint** In order to use LPE with the Pixhawk v1 hardware you should download the [`px4fmu-v2_lpe.px4` firmware](firmware.md)
+> **Hint** In order to use LPE with the Pixhawk v1 hardware you should download the [`px4fmu-v2_lpe.px4` firmware](firmware_Pixracer.md)
 
 ## Flight
 
@@ -136,7 +135,8 @@ navigate(x=2, y=2, z=2, speed=1, frame_id='aruco_map')
 
 ### Using a specific marker frame
 
-Starting with the [image](image.md) version 0.18, the drone also can fly relative to a marker in the map, even if it is not currently visible. Like with [single-marker navigation](aruco_marker.md#working-with-detected-markers), this works by setting the frame_id parameter to `aruco_ID`, where ID is the desired marker number.
+<!-- Starting with the [image](image.md) version 0.18, the drone also can fly relative to a marker in the map, even if it is not currently visible. Like with [single-marker navigation](aruco_marker.md#working-with-detected-markers), this works by setting the frame_id parameter to `aruco_ID`, where ID is the desired marker number. -->
+The drone also can fly relative to a marker in the map, even if it is not currently visible. Like with [single-marker navigation](aruco_marker.md#working-with-detected-markers), this works by setting the frame_id parameter to `aruco_ID`, where ID is the desired marker number.
 
 The following code will move the drone to the point 1 meter above the center of marker 5:
 
@@ -152,7 +152,7 @@ If the drone's altitude is not stable, try increasing the `MPC_Z_VEL_P` paramete
 
 ## Placing markers on the ceiling
 
-![Ceiling markers](../assets/IMG_4175.JPG)
+![Ceiling markers](../assets/IMG_4175.webp)
 
 In order to navigate using markers on the ceiling, mount the onboard camera so that it points up and [adjust the camera frame accordingly](camera_setup.md).
 

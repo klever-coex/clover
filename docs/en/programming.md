@@ -1,6 +1,6 @@
 # Programming
 
-<img src="../assets/programming.png" width="250" align="right">
+<img src="../assets/programming.webp" width="250" align="right">
 
 The Clover platform allows a [Raspberry Pi](raspberry.md) computer to be used for programming autonomous flights. The flight program is typically written using the Python programming language. The program may [receive telemetry data](simple_offboard.md#get_telemetry) (which includes battery data, attitude, position, and other parameters) and send commands like: [fly to a point in space](simple_offboard.md#navigate), [set attitude](simple_offboard.md#set_attitude), [set angular rates](simple_offboard.md#set_rates), and others.
 
@@ -107,5 +107,4 @@ The Clover platform also exposes APIs for interacting with other peripherals. Re
 * [LED strip](leds.md);
 * [laser rangefinder](laser.md);
 * [GPIO](gpio.md);
-* [ultrasonic rangefinder](sonar.md);
 * [camera](camera.md).

@@ -1,6 +1,6 @@
 # Autonomous Multirotor Landing System (AMLS)
 
-![Logo](../assets/amls/logo_book.png "Logo")
+![Logo](../assets/amls/logo_book.webp "Logo")
 
 ## The goal is to automatically land a drone on a moving platform
 
@@ -18,7 +18,7 @@ https://github.com/XxOinvizioNxX/Liberty-Way
 - [Andrey Kabalin](mailto:astik452@gmail.com)
 - [Vladislav Yasnetsky](mailto:vlad.yasn@gmail.com)
 
-![Drone 1](../assets/amls/drone_meme.jpg "Drone 1")
+![Drone 1](../assets/amls/drone_meme.webp "Drone 1")
 
 -----------
 
@@ -58,11 +58,11 @@ The AMLS system consists of two parts:
 
 - The drone
 
-    ![Liberty-X](../assets/amls/liberty-x_side_cutout_2_small.png "Liberty-X")
+    ![Liberty-X](../assets/amls/liberty-x_side_cutout_2_small.webp "Liberty-X")
 
 - And the platform either mobile (implemented on a vehicle), either stable (pick-up-point)
 
-    ![Platform](../assets/amls/platform_side_transparent.png "Platform")
+    ![Platform](../assets/amls/platform_side_transparent.webp "Platform")
 
 How the system operates:
 
@@ -92,7 +92,7 @@ GPS module will be built in Liberty-Link, so it would have the ability to mainta
 
 GPS-module will be used from the UBlox group (for instance, UBlox Neo-M8). There will be 1 or 3 (to minimize the error) modules.
 
-![GPS Module](../assets/amls/liberty-x_front_cutout_2_small_gps.png "GPS Module")
+![GPS Module](../assets/amls/liberty-x_front_cutout_2_small_gps.webp "GPS Module")
 
 Modules operate via UART, configured to send data 5 times per second. The Liberty-Link firmware will read data from the modules and calculate the coordinates of the current position.
 
@@ -384,7 +384,7 @@ Before optical stabilization launches (during GPS stabilization process), our Li
 
 The platform, as well as the Liberty-Link, will have MS5611 barometers.
 
-![MS5611](../assets/amls/ms5611_barometer.png "MS5611")
+![MS5611](../assets/amls/ms5611_barometer.webp "MS5611")
 
 According to the documentation, the height resolution is 10 cm. The algorithm will take the pressure values and by passing it through the PID-controller will stabilize the drone's altitude by changing the Throttle (3rd channel).
 
@@ -464,7 +464,7 @@ All basic settings are conveniently placed in separate JSON files (settings, PID
 ### 5.6. Communication with the drone {#communication-with-the-drone}
 
 The Liberty-Way connects to the Liberty-Link module installed on the drone and adjusts its position by directly controlling four main channels of the remote control. In one cycle (each frame from the camera), 12 bytes of correction data are sent to the module:
-![Packet](../assets/amls/data_structure.png "Data packet")
+![Packet](../assets/amls/data_structure.webp "Data packet")
 
 Bytes description:
 
@@ -552,19 +552,19 @@ To operate our system in real conditions, it is required to minimize camera shak
 
 Camera mount:
 
- ![Camera mount](../assets/amls/gimbal_camera_mount.png "Camera mount")
+ ![Camera mount](../assets/amls/gimbal_camera_mount.webp "Camera mount")
 
 Camera wire fixing (ferrite filter on the wire):
 
- ![Filter mount](../assets/amls/gimbal_filter_mount.png "Filter mount")
+ ![Filter mount](../assets/amls/gimbal_filter_mount.webp "Filter mount")
 
 Fixing of the "crabs" latches on the suspension substrate:
 
- ![Plane mount](../assets/amls/gimbal_plane_mount.png "Plane mount")
+ ![Plane mount](../assets/amls/gimbal_plane_mount.webp "Plane mount")
 
 An approximate view of the assembly of the entire suspension mechanism:
 
- ![Assembly](../assets/amls/gimbal_assembly.png "Assembly")
+ ![Assembly](../assets/amls/gimbal_assembly.webp "Assembly")
 
 -----------
 
@@ -576,9 +576,9 @@ The platform is an interconnected system for landing the drone. The platform was
 
 As you may know it doesn't matter how good is our stabilization, without grabbing system the drone will crash eventually. Hence we developed a 3D model of a grabbing system with 4 grips that have a hook at the end of each one. This will allow the system to slowly grab the drone while it lands and hold it steady after landing.
 
-![Screenshot](../assets/amls/grabbing_system_1.png "Screenshot")
+![Screenshot](../assets/amls/grabbing_system_1.webp "Screenshot")
 
-![Screenshot](../assets/amls/grabbing_system_2.png "Screenshot")
+![Screenshot](../assets/amls/grabbing_system_2.webp "Screenshot")
 
 ### 6.2. Weather protection system {#weather-protection-system}
 
@@ -586,15 +586,15 @@ As for the weather protection, we developed a 3D model to create a roof that wil
 The AMLS weather protection system consists of scissor-like mechanisms covered with a canvas, which are located around the edges of the platform.
 After a successful landing, the mechanisms on both sides of the platform close and protect the drone from external influences. The roof structure itself makes it light and strong, and the scissor-like mechanisms allow it to simply fold and unfold itself. Moreover, the assembly of such mechanisms will be simple and reliable.
 
-![Screenshot](../assets/amls/platform_side_transparent.png "Screenshot")
+![Screenshot](../assets/amls/platform_side_transparent.webp "Screenshot")
 
-![Screenshot](../assets/amls/platform_roof.png "Screenshot")
+![Screenshot](../assets/amls/platform_roof.webp "Screenshot")
 
 ### 6.3. Platform speedometer {#platform-speedometer}
 
 In order to land on a quickly moving platform, it is very useful to know its speed. For now, the platform does not have a GPS module, or any other way to measure absolute speed. Therefore, for a temporary solution to this problem, it was decided to calculate the speed using an accelerometer. For example, MPU6050. The IMU is mounted into the prototype platform through a soft backing and it's covered with a cap to protect it from the wind. The stabilization algorithm (Liberty-Way) sends a request to the platform `L1` to test the speed. A message `S0 L <speed in km / h>` is returned as a response.
 
-![MPU6050](../assets/amls/mpu6050_gyro.png "MPU6050")
+![MPU6050](../assets/amls/mpu6050_gyro.webp "MPU6050")
 
 Speedometer test (inside the gray circle, lower right parameter (SPD) - speed in km / h) (Clickable):
 
@@ -645,7 +645,7 @@ As our platform must work in various environmental conditions, and optical stabi
 
 In the current version of the prototype, 6 LEDs are used as a light sensor and an ADC built into the microcontroller. The stabilization algorithm (Liberty-Way) sends a request `L0` to the platform to check the illumination level. A message `S0 L <luminance>` is returned as a response.
 
-![Light sensors](../assets/amls/light_sensors.png "Light sensors")
+![Light sensors](../assets/amls/light_sensors.webp "Light sensors")
 
 Test for determining the level of illumination using LEDs (clickable):
 
@@ -669,4 +669,4 @@ Follow the updates:
 
 In the future, we plan to do much more new and interesting stuff!
 
-![Follow the white rabbit](../assets/amls/follow_the_white_rabbit.png "Follow the white rabbit")
+![Follow the white rabbit](../assets/amls/follow_the_white_rabbit.webp "Follow the white rabbit")

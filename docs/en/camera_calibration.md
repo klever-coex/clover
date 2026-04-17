@@ -12,7 +12,7 @@ Main tutorial: http://wiki.ros.org/camera_calibration/Tutorials/MonocularCalibra
 
 In order to calibrate the camera with the `camera_calibration` ROS-package you need a computer with OS GNU/Linux and [ROS Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu) installed.
 
-<img src="../assets/camera_calibration.png" alt="ROS Camera Calibrator" class="zoom center" width=600>
+<img src="../assets/camera_calibration.webp" alt="ROS Camera Calibrator" class="zoom center" width=600>
 
 1. Using the Terminal, install `camera_calibration` package to your computer:
 

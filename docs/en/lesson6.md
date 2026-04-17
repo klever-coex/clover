@@ -8,7 +8,7 @@ Basic laws of electromagnetism
 
 **Ampere's law** — the law of electric currents interaction. It was first discovered by Andre Marie Ampere in 1820 for direct current. From the Ampere's law it follows that parallel conductors with electric currents flowing in the same direction attract, and with electric currents flowing in the opposite direction, repel.
 
-![low](../assets/8_1.png)
+![low](../assets/8_1.webp)
 
 Ohm's Law
 ---------
@@ -26,13 +26,13 @@ Types of motors
 
 Each motor has certain distinctive properties, which determine the scope of use, where it would be most appropriate. Synchronous, asynchronous, direct current, brush-type, brushless, valve-inductor, stepper ones...
 
-![engine](../assets/8_2.png)
+![engine](../assets/8_2.webp)
 
 ### A DC motor (DCM)
 
 Motors of this type used in most old toys. A battery and two wires to the contacts. Such a motor contains a commutator installed on the shaft, which switches the windings depending on the rotor position. Direct current applied to the motor runs alternatively in some and other parts of the winding thus creating torque.
 
-![engine](../assets/8_3.png)
+![engine](../assets/8_3.webp)
 
 DC motors may be both small (a vibro in your telephone), and rather large — usually up to a megawatt. For example, the photo below shows a traction motor of an electric locomotive with the power of 810 kW and voltage of 1,500 V.
 
@@ -40,7 +40,7 @@ DC motors may be both small (a vibro in your telephone), and rather large — us
 
 Oddly enough, this is the most common motor in the household use, the name of which is the least known. Why did this happen? Its design and features are the same as those of a DC motor, therefore it is mentioned in textbooks usually in the very end of the chapter.
 
-![engine](../assets/8_4.png)
+![engine](../assets/8_4.webp)
 
 This type of engine is more widely available in household appliances where it is required to adjust the rotation speed: drills, washing machines (not with "direct drive"), vacuum cleaners, etc. Why is it so popular? Due to the simplicity of regulation. Like in an AC motor, it can be adjusted by voltage, through a symistor (bidirectional thyristor) for AC power. The control circuit may be so simple, which is placed, for example, directly in the "trigger" of the power tool, and requires neither microcontroller, nor a PWM, nor a rotor positioning sensor.
 
@@ -52,14 +52,14 @@ Asynchronous motors are used in the household: in the devices where there is no 
 
 There are several subtypes of synchronous motors — with magnets (PMSM) and without magnets (with an excitation winding and slip rings), with sinusoidal or trapezoidal EMF (brushless DC motors, BLDC). Some step motors may also be included here. Before the era of power semiconductor electronics, the destiny of synchronous machines was being used as alternators (almost all alternators in all power plants are synchronous machines), as well as powerful drives for any serious load in the industry.
 
-![engine](../assets/8_5.png)
+![engine](../assets/8_5.webp)
 
 ### Comparison of brushed and brushless motors
 
 In radio controlled models with electric motors, brush and brushless motors are used.
 A brief comparison of the types of engines: brush-type motors develop lower speed. Brushless motors can develop more speed, and are also more durable.
 
-![engine](../assets/8_6.png)
+![engine](../assets/8_6.webp)
 
 ### Brush-type motors
 

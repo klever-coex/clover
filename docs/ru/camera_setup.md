@@ -1,6 +1,6 @@
 # Настройка камеры
 
-> **Note** Документация для версий [образа](image.md), начиная с **0.20**. Для более ранних версий см. [документацию для версии **0.19**](https://github.com/CopterExpress/clover/blob/v0.19/docs/ru/camera_frame.md).
+<!-- > **Note** Документация для версий [образа](image.md), начиная с **0.20**. Для более ранних версий см. [документацию для версии **0.19**](https://github.com/CopterExpress/clover/blob/v0.19/docs/ru/camera_frame.md). -->
 
 Для корректной работы всех функций, связанных с компьютерным зрением (в том числе [полета по ArUco-маркерам](aruco.md) и [Optical Flow](optical_flow.md)) необходимо сфокусировать основную камеру, а также выставить ее расположение и ориентацию. Улучшить качество работы также может опциональная калибровка камеры.
 
@@ -8,14 +8,14 @@
 
 Для успешного осуществления полетов с использованием камеры, необходимо настроить фокус камеры.
 
-<img src="../assets/cam_setup.png" width=180 class="center zoom">
+<img src="../assets/cam_setup.webp" width=180 class="center zoom">
 
 1. Откройте трансляцию изображения с камеры используя [web_video_server](web_video_server.md).
 2. С помощью вращения объектива камеры добейтесь максимальной резкости деталей (предпочтительно на расстоянии предполагаемой высоты полета – 2–3 м).
 
 |Расфокусированное изображение|Сфокусированное изображение|
 |-|-|
-|<img src="../assets/unfocused.png" width=300 class=zoom>|<img src="../assets/focused.png" width=300 class=zoom>|
+|<img src="../assets/unfocused.webp" width=300 class=zoom>|<img src="../assets/focused.webp" width=300 class=zoom>|
 
 ## Настройка расположения камеры {#frame}
 
@@ -40,8 +40,8 @@
 <arg name="direction_y" default="backward"/>
 ```
 
-<img src="../assets/camera_option_1_rviz.png" width=300>
-<img src="../assets/camera_option_1_clever.jpg" width=300>
+<img src="../assets/camera_option_1_rviz.webp" width=300>
+<img src="../assets/camera_option_1_clever.webp" width=300>
 
 #### Камера направлена вниз, шлейф вперёд
 
@@ -50,8 +50,8 @@
 <arg name="direction_y" default="forward"/>
 ```
 
-<img src="../assets/camera_option_2_rviz.png" width=300>
-<img src="../assets/camera_option_2_clever.jpg" width=300>
+<img src="../assets/camera_option_2_rviz.webp" width=300>
+<img src="../assets/camera_option_2_clever.webp" width=300>
 
 #### Камера направлена вверх, шлейф назад
 
@@ -60,8 +60,8 @@
 <arg name="direction_y" default="backward"/>
 ```
 
-<img src="../assets/camera_option_3_rviz.png" width=300>
-<img src="../assets/camera_option_3_clever.jpg" width=300>
+<img src="../assets/camera_option_3_rviz.webp" width=300>
+<img src="../assets/camera_option_3_clever.webp" width=300>
 
 #### Камера направлена вверх, шлейф вперёд
 
@@ -70,8 +70,8 @@
 <arg name="direction_y" default="forward"/>
 ```
 
-<img src="../assets/camera_option_4_rviz.png" width=300>
-<img src="../assets/camera_option_4_clever.jpg" width=300>
+<img src="../assets/camera_option_4_rviz.webp" width=300>
+<img src="../assets/camera_option_4_clever.webp" width=300>
 
 > **Hint** [Утилита `selfcheck.py`](selfcheck.md) выдает словесное описание установленной в данной момент ориентации основной камеры.
 

@@ -2,7 +2,7 @@
 
 Hackathon [Copter Hack 2018](https://copterexpress.timepad.ru/event/768108/) was held on October 19 – 21 at the Moscow Technopolis.
 
-<img src="../assets/copterhack18.jpg" height=400px title="Copter Hack 2018">
+<img src="../assets/copterhack18.webp" height=400px title="Copter Hack 2018">
 
 Hackathon chat: https://t.me/CopterHack.
 
@@ -30,8 +30,8 @@ Winning teams:
 
 1. Starshine (Moscow) — controlling the drone using a "smart" glove.
 2. Alcopter (Moscow) — controlling the drone with gestures and pose change.
-3. Merry copter (Samara) — a Vkontakte bot for controlling the copter, a joint flight of "Zhuzha" and "Clover 3".
+<!-- 3. Merry copter (Samara) — a Vkontakte bot for controlling the copter, a joint flight of "Zhuzha" and "Clover 3". -->
 4. International Post (Novosibirsk) — automatic scattering leaflets from the drone.
 5. LAMAR (Yekaterinburg) — an automatic quadcopter battery replacement station.
 
-<img src="../assets/alcopter.jpg" title="Alcopter Team" height=300px>
+<img src="../assets/alcopter.webp" title="Alcopter Team" height=300px>

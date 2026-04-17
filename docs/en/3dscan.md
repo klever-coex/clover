@@ -1,6 +1,6 @@
 # 3D-scanning drone
 
-<img src="../assets/3d_drone_1.jpg" title="3D-scanning drone">
+<img src="../assets/3d_drone_1.webp" title="3D-scanning drone">
 
 The project was created in collaboration with Texel inc. that develops 3D-scanners for scanning people.
 

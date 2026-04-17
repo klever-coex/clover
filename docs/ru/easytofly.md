@@ -37,7 +37,7 @@ Telegram: [@bart02](https://t.me/bart02), [@maerans](https://t.me/maerans)
 8. Разработка программной подсистемы АПК «Монитор состояния БПЛА».
 9. Разработка аппаратной составляющей АПК.
 
-![Лого](../assets/easytofly/logo.png)
+![Лого](../assets/easytofly/logo.webp)
 
 ## Выбор платформы
 
@@ -111,7 +111,7 @@ Telegram: [@bart02](https://t.me/bart02), [@maerans](https://t.me/maerans)
 
 ### Сборка системы из 4-х лазерных дальномеров
 
-![Общий вид](../assets/easytofly/sensors.jpg)
+![Общий вид](../assets/easytofly/sensors.webp)
 
 Вам понадобится:
 
@@ -122,7 +122,7 @@ Telegram: [@bart02](https://t.me/bart02), [@maerans](https://t.me/maerans)
 2. Припаять пины для установки Arduino Nano и датчиков на каждую из плат.
 3. Расположить платы как показано на развёртке.
 
-    <img src="../assets/easytofly/pcb_scan.jpg" width=400 alt="Развертка" class="center zoom">
+    <img src="../assets/easytofly/pcb_scan.webp" width=400 alt="Развертка" class="center zoom">
 
 4. Составить из плат параллелепипед.
 5. Спаять все платы между собой по соответствующим контактным группам.

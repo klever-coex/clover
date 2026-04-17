@@ -14,15 +14,15 @@ Timepad: https://copterexpress.timepad.ru/event/1017592/.
 
 При использовании полетного контроллера *COEX Pix* перед калибровкой датчиков вам стоит обратить внимание, что в графе *Autopilot orientation* вы должны выбрать параметр `ROTATION_ROLL_180_YAW_90`. Данную настройку требуется проводить при калибровке каждого из датчиков.
 
-<img src="../assets/autopilot_orientation.png" class="center" width=600>
+<img src="../assets/autopilot_orientation.webp" class="center" width=600>
 
 Этот параметр устанавливается для того, чтобы на программном уровне настроить ориентацию вашего *IMU* датчика находящегося на полетном контроллере.
 
-### Рекомендуемая версия образа
+<!-- ### Рекомендуемая версия образа
 
 Для Raspberry Pi версий до 3B+: [v0.18](https://github.com/CopterExpress/clover/releases/tag/v0.18)
 
-Для Raspberry Pi версии 4: [v0.19-alpha.1](https://github.com/CopterExpress/clover/releases/tag/v0.19-alpha.1)
+Для Raspberry Pi версии 4: [v0.19-alpha.1](https://github.com/CopterExpress/clover/releases/tag/v0.19-alpha.1) -->
 
 ### Ориентация камеры
 
@@ -58,7 +58,7 @@ Timepad: https://copterexpress.timepad.ru/event/1017592/.
 
 ### Проблема с navigate
 
-В образе 0.18 обнаружился баг из-за которого дрон может летать по точкам слишком быстро. Если у вас это происходит, поставьте в файле `~/catkin_ws/src/clever/clever/launch/clever.launch` параметр `nav_from_sp` в значение `false` таким образом:
+<!-- В образе 0.18 обнаружился баг из-за которого дрон может летать по точкам слишком быстро. Если у вас это происходит, поставьте в файле `~/catkin_ws/src/clever/clever/launch/clever.launch` параметр `nav_from_sp` в значение `false` таким образом: -->
 
 ```xml
 <!-- simplified offboard control -->

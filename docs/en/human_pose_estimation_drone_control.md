@@ -20,7 +20,7 @@ We used posenet from tensorflow.js as our human pose estimation module because i
 
 The image below is a visualization of our architecture for the project.
 
-![Architecture](../assets/human_pose_estimation_project_architecture.png)
+![Architecture](../assets/human_pose_estimation_project_architecture.webp)
 
 This figure is made from [here](https://www.draw.io/)
 
@@ -118,7 +118,7 @@ Or refresh the page if you already run it.
 
 ## Poses
 
-![Poses](../assets/human_pose_estimation_project_poses.jpg)
+![Poses](../assets/human_pose_estimation_project_poses.webp)
 
 Animation is created by [this](https://justsketchme.web.app/)
 

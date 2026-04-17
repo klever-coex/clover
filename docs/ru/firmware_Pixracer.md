@@ -1,7 +1,7 @@
 Прошивка полетного контроллера
 ===
 
-Pixhawk, Pixracer и [COEX Pix](coex_pix.md) можно прошить, используя QGroundControl или утилиты командной строки.  
+Pixhawk, Pixracer и COEX Pix можно прошить, используя QGroundControl или утилиты командной строки.  
 
 > **Caution** Данная инструкция подходит **только для полётных контроллеров Pixracer / COEX Pix / Pixhawk**.  
 > Если у вас **MicoAir743v2**, используйте документацию по прошивке PX4 или Betaflight для MicoAir743v2:  
@@ -9,7 +9,7 @@ Pixhawk, Pixracer и [COEX Pix](coex_pix.md) можно прошить, испо
 > [Прошивка Betaflight на MicoAir743v2](firmware_Betaflight_MicoAir743v2.md)
 
 <div align="center">
-  <img src="../assets/flight_controller_firmware/PixracerR15.png" width="350" class="zoom border center">
+  <img src="../assets/flight_controller_firmware/PixracerR15.webp" width="350" class="zoom border center">
   <br/>
   <sub>Pixracer R15 flight controller</sub>
 </div>
@@ -23,7 +23,8 @@ Pixhawk, Pixracer и [COEX Pix](coex_pix.md) можно прошить, испо
 <p>Последний стабильный релиз: <strong><a id="download-latest-release"></a></strong>.</p>
 
 <ul>
-<li>Скачать файл прошивки для COEX Pix и Pixracer (<strong>Клевер 4 / Клевер 3</strong>) – <a id="firmware-pixracer" href=""><code>px4fmu-v4_default.px4</code></a>.</li>
+<!-- <li>Скачать файл прошивки для COEX Pix и Pixracer (<strong>Клевер 4 / Клевер 3</strong>) – <a id="firmware-pixracer" href=""><code>px4fmu-v4_default.px4</code></a>.</li> -->
+<li>Скачать файл прошивки для COEX Pix и Pixracer (<strong>Клевер 4</strong>) – <a id="firmware-pixracer" href=""><code>px4fmu-v4_default.px4</code></a>.</li>
 <li>Скачать файл прошивки для Pixhawk (<strong>Клевер 2</strong>) – <a id="firmware-pixhawk" href=""><code>px4fmu-v2_lpe.px4</code></a>.</li>
 </ul>
 </div>
@@ -75,12 +76,13 @@ QGroundControl
 
 В названии файла прошивки кодируется информации о целевой плате и варианте сборки. Примеры:
 
-* `px4fmu-v4_default.px4` — прошивка для COEX Pix и Pixracer с EKF2 и LPE (**Клевер 3** / **Клевер 4**).
+<!-- * `px4fmu-v4_default.px4` — прошивка для COEX Pix и Pixracer с EKF2 и LPE (**Клевер 3** / **Клевер 4**). -->
+* `px4fmu-v4_default.px4` — прошивка для COEX Pix и Pixracer с EKF2 и LPE (**Клевер 4**).
 * `px4fmu-v2_lpe.px4` — прошивка для Pixhawk с LPE (**Клевер 2**).
 * `px4fmu-v2_default.px4` — прошивка для Pixhawk с EKF2.
 * `px4fmu-v3_default.px4` — прошивка для более новых версий Pixhawk (чип ревизии 3, см. илл. + Bootloader v5) с EKF2 и LPE.
 
-![STM revision](../assets/stmrev.jpg)
+![STM revision](../assets/stmrev.webp)
 
 > **Note** Для загрузки `px4fmu-v3_default.px4` может понадобиться использование команды `force_upload` из командной строки.
 

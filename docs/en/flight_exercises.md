@@ -2,7 +2,7 @@
 
 The following are the recommended exercises for novice pilots. Repeat each exercise as many times as necessary until you feel confident in it.
 
-> **Hint** In case there is a person nearby who can control a copter, use [trainer mode](trainer_mode.md).
+> **Hint** In case there is a person nearby who can control a copter, use trainer mode.
 
 <!---->
 

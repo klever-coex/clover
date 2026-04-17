@@ -4,7 +4,7 @@
 
 ## Team information
 
-<img src="../assets/djs-phoenix/1.png" width="300" class="center">
+<img src="../assets/djs-phoenix/1.webp" width="300" class="center">
 
 We are the DJS Phoenix, the official drone team of Dwarkadas. J. Sanghvi College of Engineering.
 
@@ -36,9 +36,9 @@ The drone's arms include programmable LEDs. By blinking in a relay pattern, thes
 
 The drone is equipped with sensors to maintain a safe distance in all direction and avoid obstacles.
 
-<img src="../assets/djs-phoenix/2.png" width="300" class="center">
+<img src="../assets/djs-phoenix/2.webp" width="300" class="center">
 
-<img src="../assets/djs-phoenix/3.png" class="center" alt="Screenshot (257)">
+<img src="../assets/djs-phoenix/3.webp" class="center" alt="Screenshot (257)">
 
 ### The potential outcomes
 

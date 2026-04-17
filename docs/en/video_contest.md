@@ -2,7 +2,7 @@
 
 Requirements:
 
-- the video contains the entire process of assembling and configuring the Clover 4.2 drone kit: from opening the box with components to flying the copter in Position mode using ArUco markers;
+- the video contains the entire process of assembling and configuring the Clover 4 CODE drone kit: from opening the box with components to flying the copter in Position mode using ArUco markers;
 - the video is uploaded to YouTube and is public accessible;
 - the video contains voice-over in English;
 - the video lasts from 6 to 60 minutes.

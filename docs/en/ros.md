@@ -50,14 +50,14 @@ Each topic has the a of messages it passes. ROS include a lot of standard messag
 |-|-|
 |[`std_msgs/Int64`](https://docs.ros.org/api/std_msgs/html/msg/Int64.html)|Integer number.|
 |[`std_msgs/Float64`](https://docs.ros.org/api/std_msgs/html/msg/Float64.html)|Double-precision floating-point number.|
-|[`std_msgs/String`](https://docs.ros.org/api/std_msgs/html/msg/String.html)|String.|
+|[`std_msgs/String`](https://docs.ros.org/en/noetic/api/std_msgs/html/msg/String.html)|String.|
 |[`geometry_msgs/PoseStamped`](https://docs.ros.org/api/geometry_msgs/html/msg/PoseStamped.html)|Position and orientation of an object in a given [coordinate system](frames.md) and a time stamp (widely used for passing the robot pose or some robot's part pose).|
 |[`geometry_msgs/TwistStamped`](https://docs.ros.org/api/geometry_msgs/html/msg/TwistStamped.html)|Linear and angular velocity of an object in a given coordinate system and a time stamp.|
 |[`sensor_msgs/Image`](https://docs.ros.org/api/sensor_msgs/html/msg/Image.html)|Image (see the [article on working with the camera](camera.md)).|
 
 > **Info** See the rest of standard message types in packages: [`common_msgs`](http://wiki.ros.org/common_msgs), [`std_msgs`](https://wiki.ros.org/std_msgs), [`geometry_msgs`](https://wiki.ros.org/geometry_msgs), [`sensor_msgs`](https://wiki.ros.org/sensor_msgs), and others.
 
-Example of publishing a message of type [`String`]((https://docs.ros.org/api/std_msgs/html/msg/String.html)) in a topic `/foo` in Python:
+Example of publishing a message of type [`String`](https://docs.ros.org/en/noetic/api/std_msgs/html/msg/String.html) in a topic `/foo` in Python:
 
 ```python
 from std_msgs.msg import String

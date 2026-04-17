@@ -28,30 +28,30 @@
 
 1. Импортируйте архив виртуальной машины в среду виртуализации. Для VMware Player используйте опцию **Open a Virtual Machine**:
 
-    ![Open dialog with clever-devel.ova selected](../assets/simulation_setup_vm/01_import_vm.png)
+    ![Open dialog with clever-devel.ova selected](../assets/simulation_setup_vm/01_import_vm.webp)
 
     > **Note** При импорте архива, скорее всего, появится окно с предупреждением о формате виртуальной машины:
-    ![Import failure dialog](../assets/simulation_setup_vm/02_import_failure.png)
+    ![Import failure dialog](../assets/simulation_setup_vm/02_import_failure.webp)
     Это предупреждение можно игнорировать и нажать кнопку **Retry**.
 
 2. Откройте окно настроек виртуальной машины и измените параметры для наилучшего соответствия основной системе:
 
     * увеличьте объём оперативной памяти, отводимый для виртуальной машины:
-    ![Increasing avaliable memory](../assets/simulation_setup_vm/03_max_memory.png)
+    ![Increasing avaliable memory](../assets/simulation_setup_vm/03_max_memory.webp)
     * увеличьте количество доступных процессорных ядер:
-    ![Increasing cpu cores](../assets/simulation_setup_vm/04_core_count.png)
+    ![Increasing cpu cores](../assets/simulation_setup_vm/04_core_count.webp)
     * включите 3D-ускорение:
-    ![Enabling 3D acceleration](../assets/simulation_setup_vm/05_3d_acceleration.png)
+    ![Enabling 3D acceleration](../assets/simulation_setup_vm/05_3d_acceleration.webp)
     * включите использование USB 2.0/3.0:
-    ![USB 3.0 controller](../assets/simulation_setup_vm/06_usb_3_0.png)
+    ![USB 3.0 controller](../assets/simulation_setup_vm/06_usb_3_0.webp)
     * опционально включите режим "мост" для виртуального сетевого адаптера:
-    ![Enabling bridge networking](../assets/simulation_setup_vm/07_bridge_networking.png)
+    ![Enabling bridge networking](../assets/simulation_setup_vm/07_bridge_networking.webp)
 
     > **Note** Режим "мост" может некорректно работать с некоторыми сетевыми адаптерами. Если в режиме "мост" вы не можете подключиться к дрону, используйте USB Wi-Fi-адаптеры, "проброшенные" в виртуальную машину.
 
 3. Запустите виртуальную машину. Возможно, при первом запуске справа появятся сообщения об отсутствии поддержки 3D-ускорения со стороны основной системы:
 
-    ![No 3D support from host](../assets/simulation_setup_vm/08_no_3d_acceleration.png)
+    ![No 3D support from host](../assets/simulation_setup_vm/08_no_3d_acceleration.webp)
 
     В этом случае убедитесь, что у вас установлены самые последние драйверы для видеокарты в основной системе. Если сообщения появляются при повторных запусках виртуальной машины, добавьте строку
 
@@ -63,6 +63,6 @@
 
 4. Настройте режим моста через настройки виртуальной машины (если используется VMware Player для Windows) или с помощью утилиты `vmware-netcfg` (если используется версия для Linux-дистрибутивов):
 
-    ![vmware-netcfg interface](../assets/simulation_setup_vm/09_netcfg.png)
+    ![vmware-netcfg interface](../assets/simulation_setup_vm/09_netcfg.webp)
 
     В списке сетей выберите `vmnet0`, ниже - режим *Bridged*, в выпадающем списке *Bridged to* - название беспроводного адаптера, с помощью которого будет производиться подключение к дрону.

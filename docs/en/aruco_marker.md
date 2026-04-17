@@ -1,6 +1,6 @@
 # ArUco marker detection
 
-> **Note** The following applies to [image versions](image.md) **0.22** and up. Older documentation is still available for [for version **0.20**](https://github.com/CopterExpress/clover/blob/v0.20/docs/en/aruco_marker.md).
+<!-- > **Note** The following applies to [image versions](image.md) **0.22** and up. Older documentation is still available for [for version **0.20**](https://github.com/CopterExpress/clover/blob/v0.20/docs/en/aruco_marker.md). -->
 
 <!-- -->
 
@@ -54,7 +54,7 @@ Each marker has its own coordinate systems. It is aligned as follows:
 * the **<font color=green>y</font>** axis points to the top side of the marker;
 * the **<font color=blue>z</font>** axis points outwards from the plane of the marker
 
-<img src="../assets/aruco-axis.png" width="300">
+<img src="../assets/aruco-axis.webp" width="300">
 
 ## Working with detected markers
 
