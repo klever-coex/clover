@@ -38,7 +38,7 @@ exit
 
 In graphical programs in Windows, you will periodically see window with similar warnings.
 
-<img src="../assets/ssh-keys-known_hosts-fingerprint.png" alt="Сохранение отпечатка в Windows" class="border center">
+<img src="../assets/ssh-keys-known_hosts-fingerprint.webp" alt="Сохранение отпечатка в Windows" class="border center">
 
 > **Hint** Windows 10 has a built-in SSH client that can be run from the command line, see the Microsoft usage guide [at this link](https://learn.microsoft.com/ru-ru/windows-server/administration/openssh/openssh_install_firstuse).
 
@@ -81,7 +81,7 @@ chmod 400 ~/.ssh/id_clover*
 
 ### Copying SSH key to Raspberry Pi
 
-After that [connect to Raspberry Pi via WiFi](wi fi.md) and continue to enter commands *on the laptop* to copy the key to the minicomputer:
+After that [connect to Raspberry Pi via WiFi](wifi.md) and continue to enter commands *on the laptop* to copy the key to the minicomputer:
 
 ```bash
 ssh-copy-id -i ~/.ssh/id_clover.pub pi@192.168.11.1

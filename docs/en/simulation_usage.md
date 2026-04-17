@@ -16,21 +16,21 @@ roslaunch clover_simulation simulator.launch
 
 This will launch Gazebo server and client, the PX4 SITL binary and Clover nodes. The terminal in which the command was run will display diagnostic messages from the nodes and PX4, and will accept input for the PX4 command interpreter:
 
-![Gazebo simulation screenshot](../assets/simulation_usage/01_running_gazebo.jpg)
+![Gazebo simulation screenshot](../assets/simulation_usage/01_running_gazebo.webp)
 
 You can use QGroundControl to configure the simulated drone parameters, plan missions (if GPS is simulated) and control the drone using a joystick:
 
-![Gazebo and QGC](../assets/simulation_usage/02_gazebo_qgc.jpg)
+![Gazebo and QGC](../assets/simulation_usage/02_gazebo_qgc.webp)
 
 You can also use [our simplified OFFBOARD control](simple_offboard.md) to control the drone, and traditional ROS GUI utilities like [rviz and rqt](rviz.md) to analyze the drone state:
 
-![Gazebo and RQT](../assets/simulation_usage/03_gazebo_rqt.jpg)
+![Gazebo and RQT](../assets/simulation_usage/03_gazebo_rqt.webp)
 
 ## Configuring the simulation
 
 The simulation can be configured by passing additional arguments to the `roslaunch` command or by changing the `~/catkin_ws/src/clover/clover_simulation/launch/simulator.launch` file. Nodes that provide [ArUco detection](aruco.md), [optical flow calculation](optical_flow.md) and other services can be configured by changing their respective `.launch` files, just like on a real drone.
 
-![vscode with simulator.launch open](../assets/simulation_usage/04_vscode_config.jpg)
+![vscode with simulator.launch open](../assets/simulation_usage/04_vscode_config.webp)
 
 ### Enabling GPS
 
@@ -81,7 +81,7 @@ Since v1.9 the PX4 SITL setup supports [setting the simulation speed](https://do
 
 You should set its value to the actual real time factor that you get with `throttling_camera`. The real time factor may be found in the Gazebo GUI window at the bottom:
 
-![Real Time Factor](../assets/simulation_usage/05_real_time_factor.png)
+![Real Time Factor](../assets/simulation_usage/05_real_time_factor.webp)
 
 In this example you should set `PX4_SIM_SPEED_FACTOR` to `0.42` when launching the simulation:
 
@@ -90,7 +90,7 @@ PX4_SIM_SPEED_FACTOR=0.42 roslaunch clover_simulation simulator.launch
 ```
 
 > **Note** If you are using the VM, it may be convenient to put the value in the Gazebo desktop shortcut. Right-click on the Gazebo icon, select "Properties..." and add `PX4_SIM_SPEED_FACTOR=0.42` to the Command field as follows:
-![Gazebo PX4 launcher command](../assets/simulation_usage/06_gazebo_px4_launcher.png)
+![Gazebo PX4 launcher command](../assets/simulation_usage/06_gazebo_px4_launcher.webp)
 
 ### Allocate more resources to the VM
 

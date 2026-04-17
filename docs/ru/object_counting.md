@@ -53,7 +53,7 @@ sofa, train, tvmonitor
 
 Итогом работы программы будет записанное видео с метками, отмечающими распознавание объектов и их номер, а также .png изображение, на котором показана информация о времени записи видео, количестве распознанных объектов в разное время.
 
-<img src="../assets/op.png" width="50%">
+<img src="../assets/op.webp" width="50%">
 
 По вопросам пишите в Telegram @mmkuznecov.
 
@@ -105,12 +105,12 @@ git clone https://github.com/mmkuznecov/HD_Link_crowd.git
 
 Оригинал изображения:
 
-<img src="../assets/CS.jpg" width="50%">
+<img src="../assets/CS.webp" width="50%">
 
 Тепловая карта плотности скопления людей:
 
-<img src="../assets/heatmap.jpg" width="50%">
+<img src="../assets/heatmap.webp" width="50%">
 
 В итоге получается примерно 1562 человека:
 
-<img src="../assets/screen.jpg" width="50%">
+<img src="../assets/screen.webp" width="50%">

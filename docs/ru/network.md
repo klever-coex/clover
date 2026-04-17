@@ -282,9 +282,9 @@ EOF
 1. [habr.com: Linux WiFi из командной строки с wpa_supplicant](https://habr.com/post/315960/)
 2. [wiki.archlinux.org: WPA supplicant (Русский)](https://wiki.archlinux.org/index.php/WPA_supplicant_%28%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%29)
 3. [blog.hoxnox.com: WiFi access point with wpa_supplicant](http://blog.hoxnox.com/gentoo/wifi-hotspot.html)
-4. [dmitrysnotes.ru: Raspberry Pi 3. Присвоение статического IP-адреса](http://dmitrysnotes.ru/raspberry-pi-3-prisvoenie-staticheskogo-ip-adresa)
+<!-- 4. [dmitrysnotes.ru: Raspberry Pi 3. Присвоение статического IP-адреса](http://dmitrysnotes.ru/raspberry-pi-3-prisvoenie-staticheskogo-ip-adresa) -->
 5. [thegeekdiary.com: Linux OS Service ‘network’](https://www.thegeekdiary.com/linux-os-service-network/)
-6. [frillip.com: Using your new Raspberry Pi 3 as a Wi-Fi access point with hostapt](https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/) (также здесь есть инструкция по настройке форвардинга для использования RPi в качестве шлюза для выхода в интернет)
+<!-- 6. [frillip.com: Using your new Raspberry Pi 3 as a Wi-Fi access point with hostapt](https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/) (также здесь есть инструкция по настройке форвардинга для использования RPi в качестве шлюза для выхода в интернет) -->
 7. [habr.com: Настраиваем ddns-сервер на GNU/Linux Debian 6](https://habr.com/sandbox/30433/) (Хорошая статья по настройке ddns-сервера на основе `bind` и `isc-dhcp-server`)
 8. [pro-gram.ru: Установка и настройка DHCP сервера на Ubuntu 16.04.](https://pro-gram.ru/dhcp-server-ubuntu.html) (Настройка isc-dhcp-server)
 9. [expert-orda.ru: Настройка DHCP-сервера на Ubuntu](http://expert-orda.ru/posts/liuxnewbie/125--dhcp-ubuntu) (Настройка isc-dhcp-server)

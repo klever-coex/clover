@@ -4,7 +4,7 @@ Safety tips
 Soldering
 -----
 
-<img src="../assets/stand.jpg" align=right width=200>
+<img src="../assets/stand.webp" align=right width=200>
 
 Soldering and tinning should be performed in specially prepared rooms. A ventilation system and a fume extractor are mandatory.
 
@@ -19,14 +19,14 @@ During soldering:
 
 1. Use the soldering iron grip to hold the soldering iron. The tip is very hot!
 
-    <img src="../assets/keep.png" width=300>
+    <img src="../assets/keep.webp" width=300>
 
 2. The soldering iron tip can easily damage insulation which may lead to short circuits.
 3. Use pliers, tweezers and other tools to safely handle wires and boards during soldering.
 4. Do not pull wires too hard during desoldering operations to avoid burns by molten solder.
 5. Use a special holder (a "helping hand") for soldering small components.
 
-    <img src="../assets/helphand.jpg" width=300>
+    <img src="../assets/helphand.webp" width=300>
 
 6. Don't hold the soldering iron by its wire or tip. Unplug the iron during breaks and after work.
 

@@ -1,6 +1,6 @@
 # Программирование
 
-<img src="../assets/programming.png" width=250 align=right>
+<img src="../assets/programming.webp" width=250 align=right>
 
 Платформа Клевера позволяет использовать [Raspberry Pi](raspberry.md) для того, чтобы запрограммировать автономный полет дрона. Чаще всего программа для автономного полета пишется на языке Python. Программа может [получать телеметрию](simple_offboard.md#get_telemetry) (заряд батареи, ориентацию, положение, скорости) и отправлять команды, например: [полететь в точку](simple_offboard.md#navigate), [установить ориентацию](simple_offboard.md#set_attitude), [установить угловую скорость](simple_offboard.md#set_rates).
 
@@ -107,5 +107,4 @@ land()
 * [работа со светодиодной лентой](leds.md);
 * [лазерный дальномер](laser.md);
 * [GPIO](gpio.md);
-* [ультразвуковой дальномер](sonar.md);
 * [камера](camera.md).

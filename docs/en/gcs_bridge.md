@@ -1,7 +1,7 @@
 Using QGroundControl via Wi-Fi
 ===
 
-![QGroundControl](../assets/qground.png)
+![QGroundControl](../assets/qground.webp)
 
 You can monitor, control, calibrate and configure the flight controller of the quadcopter using QGroundControl via Wi-Fi.
 This requires [connecting to Wi-Fi](wifi.md) of the `clover-xxxx` network.
@@ -25,7 +25,7 @@ Change parameter `gcs_bridge` in the launch file:
 
 Then in the QGroundControl program, choose Application Settings > Comm Links > Add. Create a connection with the following settings:
 
-![QGroundControl TCP connection](../assets/bridge_tcp.png)
+![QGroundControl TCP connection](../assets/bridge_tcp.webp)
 
 Then choose the created connection from the list of connections, and click "Connect".
 
@@ -51,7 +51,7 @@ Change parameter `gcs_bridge` in the launch file:
 
 Then in the QGroundControl program, choose Application Settings > Comm Links > Add. Create a connection with the following settings:
 
-![QGroundControl UDP connection](../assets/bridge_udp.png)
+![QGroundControl UDP connection](../assets/bridge_udp.webp)
 
 Then choose the created connection from the list of connections, and click "Connect".
 

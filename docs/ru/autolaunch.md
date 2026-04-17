@@ -1,7 +1,7 @@
 Автозапуск ПО
 ===
 
-> **Note** В версии образа **0.20** пакет и сервис `clever` был переименован в `clover`. Для более ранних версий см. документацию для версии [**0.19**](https://github.com/CopterExpress/clover/blob/v0.19/docs/ru/autolaunch.md).
+<!-- > **Note** В версии образа **0.20** пакет и сервис `clever` был переименован в `clover`. Для более ранних версий см. документацию для версии [**0.19**](https://github.com/CopterExpress/clover/blob/v0.19/docs/ru/autolaunch.md). -->
 
 systemd
 ---

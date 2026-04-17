@@ -8,12 +8,12 @@ Aerodynamics of the propeller
 
 The screw (propeller) rotates in place. With that, the air flows vertically downwards. This is one of the modes of the so-called axial screw airflow. On one of the blades, two small sections are marked: one (A) — closer to the rotation axis, the other (B) — at the end of the blade. During screw rotation, both sections will circumscribe concentric circles. It is clear that the length of the circle circumscribed by the element "B", and hence its speed relative to the air are greater than those of element "A". In other words, the speed of the blade element relative to the air depends on the distance to the rotation axis. The longer the distance, the greater the speed of the element. It is clear that at the axis of rotation, the speed will be zero, and at the end of the blade, it will be the maximum.
 
-![rotation](../assets/7_1.png)
+![rotation](../assets/7_1.webp)
 
 The blade cross section in this area has the shape of a streamlined profile. When air flows past this profile at the angle of incidence, the lifting force Y and the drag force X appear, which are calculated using special formulas. By breaking the blade into many small sections, one can determine their lifting forces and the drag forces, and by adding the appropriate forces of all sections, one can determine the lifting force and the drag force of one blade. (From the mathematical point of view, this operation is called integrating along the span of the blade). The lifting force (or the thrust) of the entire screw is obtained by multiplying the lifting force of one blade by the number of blades.
 The edge effect. The magnitude of the screw thrust is calculated by the method described above with a certain error, which is determined by several reasons. One of them is not considering the so-called edge effect. The edge effect is manifested in the fact that the air tends to equalize the pressure above the blade and under the blade by flowing over the edge of the blade.
 
-![rotation](../assets/7_2.png)
+![rotation](../assets/7_2.webp)
 
 In this case, flowing over occurs on both on outer and inner edges of the blade. And since the lifting force occurs due to the pressure difference on the top and the bottom surfaces of the blade, any equalization of these pressures causes the loss of the lifting force.
 
@@ -32,7 +32,7 @@ One should consider the following parameters:
 
 Building a quadcopter requires two pairs of bidirectional screws, building a hexacopter requires 3 pairs, etc.
 
-![rotation](../assets/7_3.png)
+![rotation](../assets/7_3.webp)
 
 5\. **Direction of screws rotation** - classic - two screws counterclockwise, the other two screws clockwise in quadcopters.
 6\. **Propellers workmanship quality** is also important. In the practice, it means that you should always balance the propellers to minimize vibration, which gradually destructs mechanical parts and drives periscopes crazy, deteriorating the flight properties of the quadcopter.
@@ -58,7 +58,7 @@ So, we have to choose a motor and a propeller. How can one do it without using c
 
 For example, let's take motor X2204S 2300kv from the SunnySky company. Go to the manufacturer's website, and find the motor. The description contains a table for choosing the propeller (prop).
 
-![rotation](../assets/7_4.png)
+![rotation](../assets/7_4.webp)
 
 ### Reference questions
 

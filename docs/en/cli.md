@@ -78,7 +78,7 @@ You can use **nano** to edit files on the Raspberry Pi. It is one of the more us
    nano ~/catkin_ws/src/clover/clover/launch/clover.launch
    ```
 
-   <img src="../assets/nano.png" alt="Editing files in nano" data-action="zoom">
+   <img src="../assets/nano.webp" alt="Editing files in nano" data-action="zoom">
 2. Edit the file.
 3. Press `Ctrl`+`X`, `Y`, `Enter` to save your file and exit.
 4. Restart the `clover` service if you've changed .launch files:

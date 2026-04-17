@@ -4,7 +4,7 @@
 
 **QGroundControl** – программное обеспечение, необходимое для прошивки, настройки и калибровки полетного контроллера Клевера.
 
-<img src="../assets/qgc.png" alt="QGroundControl" class="zoom">
+<img src="../assets/qgc.webp" alt="QGroundControl" class="zoom">
 
 Скачайте и установите установочный файл для Windows/Linux/macOS с [официального сайта QGroundControl](http://qgroundcontrol.com/downloads/). В случае необходимости согласитесь с установкой дополнительных драйверов при установке.
 
@@ -25,7 +25,7 @@
 4. Подключите полетный контроллер к компьютеру по USB.
 5. Выберите в появившемся меню справа *PX4 Flight Stack*.
 
-   <img src="../assets/qgc-firmware.png" alt="QGroundControl firmware upload" class="zoom">
+   <img src="../assets/qgc-firmware.webp" alt="QGroundControl firmware upload" class="zoom">
 
 6. Для выбора и загрузки файла прошивки:
 
@@ -42,7 +42,7 @@
 
 > **Hint** Все дальнейшие настройки и калибровки полетного контроллера могут быть выполнены без проводов с применением [доступа к полетному контроллеру по Wi-Fi через Raspberry Pi](gcs_bridge.md).
 
-<img src="../assets/qgc-requires-setup.png" alt="QGroundControl overview" class="zoom">
+<img src="../assets/qgc-requires-setup.webp" alt="QGroundControl overview" class="zoom">
 
 1. Параметры, нуждающиеся в настройке: *Airframe*, *Radio*, *Sensors*, *Flight Modes*.
 2. Текущая прошивка контроллера.
@@ -51,7 +51,7 @@
 
 ### Выбор рамы
 
-<img src="../assets/qgc-frame-apply-clover4.png" alt="QGroundControl frame selection" class="zoom">
+<img src="../assets/qgc-frame-apply-clover4.webp" alt="QGroundControl frame selection" class="zoom">
 
 1. Выберите меню *Airframe*.
 2. Выберите тип рамы *Quadrotor*.
@@ -63,7 +63,7 @@
 
 Для настройки параметров полетного контроллера войдите во вкладку *Vehicle Configuration* и выберите меню *Parameters*. Вы можете использовать поле *Search* для поиска параметров по имени. Рекомендуемые параметры для Клевера приведены в дальнейшей документации.
 
-<img src="../assets/qgc-parameters.png" alt="QGroundControl parameters" class="zoom">
+<img src="../assets/qgc-parameters.webp" alt="QGroundControl parameters" class="zoom">
 
 После установки параметра необходимо нажать кнопку *Save*. При необходимости – перезагрузить полетный контроллер, нажав кнопку *Tools*, затем *Reboot vehicle*.
 

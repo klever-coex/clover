@@ -58,11 +58,11 @@ for i in os.listdir('faces/'):
 
 ***Дополнение: все изображения хранятся в папке faces в формате name.jpg***
 
-<img src="../assets/screenshot.jpeg" width="50%">
+<img src="../assets/screenshot.webp" width="50%">
 
-<img src="../assets/Mikhail.jpg" width="30%">
+<img src="../assets/Mikhail.webp" width="30%">
 
-<img src="../assets/Timofey.jpg" width="30%">
+<img src="../assets/Timofey.webp" width="30%">
 
 Инициализируем некоторые переменные:
 
@@ -103,9 +103,9 @@ python recog.py
 
 И на выходе:
 
-<img src="../assets/Mikhail_output.jpg" width="50%">
+<img src="../assets/Mikhail_output.webp" width="50%">
 
-<img src="../assets/Timofey_output.jpg" width="50%">
+<img src="../assets/Timofey_output.webp" width="50%">
 
 ## Возможные трудности
 
@@ -159,5 +159,5 @@ frame=cv2.resize(frame,(0,0), fx=(width_or/width_unz),fy=(height_or/height_unz))
 
 Благодаря этому можно значительно повысить точность распознавания, т.к. обрабатываемое изображение будет уже не так сильно искажено.
 
-<img src="../assets/misha_calib.jpg" width="50%">
-<img src="../assets/tim_calib.jpg" width="50%">
+<img src="../assets/misha_calib.webp" width="50%">
+<img src="../assets/tim_calib.webp" width="50%">

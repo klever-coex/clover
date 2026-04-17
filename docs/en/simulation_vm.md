@@ -26,30 +26,30 @@ Make sure that you have hardware virtualization enabled in your BIOS/UEFI (it ma
 
 1. Import the OVA archive into your virtualization environment. Use the **Open a Virtual Machine** option in VMware Player:
 
-    ![Open dialog with clever-devel.ova selected](../assets/simulation_setup_vm/01_import_vm.png)
+    ![Open dialog with clever-devel.ova selected](../assets/simulation_setup_vm/01_import_vm.webp)
 
     > **Note** You may see a dialog box with a warning about the VM format:
-    ![Import failure dialog](../assets/simulation_setup_vm/02_import_failure.png)
+    ![Import failure dialog](../assets/simulation_setup_vm/02_import_failure.webp)
     You can safely ignore the warning and press **Retry**.
 
 2. Right-click on the VM name and select **Virtual Machine Settings**. In the new window, set the following parameters:
 
     * increase the amount of memory available to the virtual machine (a good rule of thumb is 2048 MB per CPU core, but no less than 4 GB):
-    ![Increasing available memory](../assets/simulation_setup_vm/03_max_memory.png)
+    ![Increasing available memory](../assets/simulation_setup_vm/03_max_memory.webp)
     * increase the amount available CPU cores:
-    ![Increasing cpu cores](../assets/simulation_setup_vm/04_core_count.png)
+    ![Increasing cpu cores](../assets/simulation_setup_vm/04_core_count.webp)
     * enable 3D acceleration:
-    ![Enabling 3D acceleration](../assets/simulation_setup_vm/05_3d_acceleration.png)
+    ![Enabling 3D acceleration](../assets/simulation_setup_vm/05_3d_acceleration.webp)
     * enable USB 2.0/3.0 controller  (if you plan to connect external devices to the VM):
-    ![USB 3.0 controller](../assets/simulation_setup_vm/06_usb_3_0.png)
+    ![USB 3.0 controller](../assets/simulation_setup_vm/06_usb_3_0.webp)
     * optionally enable the "bridged" network connection (if you plan to connect to a real drone):
-    ![Enabling bridge networking](../assets/simulation_setup_vm/07_bridge_networking.png)
+    ![Enabling bridge networking](../assets/simulation_setup_vm/07_bridge_networking.webp)
 
     > **Note** Some host network adapters may not work well with the bridged network. Consider using external USB Wi-Fi adapters managed by your VM to connect to a real drone.
 
 3. "Power on" the virtual machine. You may see a warning message about your host system not providing 3D acceleration:
 
-    ![No 3D support from host](../assets/simulation_setup_vm/08_no_3d_acceleration.png)
+    ![No 3D support from host](../assets/simulation_setup_vm/08_no_3d_acceleration.webp)
 
     Make sure you have the latest GPU drivers for your host system. If the warnings persist, add the following line to `clover-devel.vmx` (actual file name may differ based on the VM name):
 
@@ -61,6 +61,6 @@ Make sure that you have hardware virtualization enabled in your BIOS/UEFI (it ma
 
 4. (Bridged networking only) Set up network bridge configuration in VM settings or using `vmware-netcfg` utility (in Linux):
 
-    ![vmware-netcfg interface](../assets/simulation_setup_vm/09_netcfg.png)
+    ![vmware-netcfg interface](../assets/simulation_setup_vm/09_netcfg.webp)
 
     Select `vmnet0` in the networks list, set it to *Bridged*, and choose the adapter you are planning to use to connect to drone in the drop-down menu.

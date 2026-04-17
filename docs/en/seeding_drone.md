@@ -12,7 +12,7 @@ Since there are a lot of dangerous and difficult-to-reach landsides for humans t
 
 Seed-firing drones will, as the name suggests, fire seeds into fertile soil to allow millions of trees to grow back after being cut down for industrial use. If the rate of planting exceeds the rate of cutting, eventually we will restore the trees we once felled.
 
-<img src="../assets/seeding_drone/image.jpg" alt="" width="400px" class="center"/>
+<img src="../assets/seeding_drone/image.webp" alt="" width="400px" class="center"/>
 
 ## Our Aim
 
@@ -25,7 +25,7 @@ We achieved to do small seeding missions but we faced some problem about autonom
 We coated our battery to protect it from cold weather, seeding missions need to start in winter since apple seeds need to stay in a cold place for some time to break dormancy.
 
 - [Seed capsules](#seed-capsules)
-- [How to assemble seeding mechanism to clover 4.2 drone](#how-to-assemble-seeding-mechanism-to-clover-42-drone)
+- [How to assemble seeding mechanism to Clover 4 CODE drone](#how-to-assemble-seeding-mechanism-to-clover-4-code-drone)
 - [How to control the seeding mechanism](#how-to-control-the-seeding-mechanism)
 - [Programming](#programming)
 
@@ -39,7 +39,7 @@ Link for the all files used in this project: [https://github.com/Sahinysf/TreeSe
 
 In southern Japan, the Japanese farmer and philosopher Masanobu Fukuoka invented a seed ball planting technique. The method is regarded as a natural farming technique that requires no machines, no chemicals and very little weeding. By the use of seed balls, land is cultivated without any soil preparation.
 
-<img src="../assets/seeding_drone/seedcapsules/1.jpg" width="250px" class="center"/>
+<img src="../assets/seeding_drone/seedcapsules/1.webp" width="250px" class="center"/>
 
 Advantages of seed balls:
 
@@ -73,7 +73,7 @@ Steps for making seed balls:
 6. Insert seeds (1 to 2 seeds per seed ball for permanent trees such as mahogany, sandalwood, orange, moringa…) (± 5 seeds per seed ball for vegetables, flowers, grasses, clovers…)
 7. Dry the seed balls for one to two days in a shaded area, if properly dry, the seed balls will be protected from external predators such as chickens, birds, rats…
 
-<img src="../assets/seeding_drone/seedcapsules/3.jpg" width="250px" class="center"/>
+<img src="../assets/seeding_drone/seedcapsules/3.webp" width="250px" class="center"/>
 
 Second technique - paper seed capsules.
 
@@ -95,7 +95,7 @@ Steps for making paper seed balls:
 4. Add seeds and give round shape.
 5. Let it dry overnight.
 
-<img src="../assets/seeding_drone/seedcapsules/2.jpg" width="400px" class="center"/>
+<img src="../assets/seeding_drone/seedcapsules/2.webp" width="400px" class="center"/>
 
 Advantages of paper balls:
 
@@ -107,47 +107,47 @@ REREFENCES
 <https://web.archive.org/web/20090115211020/http://www.rmaf.org.ph/Awardees/Biography/BiographyFukuokaMas.htm>
 <http://www.guerrillagardening.org/ggseedbombs.html>
 
-## How to assemble seeding mechanism to Clover 4.2 drone
+## How to assemble seeding mechanism to Clover 4 CODE drone
 
 ### How to assemble seeding mechanism
 
-After finishing step 4, at section Installing guard of Clover 4.2 assembly.
+After finishing step 4, at section Installing guard of Clover 4 CODE assembly.
 
 1. Install the Lower Tank Holders to top Deck mount and fix with the M3x8 screws.
 
-    <img src="../assets/seeding_drone/mechanismpictures/1.PNG" width="400px" class="center"/>
+    <img src="../assets/seeding_drone/mechanismpictures/1.webp" width="400px" class="center"/>
 
 2. Install Nylon rack(40 mm) to 4 sides of the Deck mount.
 
-    <img src="../assets/seeding_drone/mechanismpictures/2.PNG" width="400px" class="center"/>
+    <img src="../assets/seeding_drone/mechanismpictures/2.webp" width="400px" class="center"/>
 
 3. Install the Grab deck and fix with the M3x8 screws.
 
-    <img src="../assets/seeding_drone/mechanismpictures/3.PNG" width="400px" class="center"/>
+    <img src="../assets/seeding_drone/mechanismpictures/3.webp" width="400px" class="center"/>
 
 4. Install the Upper Tank Holders to top Grab mount and fix with the M3x8 screws.
 
-    <img src="../assets/seeding_drone/mechanismpictures/4.PNG" width="400px" class="center"/>
+    <img src="../assets/seeding_drone/mechanismpictures/4.webp" width="400px" class="center"/>
 
 5. Connect the Tanks carefully to Tank Holders.
 
-    <img src="../assets/seeding_drone/mechanismpictures/5.PNG" width="400px" class="center"/>
+    <img src="../assets/seeding_drone/mechanismpictures/5.webp" width="400px" class="center"/>
 
 6. Connect SG90 servo motors to Tank using zip tie.
 
 Final view of seeding drone:
 
-<img src="../assets/seeding_drone/mechanismpictures/6.jpg" alt="" width="400px" class="center"/>
+<img src="../assets/seeding_drone/mechanismpictures/6.webp" alt="" width="400px" class="center"/>
 
 ### GPS Module
 
 We installed the GPS Module to the top using 2 Nylon rack (40 mm):
 
-<img src="../assets/seeding_drone/mechanismpictures/7.jpg" alt="" width="400px" class="center"/>
+<img src="../assets/seeding_drone/mechanismpictures/7.webp" alt="" width="400px" class="center"/>
 
 We coated the battery to protect it from the cold weather:
 
-<img src="../assets/seeding_drone/mechanismpictures/8.jpg" alt="" width="400px" class="center"/>
+<img src="../assets/seeding_drone/mechanismpictures/8.webp" alt="" width="400px" class="center"/>
 
 ## How to control the seeding mechanism
 
@@ -159,7 +159,7 @@ Electronic part of seed dropping mechanism consists of:
 
 Servo motor’s signal pins are connected to Raspberry Pi’s Hardware PWM pins 32 and 33, and power is taken from Power Distribution Board (5 V).
 
-<img src="../assets/seeding_drone/electronicspictures/electronic1.png" alt="" width="400px" class="center"/>
+<img src="../assets/seeding_drone/electronicspictures/electronic1.webp" alt="" width="400px" class="center"/>
 
 ### Explanation of code for controlling servo motors
 
@@ -173,7 +173,7 @@ What we get is:
 - 90° rotation angle or 2ms Duty Cycle => 2/20*100% = 10% Duty Cycle.
 - 0° rotation angle or 1,5ms Duty Cycle => 1,5/20*100% = 7,5% Duty Cycle.
 
-<img src="../assets/seeding_drone/electronicspictures/electronic2.png" alt="" width="400px" class="center"/>
+<img src="../assets/seeding_drone/electronicspictures/electronic2.webp" alt="" width="400px" class="center"/>
 
 We’ll do this by using the RPi.GPIO library and writing Python code on the Raspberry Pi.
 
@@ -319,4 +319,4 @@ GPIO.cleanup()
 
 Special thanks to International Ala-Too University for funding the Clover 4 kits.
 
-<img src="../assets/seeding_drone/ala-too.png">
+<img src="../assets/seeding_drone/ala-too.webp">

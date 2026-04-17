@@ -2,7 +2,7 @@
 
 Computer vision is becoming more and more widespread. Often, computer vision algorithms are not precise and obtain distorted images from the camera, which is especially true for fisheye cameras.
 
-![img](../assets/img1.jpg)
+![img](../assets/img1.webp)
 
 > The image is "rounded" closer to the edge.
 
@@ -49,7 +49,7 @@ python setup.py install
 You will have to prepare a calibration target. It looks like a chessboard. The file is available for downloading [here](https://www.oreilly.com/library/view/learning-opencv-3/9781491937983/assets/lcv3_ac01.png).
 Glue a printed target to any solid surface. Count the number of intersections on the board lengthwise and widthwise, measure the size of a cell (mm).
 
-![img](../assets/chessboard.jpg)
+![img](../assets/chessboard.webp)
 
 Turn on Clover and connect to its Wi-Fi.
 
@@ -95,7 +95,7 @@ help, catch (key: Enter), delete, restart, stop, finish
 
 To calibrate the camera, make at least 25 photos of the chessboard at various angles.
 
-![img](../assets/calibration.jpg)
+![img](../assets/calibration.webp)
 
 To make a photo, enter command ***catch***.
 
@@ -162,15 +162,15 @@ The function returns a cv2 array, into which the corrected image is coded.
 
 Source images:
 
-![img](../assets/img1.jpg)
+![img](../assets/img1.webp)
 
-![img](../assets/img2.jpg)
+![img](../assets/img2.webp)
 
 Corrected images:
 
-![img](../assets/calibresult.jpg)
+![img](../assets/calibresult.webp)
 
-![img](../assets/calibresult1.jpg)
+![img](../assets/calibresult1.webp)
 
 ## An example of usage
 
@@ -205,24 +205,24 @@ Connect to Raspberry Pi via SFTP:
 
 > Password: ***raspberry***
 
-![img](../assets/wcp1.png)
+![img](../assets/wcp1.webp)
 
 Press “Enter”. Go to ***/home/pi/catkin_ws/src/clever/clever/camera_info/***, and copy the calibration .yaml file to this folder:
 
-![img](../assets/wcp2.jpg)
+![img](../assets/wcp2.webp)
 
 Now we have to select this file in ArUco configuration. Connection via SSH is used for this purpose. This example, PuTTY program is used.
 
 Connect to Raspberry Pi via SSH:
 
-![img](../assets/pty1.jpg)
+![img](../assets/pty1.webp)
 
 Log in with username ***pi*** and password ***raspberry***, go to directory ***/home/pi/catkin_ws/src/clever/clever/launch*** and start editing configuration ***main_camera.launch***:
 
-![img](../assets/pty2.jpg)
+![img](../assets/pty2.webp)
 
 In line ***camera node***, change parameter ***camera_info*** to ***camera_info.yaml***:
 
-![img](../assets/pty3.jpg)
+![img](../assets/pty3.webp)
 
 > Don't forget to change camera resolution.

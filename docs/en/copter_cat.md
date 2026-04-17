@@ -67,8 +67,8 @@ At the stage of the project: debugging and demonstration of capabilities. After:
 
 ## Connectors and jumpers
 
-![](../assets/copter_cat/board_top_nums.png)
-![](../assets/copter_cat/board_bottom_nums.png)
+![](../assets/copter_cat/board_top_nums.webp)
+![](../assets/copter_cat/board_bottom_nums.webp)
 
 1. GPIO ESP32 4 I/O ports for connecting external equipment.
 2. RPi CM4 connectors.

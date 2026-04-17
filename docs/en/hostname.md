@@ -1,6 +1,6 @@
 # Hostname
 
-> **Note** The following applies to [image version](image.md) **0.20** and up. See [previous version of the article](https://github.com/CopterExpress/clover/blob/v0.19/docs/en/hostname.md) for older images.
+<!-- > **Note** The following applies to [image version](image.md) **0.20** and up. See [previous version of the article](https://github.com/CopterExpress/clover/blob/v0.19/docs/en/hostname.md) for older images. -->
 
 [By default](image.md) the hostname of the Clover drone is set to `clover-xxxx`, where `xxxx` are random numbers. These numbers are the same as in the [Wi-Fi SSID](wifi.md).
 

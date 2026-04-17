@@ -282,9 +282,9 @@ EOF
 1. [habr.com Linux WiFi from the command line with wpa_supplicant](https://habr.com/post/315960/)
 2. [wiki.archlinux.org WPA supplicant (Russian)](https://wiki.archlinux.org/index.php/WPA_supplicant_%28%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%29)
 3. [blog.hoxnox.com: WiFi access point with wpa_supplicant](http://blog.hoxnox.com/gentoo/wifi-hotspot.html)
-4. [dmitrysnotes.ru: Raspberry Pi 3. Assigning a static IP addresses](http://dmitrysnotes.ru/raspberry-pi-3-prisvoenie-staticheskogo-ip-adresa)
+<!-- 4. [dmitrysnotes.ru: Raspberry Pi 3. Assigning a static IP addresses](http://dmitrysnotes.ru/raspberry-pi-3-prisvoenie-staticheskogo-ip-adresa) -->
 5. [thegeekdiary.com: Linux OS Service ‘network’](https://www.thegeekdiary.com/linux-os-service-network/)
-6. [frillip.com: Using your new Raspberry Pi 3 as a Wi-Fi access point with hostapt](https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/) (it also contains instructions for setting up forwarding for using RPi as an Internet gateway)
+<!-- 6. [frillip.com: Using your new Raspberry Pi 3 as a Wi-Fi access point with hostapt](https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/) (it also contains instructions for setting up forwarding for using RPi as an Internet gateway) -->
 7. [habr.com: Configuring a ddns server on a GNU/Linux Debian 6](https://habr.com/sandbox/30433/) (Good article on configuring a ddns server based on `bind` and `isc-dhcp-server`)
 8. [pro-gram.ru to: Setting up and configuring a DHCP server in Ubuntu 16.04.](https://pro-gram.ru/dhcp-server-ubuntu.html) (setup isc-dhcp-server)
 9. [expert-orda.ru: Configuring a DHCP server in Ubuntu](http://expert-orda.ru/posts/liuxnewbie/125--dhcp-ubuntu) (setup isc-dhcp-server)

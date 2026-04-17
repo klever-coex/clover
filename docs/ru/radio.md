@@ -3,16 +3,13 @@
 ## Содержание
 1. [Обзор аппаратуры](#обзор-аппаратуры)
 2. [Настройка аппаратуры](#настройка-аппаратуры)
-3. [Создание модели дрона](#создание-модели-дрона)
-4. [Загрузка модели](#загрузка-модели)
-5. [Сопряжение аппаратуры управления с приемником](#сопряжение-аппаратуры-управления-с-приемником)
-6. [Сопряжение аппаратуры управления с приемником через Bind Phrase](#сопряжение-аппаратуры-управления-с-приемником-через-bind-phrase)
+3. [Сопряжение аппаратуры управления с приемником](#сопряжение-аппаратуры-управления-с-приемником)
 
 ## Обзор аппаратуры
 
-<div align="center"><img src="../assets/radio/rc_pocket_front_part.png" width=900 class="zoom border center"></div>
+<div align="center"><img src="../assets/radio/rc_pocket_front_part.webp" width=900 class="zoom border center"><p>Рисунок 1 – Аппаратура управления, вид спереди</p></div>
 
-<div align="center"><img src="../assets/radio/rc_pocket_back_part.png" width=900 class="zoom border center"></div>
+<div align="center"><img src="../assets/radio/rc_pocket_back_part.webp" width=900 class="zoom border center"><p>Рисунок 2 – Аппаратура управления, вид сзади</p></div>
 
 ## Настройка аппаратуры
 
@@ -21,134 +18,34 @@
 3. Наденьте резиновые накладки обратно.
 4. Включите аппаратуру, зажав кнопку **POWER**.
 
-> **Caution** Если на экране аппаратуры появляются сообщения с предупреждением (картинка WARN), тогда проверьте положение тумблеров и стика газа (Throttle), они должны быть в нулевом положении.  
+> **Caution** Если на экране аппаратуры появляются предупреждения, проверьте положение тумблеров и стика газа (Throttle). Перед включением они должны быть в нулевом положении.
 
-<div align="center"><img src="../assets/radio/rc_pocket.png" width=700 class="zoom border center"></div>
+<div align="center"><img src="../assets/radio/warn.webp" width=350 class="zoom border center"><p>Рисунок 3 – Предупреждение при неверном положении стиков или тумблеров</p></div>
 
-<div align="center"><img src="../assets/radio/main_menu_no_signal.jpg" width=350 class="zoom border center"></div>
+После установки тумблеров и стиков в нулевое положение вы попадете в главное меню.
 
-## Создание модели дрона
-
-1. Нажмите кнопку **MDL**.
-2. Выберите пустое поле и зажмите **колесо (энкодер)**.
-
-    <div align="center"><img src="../assets/radio/steps_model/step_1.jpg" width=350 class="zoom border center"></div>
-
-3. Выберите пункт **CREATE MODEL**.
-4. Нажмите кнопку **PAGE >**.
-5. С помощью **колеса (энкодера)** выберите пункт **«Model name»** и дайте имя вашему дрону.
-
-    <div align="center"><img src="../assets/radio/steps_model/step_2.jpg" width=350 class="zoom border center"></div>
-
-6. Вернитесь в меню с помощью кнопки **RTN**.
-7. С помощью **колеса (энкодера)** спуститесь ниже и включите внутренний передатчик сигнала.
-
-  <div align="center">
-    <img src="../assets/radio/steps_model/step_3.jpg" width=350 class="zoom border center">
-    <img src="../assets/radio/steps_model/step_4.jpg" width=350 class="zoom border center">
-  </div>
-
-8. Перейдите на страницу **MIXES** и включите дополнительные свитчи на аппаратуре:
-
-  <div align="center">
-    <img src="../assets/radio/steps_model/step_6.jpg" width=350 class="zoom border center">
-    <img src="../assets/radio/steps_model/step_7.jpg" width=350 class="zoom border center">
-  </div>
-   <div align="center"><img src="../assets/radio/steps_model/step_5.jpg" width=350 class="zoom border center"></div>
-
-9. У вас должны быть настроены все свитчи от SA до S1, после чего нажмите кнопку **RTN**. На этом основная настройка модели дрона закончена.
-
-## Загрузка модели
-
-1. Скачайте файл модели дрона на ПК [`model05.yml`](https://drive.google.com/file/d/19Ab9sWPvaOvIavkEXPXzDXCRajpBcO7e/view?usp=sharing).
-2. Включите аппаратуру > подключите кабель type-C в верхний USB порт > выберите в меню вариант подключения **USB Storage (SD)**.
-3. В появившемся окне перейдите в папку **MODELS** и скопируйте в неё файл `model05.yml`.
-
-    <div align="center"><img src="../assets/radio/steps_model/step_8.png"  height=300 class="zoom border center"><img src="../assets/radio/steps_model/step_9.png" height=300 class="zoom border center"></div>
+<div align="center"><img src="../assets/radio/main_menu_no_signal.webp" width=350 class="zoom border center"><p>Рисунок 4 – Главное меню аппаратуры без связи с приемником</p></div>
 
 ## Сопряжение аппаратуры управления с приемником
 
 1. Переведите приемник в режим **bind**, трижды подключив и отключив питание полетного контроллера, к которому подключен приемник ELRS.
 
-  > **Note** При переходе приемника в режим сопряжения, светодиод на приемнике начнет **мигать дважды с паузой**.
+> **Note** При переходе приемника в режим сопряжения светодиод на приемнике начнет мигать дважды с паузой.
 
-2. Нажмите кнопку **SYS** и перейдите в меню **ExpressLRS**.
+2. На аппаратуре нажмите кнопку **SYS** и перейдите в меню **ExpressLRS**, как показано на рисунке 5.
 
-    <div align="center"><img src="../assets/radio/rx/elrs_step_1.jpg" width=350 class="zoom border center"></div>
+<div align="center"><img src="../assets/radio/rx/elrs_step_1.webp" width=350 class="zoom border center"><p>Рисунок 5 – Переход в меню ExpressLRS</p></div>
 
-3. Выставьте **TX Power** на **100mW**.
+3. Установите **TX Power** в значение **100mW**, как показано на рисунке 6.
 
-    <div align="center"><img src="../assets/radio/rx/elrs_step_2.jpg" width=350 class="zoom border center"></div>
+<div align="center"><img src="../assets/radio/rx/elrs_step_2.webp" width=350 class="zoom border center"><p>Рисунок 6 – Установка мощности передатчика 100mW</p></div>
 
-4. Нажмите кнопку **bind**, дождитесь сопряжения.
+4. Нажмите кнопку **Bind** и дождитесь завершения сопряжения, как показано на рисунке 7.
 
-    <div align="center"><img src="../assets/radio/rx/elrs_step_3.jpg" width=350 class="zoom border center"><img src="../assets/radio/rx/elrs_bind.jpg" width=350 class="zoom border center"></div>
+<div align="center"><img src="../assets/radio/rx/elrs_step_3.webp" width=350 class="zoom border center"><img src="../assets/radio/rx/elrs_bind.webp" width=350 class="zoom border center"><p>Рисунок 7 – Запуск сопряжения в меню ExpressLRS</p></div>
 
-5. После чего зажмите кнопку **RTN**, и в основном меню появится индикатор связи с приемником.
+5. Нажмите кнопку **RTN**. В основном меню появится индикатор связи с приемником, как на рисунке 8.
 
-    <div align="center"><img src="../assets/radio/main_menu.jpg" width=350 class="zoom border center"></div>
+<div align="center"><img src="../assets/radio/main_menu.webp" width=350 class="zoom border center"><p>Рисунок 8 – Главное меню аппаратуры после успешного сопряжения</p></div>
 
-## Сопряжение аппаратуры управления с приемником через Bind Phrase
-
-### Настройка аппаратуры (передатчика)
-
-1. Включите аппаратуру, зажав кнопку **POWER**.
-2. Нажмите кнопку **SYS** и перейдите в меню **ExpressLRS**.
-
-    <div align="center"><img src="../assets/radio/rx/elrs_step_1.jpg" width=350 class="zoom border center"></div>
-
-3. Перейдите во вкладку **WiFi Connectivity** и активируйте подключение **Enable WiFi**.
-
-  <div align="center">
-    <img src="../assets/radio/bind_phrase/elrs_step_1.jpg" width=350 class="zoom border center">
-  </div>
-  <div align="center">
-    <img src="../assets/radio/bind_phrase/elrs_step_2.jpg" width=350 class="zoom border center">
-  </div>
-  <div align="center">
-    <img src="../assets/radio/bind_phrase/elrs_step_3.jpg" width=350 class="zoom border center">
-  </div>
-
-4. Подключитесь с компьютера или смартфона к появившейся сети **ExpressLRS TX**. Пароль по умолчанию: **expresslrs**.
-
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_step_4.png" width=350 class="zoom border center"></div>
-
-5. Откройте браузер и перейдите по адресу `10.0.0.1`.
-
-    > **Note** **Обратите внимание на версию прошивки:** если она меньше 3.3.1, то её следует обновить через [ExpressLRS Web Flasher](https://expresslrs.github.io/web-flasher/).
-
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_logo_tx.png" width=350 class="zoom border center"></div>
-
-6. Введите уникальную **Binding Phrase** и нажмите **SAVE**.
-
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_settings.png" width=700 class="zoom border center"></div>
-
-7. В появившемся окне нажмите кнопку **REBOOT**.
-
-    <div align="center"><img src="../assets/radio/bind_phrase/reboot.png" width=350 class="zoom border center"></div>
-
-### Настройка приемника
-
-1. Переведите приемник в режим **WiFi**, подав питание на полетный контроллер, к которому подключен приемник ELRS и подождав 60 секунд, после чего приемник будет непрерывно моргать.
-
-2. Подключитесь с компьютера или смартфона к появившейся сети **ExpressLRS RX**. Пароль по умолчанию: **expresslrs**.
-
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_step_5.png" width=350 class="zoom border center"></div>
-
-3. Откройте браузер и перейдите по адресу `10.0.0.1`.
-
-    > **Note** **Обратите внимание** на версию прошивки: если она меньше 3.0.0, то её следует обновить через ["ExpressLRS Web Flasher"](https://expresslrs.github.io/web-flasher/).
-
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_logo_rx.png" width=350 class="zoom border center"></div>
-
-4. Введите **ТАКУЮ ЖЕ** уникальную **Binding Phrase**, как и на передатчике, и нажмите **SAVE & REBOOT**.
-
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_settings_2.png" width=700 class="zoom border center"></div>
-
-5. В появившемся окне нажмите кнопку **REBOOT**.
-
-    <div align="center"><img src="../assets/radio/bind_phrase/reboot.png" width=350 class="zoom border center"></div>
-
-6. Настройка завершена.
-
-    <div align="center"><img src="../assets/radio/main_menu.jpg" width=350 class="zoom border center"></div>
+> **Success** [Подробная настройка пульта](radio_full.md) доступна в отдельной документации.

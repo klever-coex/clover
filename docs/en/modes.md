@@ -19,7 +19,7 @@ In order to configure flight modes:
 6. Check mode switching by changing the switch position.
 7. Choose SwA (Channel 5) as emergency motor stop (*Kill switch*).
 
-<img src="../assets/qgc-modes.png" class="zoom" alt="QGroundControl modes">
+<img src="../assets/qgc-modes.webp" class="zoom" alt="QGroundControl modes">
 
 ## Flight modes description
 

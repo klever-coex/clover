@@ -1,6 +1,6 @@
 # Autonomous Multirotor Landing System (AMLS)
 
-![Logo](../assets/amls/logo_book.png "Logo")
+![Logo](../assets/amls/logo_book.webp "Logo")
 
 ## Цель проекта: Автоматически посадить дрон в движении
 
@@ -18,7 +18,7 @@ https://github.com/XxOinvizioNxX/Liberty-Way
 - [Андрей Кабалин](mailto:astik452@gmail.com)
 - [Владислав Яснецкий](mailto:vlad.yasn@gmail.com)
 
-![Drone 1](../assets/amls/drone_meme.jpg "Drone 1")
+![Drone 1](../assets/amls/drone_meme.webp "Drone 1")
 
 -----------
 
@@ -58,11 +58,11 @@ https://github.com/XxOinvizioNxX/Liberty-Way
 
 - Дрона
 
-    ![Liberty-X](../assets/amls/liberty-x_side_cutout_2_small.png "Liberty-X")
+    ![Liberty-X](../assets/amls/liberty-x_side_cutout_2_small.webp "Liberty-X")
 
 - И платформы, или подвижной (на автомобиле), или статичной (на постамате)
 
-    ![Platform](../assets/amls/platform_side_transparent.png "Platform")
+    ![Platform](../assets/amls/platform_side_transparent.webp "Platform")
 
 Порядок действий выглядит так:
 
@@ -94,7 +94,7 @@ https://github.com/XxOinvizioNxX/Liberty-Way
 
 GPS-модуль будет использоваться из семейства UBlox (например, UBlox Neo-M8). Установлено будет 1 или 3 (для минимизации погрешности) модуля.
 
-![GPS Module](../assets/amls/liberty-x_front_cutout_2_small_gps.png "GPS Module")
+![GPS Module](../assets/amls/liberty-x_front_cutout_2_small_gps.webp "GPS Module")
 
 Модули работают по UART-интерфейсу. Настроены на частоту отправки 5 раз в секунду. Прошивка Liberty-Link будет читать данные с модулей и вычислять координаты текущего положения.
 
@@ -388,7 +388,7 @@ else if (actual_compass_heading >= 360) actual_compass_heading -= 360;
 
 На платформе, так же, как и в Liberty-Link будут установлены следующие барометры MS5611.
 
-![MS5611](../assets/amls/ms5611_barometer.png "MS5611")
+![MS5611](../assets/amls/ms5611_barometer.webp "MS5611")
 
 Согласно документации, разрешение по высоте составляет 10см. Алгоритм будет брать значения давления и, пропуская его через ПИД-регулятор, стабилизировать высоту дрона, изменяя Throttle (3-ий канал).
 
@@ -469,7 +469,7 @@ Liberty-Way может даже стабилизировать "брошенны
 ### 5.6. Связь с дроном {#communication-with-the-drone}
 
 Liberty-Way подключается к модулю Liberty-Link, установленному на дроне, и, корректирует его положение, управляя напрямую первыми четырьмя основными каналами пульта. За один цикл (каждый фрейм с камеры) на модуль отправляются 12 байт данных корректировки:
-![Packet](../assets/amls/data_structure.png "Data packet")
+![Packet](../assets/amls/data_structure.webp "Data packet")
 
 - **Roll bytes** - Корректировка крена (1000-2000)
 - **Pitch bytes** - Корректировка тангажа (1000-2000)
@@ -555,19 +555,19 @@ direct_throttle_control
 
 Крепление для камеры:
 
- ![Camera mount](../assets/amls/gimbal_camera_mount.png "Camera mount")
+ ![Camera mount](../assets/amls/gimbal_camera_mount.webp "Camera mount")
 
 Крепление провода (ферритового фильтра на проводе) камеры:
 
- ![Filter mount](../assets/amls/gimbal_filter_mount.png "Filter mount")
+ ![Filter mount](../assets/amls/gimbal_filter_mount.webp "Filter mount")
 
 Крепление защёлок "крабиков" на подложку подвеса:
 
- ![Plane mount](../assets/amls/gimbal_plane_mount.png "Plane mount")
+ ![Plane mount](../assets/amls/gimbal_plane_mount.webp "Plane mount")
 
 Примерный вид сборки всего механизма подвеса:
 
- ![Assembly](../assets/amls/gimbal_assembly.png "Assembly")
+ ![Assembly](../assets/amls/gimbal_assembly.webp "Assembly")
 
 -----------
 
@@ -580,23 +580,23 @@ direct_throttle_control
 
 Но ведь логично, что в реальности, без системы захватов невозможно посадить дрон, не повредив никого. Пока что, у нас есть прототип в виде 3Д модели. Для реализации захвата дрона будут изготовлены 4 длинных захвата с крючками на концах и по мере посадки коптера на платформу, шасси будут захватываться этими 4-мя крючками и удерживаться по мере снижения и после него.
 
-![Screenshot](../assets/amls/grabbing_system_1.png "Screenshot")
+![Screenshot](../assets/amls/grabbing_system_1.webp "Screenshot")
 
-![Screenshot](../assets/amls/grabbing_system_2.png "Screenshot")
+![Screenshot](../assets/amls/grabbing_system_2.webp "Screenshot")
 
 ### 6.2. Крыша {#weather-protection-system}
 
 Для защиты от неблагоприятных погодных условий, мы разработали механизм крыши - ножничные механизмы, обтянутые брезентом, которые находятся на краях платформы и после успешной посадки механизмы с обеих сторон платформы будут закрываться и защищать дрон от внешнего воздействия, Сама конструкция крыши делает её достаточно лёгкой и прочной, а ножничный механизм позволяет просто складывается и раскладывается при этом сборка такого механизма будет простой и надежной.
 
-![Screenshot](../assets/amls/platform_side_transparent.png "Screenshot")
+![Screenshot](../assets/amls/platform_side_transparent.webp "Screenshot")
 
-![Screenshot](../assets/amls/platform_roof.png "Screenshot")
+![Screenshot](../assets/amls/platform_roof.webp "Screenshot")
 
 ### 6.3. Спидометр {#platform-speedometer}
 
 Для будущей посадки на быстро движущуюся платформу, очень полезно знать скорость её движения. На данный момент на платформе нет GPS модуля, или иных способов измерить абсолютную скорость. Поэтому, для временного решения этой проблемы, решено было вычислять скорость по ускорению, используя акселерометр. Для примера, MPU6050. IMU-модуль через мягкую подложку установлен на прототип платформы и прикрыт крышкой для защиты от ветра. Алгоритм стабилизации (Liberty-Way) посылает на платформу запрос `L1` для проверки скорости. В качестве ответа возвращается `S0 L<скорость в км/ч>`.
 
-![MPU6050](../assets/amls/mpu6050_gyro.png "MPU6050")
+![MPU6050](../assets/amls/mpu6050_gyro.webp "MPU6050")
 
 Тест спидометра (внутри серого круга нижний правый параметр (SPD) - скорость в км/ч) (кликабельно):
 
@@ -647,7 +647,7 @@ void speed_handler(void) {
 
 В текущем варианте прототипа, используются 6 светодиодов в качестве датчика света и, встроенный в микроконтроллер, АЦП. Алгоритм стабилизации (Liberty-Way) посылает на платформу запрос `L0` для проверки уровня освещённости. В качестве ответа возвращается `S0 L<освещённость>`.
 
-![Light sensors](../assets/amls/light_sensors.png "Light sensors")
+![Light sensors](../assets/amls/light_sensors.webp "Light sensors")
 
 Тест определения уровня освещённости с помощью светодиодов (кликабельно):
 
@@ -671,4 +671,4 @@ void speed_handler(void) {
 
 В дальнейшем, мы планируем сделать ещё много нового и интересного!
 
-![Follow the white rabbit](../assets/amls/follow_the_white_rabbit.png "Follow the white rabbit")
+![Follow the white rabbit](../assets/amls/follow_the_white_rabbit.webp "Follow the white rabbit")

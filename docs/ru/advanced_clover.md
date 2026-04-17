@@ -19,15 +19,15 @@
 
 Пример автокомплита, терминала и файлового менеджера:
 
-![Пример автокомплита, терминала и файлового менеджера](../assets/advancedClover1.png)
+![Пример автокомплита, терминала и файлового менеджера](../assets/advancedClover1.webp)
 
 Пример инструментов ROS и Copter Status:
 
-![Пример инструментов ROS и Copter Status](../assets/advancedClover2.png)
+![Пример инструментов ROS и Copter Status](../assets/advancedClover2.webp)
 
 Пример полёта по квадрату с использованием advancedClover:
 
-![Пример полёта по квадрату с использованием advancedClover](../assets/advancedClover3.png)
+![Пример полёта по квадрату с использованием advancedClover](../assets/advancedClover3.webp)
 
 Более подробно об установке и использовании advancedClover можно почитать [здесь](https://ftl-team.github.io/cloverIDE).
 

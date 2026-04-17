@@ -2,14 +2,14 @@
 
 На этой странице представлены CAD-модели некоторых деталей квадрокоптеров Клевер.
 
-## Клевер 4.2
+## Клевер 4 КОД
 
 ### Фрезеровка
 
 <table>
     <tr><th width=150>Изображение</th><th>Деталь</th><th width=1>Файлы</th></tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/deck_mount.png"></td>
+        <td><img src="../assets/dxf/4.2/deck_mount.webp"></td>
         <td>
             <b>Дека монтажная</b>.<br>
             Функция: Дека для установки АКБ и Raspberry Pi.<br>
@@ -23,7 +23,7 @@
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/deck_mount_small.png"></td>
+        <td><img src="../assets/dxf/4.2/deck_mount_small.webp"></td>
         <td>
             <b>Дека монтажная малая</b>.<br>
             Функция: Дека для установки FPV камеры и крепления пластин жесткости.<br>
@@ -37,7 +37,7 @@
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/grab_deck.png"></td>
+        <td><img src="../assets/dxf/4.2/grab_deck.webp"></td>
         <td>
             <b>Дека захвата</b>.<br>
             Функция: Дека для установки захватов и внешней периферии (камера, дальномер).<br>
@@ -51,7 +51,7 @@
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/led_mount_plate.png"></td>
+        <td><img src="../assets/dxf/4.2/led_mount_plate.webp"></td>
         <td>
             <b>Пластина для LED</b>.<br>
             Функция: Крепление светодиодной ленты.<br>
@@ -65,7 +65,7 @@
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/prop_guard.png"></td>
+        <td><img src="../assets/dxf/4.2/prop_guard.webp"></td>
         <td>
             <b>Дуга</b>.<br>
             Функция: Предотвращение повреждения пропеллеров.<br>
@@ -79,7 +79,7 @@
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/prop_guard_mount.png"></td>
+        <td><img src="../assets/dxf/4.2/prop_guard_mount.webp"></td>
         <td>
             <b>Дуга монтажная</b>.<br>
             Функция: Дуга для закрепления контура защиты.<br>
@@ -93,7 +93,7 @@
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/small_leg.png"></td>
+        <td><img src="../assets/dxf/4.2/small_leg.webp"></td>
         <td>
             <b>Ножка маленькая</b>.<br>
             Функция: Стандартный опорный элемент.<br>
@@ -162,14 +162,14 @@
     </tr>
 </table>
 
-## Клевер 4.2 WorldSkills
+## Клевер 4 ПРО
 
 ### Фрезеровка
 
 <table>
     <tr><th width=150>Изображение</th><th>Деталь</th><th width=1>Файлы</th></tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/big_leg.png"></td>
+        <td><img src="../assets/dxf/4.2/big_leg.webp"></td>
         <td>
             <b>Ножка большая</b>.<br>
             Функция: Опорный элемент увеличенной высоты.<br>
@@ -183,7 +183,7 @@
         </td>
     </tr>
     <tr>
-        <td><img src="../assets/dxf/4.2/grip_spacer.png"></td>
+        <td><img src="../assets/dxf/4.2/grip_spacer.webp"></td>
         <td>
             <b>Проставка для захвата</b>.<br>
             Функция: Опорный элемент для механического захвата.<br>
@@ -226,7 +226,7 @@
 
 ## Дополнительные модели для Клевер 4
 
-Усиленная пластина для монтажа [Jetson Nano](jetson_nano.md) и дополнительного оборудования, автор: [Вячеслав Бузов](https://t.me/buzyakabarbuzyaka).
+Усиленная пластина для монтажа Jetson Nano и дополнительного оборудования, автор: [Вячеслав Бузов](https://t.me/buzyakabarbuzyaka).
 
 ### Лазерная резка
 
@@ -243,6 +243,7 @@
     Материал: Монолитный поликарбонат 2мм.
     Количество: 1шт.
 
+<!--
 ## Клевер 3
 
 ### 3D печать
@@ -309,3 +310,4 @@
     Функция: Крепление моторов.
     Материал: Стеклотекстолит/карбон 2мм.
     Количество: 4шт.
+-->

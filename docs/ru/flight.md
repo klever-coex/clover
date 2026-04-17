@@ -54,17 +54,17 @@
 
 1. Установите ремешок для аккумулятора.
 
-    <img src="../assets/assembling_clever4_2/final_1.png" width=300 class="zoom border center">
+    <img src="../assets/assembling_clever4_2/final_1.webp" width=300 class="zoom border center">
 
 2. Установите пропеллеры в соответствии со [схемой направления движения моторов](#prop_rotation).
 
-    <img src="../assets/assembling_clever4_2/final_3.png" width=300 class="zoom border center">
+    <img src="../assets/assembling_clever4_2/final_3.webp" width=300 class="zoom border center">
 
 3. Закрепите пищалку и установите аккумулятор.
 
     <div class="image-group">
-        <img src="../assets/flight/buzzer_acb.jpg" width=200 class="zoom border">
-        <img src="../assets/assembling_clever4_2/final_4.png" width=300 class="zoom border">
+        <img src="../assets/flight/buzzer_acb.webp" width=200 class="zoom border">
+        <img src="../assets/assembling_clever4_2/final_4.webp" width=300 class="zoom border">
     </div>
 
 ### Настройка пищалки
@@ -74,8 +74,8 @@
 Для настройки *пищалки* подключите ее к балансировочному разъему вашего аккумулятора. Теперь, нажимая на кнопку в основании будет изменяться минимальное напряжение на ячейках. Оптимальное значение минимального напряжения является *3.5-3.6 V*.
 
 <div class="image-group">
-    <img src="../assets/flight/buzzer_connection.jpg" width=300 class="zoom border">
-    <img src="../assets/flight/buzzer.jpg" width=300 class="zoom border">
+    <img src="../assets/flight/buzzer_connection.webp" width=300 class="zoom border">
+    <img src="../assets/flight/buzzer.webp" width=300 class="zoom border">
 </div>
 
 ### Состояния готовности к полету
@@ -91,7 +91,7 @@
 
 * С помощью стика – переведите левый стик вниз вправо и подождите пару секунд.
 
-  <img src="../assets/flight/controller_arm.jpg" width=300 class="zoom center">
+  <div align="center"><img src="../assets/radio/rc_pocket_front_part.webp" width=900 class="zoom border center"></div>
 
 * С помощью тумблера – состояния Armed/Disarmed можно настроить на один из тумблеров. Подробнее о настройке в смотрите в статье про [полетные режимы](modes.md).
 * С помощью QGC – вы можете заармить ваш дрон программно. Для этого нажмите на надпись *Disarmed* в шапке и выберите другое состояние.

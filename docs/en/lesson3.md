@@ -25,7 +25,7 @@ How to tin/solder, and what to use?
 
 For the following operations, you will need a special electric-heating tool: a soldering iron or a blowtorch. At home, an electric soldering iron with a tin-plated copper tip is most often used for soldering.
 
-![scheme](../assets/4_1.png)
+![scheme](../assets/4_1.webp)
 
 Tinning should be done as follows:
 
@@ -49,7 +49,7 @@ Before wires are soldered, they should be properly twisted. The main methods of 
 * Simple twists may be used to connect both single core and multicore wires immediately after insulation stripping (shiny).
 * Simple consecutive twisting, the so-called British twisting, is used for connecting current-carrying wires of flexible cables with the cross-section up to 1.4 sq. mm not subjected to regular high mechanical loads, e.g., electrical extension cords or temporary connections.
 
-![scheme](../assets/4_2.png)
+![scheme](../assets/4_2.webp)
 
 Electrical wires subjected to regular and/or constant mechanical loads are to be stranded. They are to be twisted as shown in the Figure below: the ends are spread apart, the "brooms" are slid into each other and twisted the British way. Soldering is performed with the use of a fusible solder with high tensile strength, e.g. POSK-50 (see below) with activated flux that does not require residue removal, also see below. Parallel (dead end) twists of wires with the cross section greater than 0.7 sq. mm should be soldered preferably by dipping into molten solder, see below. Otherwise, the wires re to be either heated for a long time, or with a too powerful soldering iron, which results in damaged insulation, and the flux boiling away prematurely.
 
@@ -72,7 +72,7 @@ Soldering fluxes are divided into neutral (inactive, acid-free) that do not inte
 
 The second one is that zinc chloride in activated flux pastes is often replaced with borax. Hydrochloric acid is a highly toxic volatile chemically aggressive substance; zinc chloride is also toxic and when heated, sublimates, i.e., it evaporates without melting. Borax is safe, but when heated, produces a large amount of crystallization water, which slightly affects soldering quality.
 
-![flux](../assets/4_3.png)
+![flux](../assets/4_3.webp)
 
 Soldering joints made with the spirit-colophony flux are to be washed: colophony contains succinic acid, which destroys metal upon prolonged contact. In addition, accidentally spilled spirit-colophony flux instantaneously spreads over a large area and turns into an extremely sticky stuff that takes very long to dry, and its stains cannot be removed from clothes, furniture, or floor and walls. In general, spirit-colophony is a good soldering flux, but not for rubbernecks and butterfingers. A full-fledged substitute for the spirit-colophony flux, but not so nasty if handled carelessly, is the flux named TAGS. If steel parts are more massive than allowed for soldering with soldering acid and the soldering should be stronger, flux F38 is used for soldering. It is a universal flux that can be used with virtually any metals in any combination, including aluminum, but the strength of the joint with it has not been standardized. We'll yet return to soldering aluminum.
 
@@ -80,7 +80,7 @@ Soldering joints made with the spirit-colophony flux are to be washed: colophony
 
 Tinkerers also often use a dry soldering iron with an untinned tip, the so-called soldering pencil, pos. 1 in the Figure. It is good where solder spreading outside the area of soldering is unacceptable: in jewelry, stained glass, soldered items of applied art. Dry soldering is sometimes used for soldering surface mounted chips, with the distance between pins of 1.25 or 0.625 mm, but it is risky even for experienced professionals: the poor thermal contact requires excessive power of the soldering iron and prolonged heating, while it is impossible to ensure heating stability during manual soldering. White resin POSK-40, 45, or 50, and flux pastes that do not require residue removal are used for dry soldering.
 
-![scheme](../assets/4_4.png)
+![scheme](../assets/4_4.webp)
 
 ### Small-scale soldering
 
@@ -90,7 +90,7 @@ Soldering of printed circuit boards has its own peculiarities. Wires are not tin
 
 Then, take a look at something ugly on the left in the next Figure. Such poor quality could, even in the Ministry of electronics industry could be the reason for transferring fitters to movers or helpers. The reason was not even appearance or overuse of expensive solder, but, firstly, the fact that the mount pads and the components overheated while these drops of solder cooled down. Large and heavy drops of solder are pretty inert weights for the already weakened paths. Radio enthusiasts are well familiar with the effect: when one, two or more paths peel off from a circuit board that has fallen on the floor. Even without waiting for the first re-soldering
 
-![soldering](../assets/4_5.png)
+![soldering](../assets/4_5.webp)
 
 Soldering drops on circuit boards should have around shape, be smooth, and have the height not exceeding 0.7 of the mounting pad diameter, see right in the Figure. The ends of pins should slightly protrude from the drops. By the way, the circuit-board is completely self-made. There is a way to make a homemade circuit board as crisp and precise as a factory-made one, and place whatever inscriptions on it. White sports are glares from the varnish during under the flashlight. The drops are sagged in and shrunk - it is also a defect. A sagged in drop means that the soldier was not enough, and shrunk drop also means that air has penetrated the solder. If the device is not working or there are suspected dry joints, check these locations first.
 
@@ -102,7 +102,7 @@ Chips in DIP-packages re soldered like other electronic components. Soldering ir
 
 Oh yeah, stands for soldering irons. A classic stand is shown in the figure in the left; it is suitable for any soldering irons with rod tips. It's up to you where to place trays for the solder and colophony - it is not regulated. For low-power soldering irons with a skirt, simplified stands with a bracket in the center are suitable.
 
-![soldering](../assets/4_6.png)
+![soldering](../assets/4_6.webp)
 
 Soldering stations are equipped with mainly spring or tubular socket cradles for soldering irons. The hot part of the tool is inaccessible in them, however it is easy to miss when soldering small components. But one should never, and it is expressly forbidden in the safety rules, make a stand of materials at hand, where the soldering iron rests on trays with consumables, as shown in the Figure on the right.
 

@@ -10,9 +10,9 @@ People strive to teach artificial intelligence everything they can do themselves
 
 ## Models and assembly
 
-<img class="center" src="../assets/ddrone/full_holder.png" width="300" class="zoom">
+<img class="center" src="../assets/ddrone/full_holder.webp" width="300" class="zoom">
 
-<img class="center" src="../assets/ddrone/full_holder_in_real.jpg" width="300" class="zoom">
+<img class="center" src="../assets/ddrone/full_holder_in_real.webp" width="300" class="zoom">
 
 To complete the project you need to have in stock:
 
@@ -37,15 +37,15 @@ To complete the project you need to have in stock:
 
 Holder weight: 90g.
 
-<img class="center" src="../assets/ddrone/holder.png" width="300">
+<img class="center" src="../assets/ddrone/holder.webp" width="300">
 
 If the diameter of the can is less than the diameter of the holder, we use the part in the form of an arc, with the size of the difference between them. This helps us to fix the spray can firmly.
 
 **Pressing mechanism.** To push the valve, we will use a screw drive with a fixed nut. A bar with holes will be attached to the servo, which will include the racks attached to the nut. This helps the servo to move only on one axis, up and down. We also modeled the cap for the spray can button, since the surface of the nozzle is uneven.
 
-<img class="center" src="../assets/ddrone/pressing_mechanism.png" width="300" class="zoom">
+<img class="center" src="../assets/ddrone/pressing_mechanism.webp" width="300" class="zoom">
 
-<img class="center" src="../assets/ddrone/pressing_mechanism_in_real.jpg" width="300" class="zoom">
+<img class="center" src="../assets/ddrone/pressing_mechanism_in_real.webp" width="300" class="zoom">
 
 ## Before launching
 
@@ -81,11 +81,11 @@ Now to open the web interface, click on the link [http://192.168.11.1/clover/dro
 
 Our drone is launched via [website](https://perizatkurmanbaeva.github.io/visual_ddrone). The web interface allows you to draw and encode what you draw in G-code. The coordinate data will be transmitted for further processing and execution by the copter.
 
-<img class="center" src="../assets/ddrone/screen_2.png" width="600" class="zoom">
+<img class="center" src="../assets/ddrone/screen_2.webp" width="600" class="zoom">
 
 We pick the web interface to control the copter because it is easier for the user.
 
-<img class="center" src="../assets/ddrone/instruction.png" width="300" class="zoom">
+<img class="center" src="../assets/ddrone/instruction.webp" width="300" class="zoom">
 
 ## Flights
 
@@ -95,4 +95,4 @@ We pick the web interface to control the copter because it is easier for the use
 
 Project was created with financial support of International Ala-Too University.
 
-![Ala-Too University](../assets/seeding_drone/ala-too.png)
+![Ala-Too University](../assets/seeding_drone/ala-too.webp)

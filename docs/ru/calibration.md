@@ -4,7 +4,7 @@
 
 ## Гироскоп
 
-<img src="../assets/qgc-cal-gyro.png" alt="QGroundControl gyroscope calibration" class="zoom">
+<img src="../assets/qgc-cal-gyro.webp" alt="QGroundControl gyroscope calibration" class="zoom">
 
 1. Выберите меню *Gyroscope*
 2. Установите квадрокоптер на ровную поверхность.
@@ -17,7 +17,7 @@
 
 ## Акселерометр
 
-<img src="../assets/qgc-cal-acc.png" alt="QGroundControl accelerometer calibration" class="zoom">
+<img src="../assets/qgc-cal-acc.webp" alt="QGroundControl accelerometer calibration" class="zoom">
 
 1. Выберите меню *Accelerometer*.
 2. Выберите ориентацию полетного контроллера – *ROTATION_NONE* при условии, что полетный контроллер ориентирован передом к носу квадрокоптера.
@@ -28,7 +28,7 @@
 
 ## Уровень горизонта
 
-<img src="../assets/qgc-cal-level.png" alt="QGroundControl level horizon calibration" class="zoom">
+<img src="../assets/qgc-cal-level.webp" alt="QGroundControl level horizon calibration" class="zoom">
 
 1. Выберите меню *Level Horizon*.
 2. Выберите ориентацию полетного контроллера – *ROTATION_NONE* при условии, что полетный контроллер ориентирован передом к носу квадрокоптера.

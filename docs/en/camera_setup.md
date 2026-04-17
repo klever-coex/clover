@@ -1,6 +1,6 @@
 # Camera setup
 
-> **Note** The following applies to [image version](image.md) **0.20** and up. See [previous version of the article](https://github.com/CopterExpress/clover/blob/v0.19/docs/en/camera_frame.md) for older images.
+<!-- > **Note** The following applies to [image version](image.md) **0.20** and up. See [previous version of the article](https://github.com/CopterExpress/clover/blob/v0.19/docs/en/camera_frame.md) for older images. -->
 
 Computer vision modules (like [ArUco markers](aruco.md) and [Optical Flow](optical_flow.md)) require adjusting the camera focus and set up camera position and orientation relative to the drone body. Optional camera calibration can improve their quality of performance.
 
@@ -8,14 +8,14 @@ Computer vision modules (like [ArUco markers](aruco.md) and [Optical Flow](optic
 
 In order to focus the camera lens, do the following:
 
-<img src="../assets/cam_setup.png" width=180 class="center zoom">
+<img src="../assets/cam_setup.webp" width=180 class="center zoom">
 
 1. Open the live camera stream in your browser using [web_video_server](web_video_server.md).
 2. Rotate the lens to adjust the image. Make sure the objects that are 2-3 m from the camera are in focus.
 
 |Unfocused image|Focused image|
 |-|-|
-|<img src="../assets/unfocused.png" width=300 class=zoom>|<img src="../assets/focused.png" width=300 class=zoom>|
+|<img src="../assets/unfocused.webp" width=300 class=zoom>|<img src="../assets/focused.webp" width=300 class=zoom>|
 
 ## Setting the camera position {#frame}
 
@@ -40,8 +40,8 @@ To set the orientation, define:
 <arg name="direction_y" default="backward"/>
 ```
 
-<img src="../assets/camera_option_1_rviz.png" width=300>
-<img src="../assets/camera_option_1_clever.jpg" width=300>
+<img src="../assets/camera_option_1_rviz.webp" width=300>
+<img src="../assets/camera_option_1_clever.webp" width=300>
 
 ### Camera faces downward, cable goes forward
 
@@ -50,8 +50,8 @@ To set the orientation, define:
 <arg name="direction_y" default="forward"/>
 ```
 
-<img src="../assets/camera_option_2_rviz.png" width=300>
-<img src="../assets/camera_option_2_clever.jpg" width=300>
+<img src="../assets/camera_option_2_rviz.webp" width=300>
+<img src="../assets/camera_option_2_clever.webp" width=300>
 
 ### Camera faces upward, cable goes backward
 
@@ -60,8 +60,8 @@ To set the orientation, define:
 <arg name="direction_y" default="backward"/>
 ```
 
-<img src="../assets/camera_option_3_rviz.png" width=300>
-<img src="../assets/camera_option_3_clever.jpg" width=300>
+<img src="../assets/camera_option_3_rviz.webp" width=300>
+<img src="../assets/camera_option_3_clever.webp" width=300>
 
 ### Camera faces upward, cable goes forward
 
@@ -70,8 +70,8 @@ To set the orientation, define:
 <arg name="direction_y" default="forward"/>
 ```
 
-<img src="../assets/camera_option_4_rviz.png" width=300>
-<img src="../assets/camera_option_4_clever.jpg" width=300>
+<img src="../assets/camera_option_4_rviz.webp" width=300>
+<img src="../assets/camera_option_4_clever.webp" width=300>
 
 > **Hint** The [`selfcheck.py` utility](selfcheck.md) will describe your current camera setup in a human-readable fashion. Be sure to check whether this description corresponds to your actual camera position.
 

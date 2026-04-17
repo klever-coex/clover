@@ -9,7 +9,7 @@
 
 New technologies are being implemented into various sectors of the economy including agricultural industry. Drones or UAV are no exception. Thanks to their usage, assessment of agricultural territories' states and analysis of landscape components became more effective and accessible.
 
-<img src="../assets/photo_2020-06-18_18-54-23.jpg" width="300" title="One of the field options">
+<img src="../assets/photo_2020-06-18_18-54-23.webp" width="300" title="One of the field options">
 
 The final task of Innopolis Open 2020 was dedicated to monitoring agricultural territories and consisted of the following elements:
 
@@ -58,7 +58,7 @@ To convert the position of colored objects into `aruco_map` frame TF library was
 
 Due to distortions at the edges of the image from the fisheye lens, all the recognized contours located near the edge of the image are ignored. This filter is disabled during landing. The object type is determined using the contour analysis functions  (`approxPolyDP` - number of vertexes; `minAreaRect`, `contourArea` - area of bounding rect / area of the contour; `minAreaRect` - aspect ratio).
 
-<img src="../assets/5_D1_2.jpg" height="355">
+<img src="../assets/5_D1_2.webp" height="355">
 
 Examples of marker recognition:
 
@@ -74,7 +74,7 @@ To debug object recognition, a script has been created that visualizes the coord
 
 ## QR-code
 
-<img src="../assets/qr.jpg" width="400" title="A QR-code is being recognized during one of the attempts">
+<img src="../assets/qr.webp" width="400" title="A QR-code is being recognized during one of the attempts">
 
 The PyZbar library was used to perform the QR-code recognition. In order to improve the accuracy of QR-code recognition, flights around the QR-code were performed at low altitude.
 
@@ -98,9 +98,9 @@ For Innopolis Open we have prepared several test scenes.  [ior2020_uav_L22_AERO_
 
 Also, the use of the simulator accelerated the debugging of the full code execution, since the launch was performed with real time factor = 2.5.
 
-<img src="../assets/real_map.jpg" height="250">
+<img src="../assets/real_map.webp" height="250">
 
-<img src="../assets/big_map.jpg" height="250">
+<img src="../assets/big_map.webp" height="250">
 
 During testing, some problems were found (e.g. incorrect position of `aruco_map`) while using distortion in the camera plugin, so the simulator used a Pinhole camera (without any distortions from the lens).
 

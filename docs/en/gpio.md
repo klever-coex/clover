@@ -16,7 +16,8 @@ To enable automatic launch of the daemon, run:
 sudo systemctl enable pigpiod.service
 ```
 
-> **Warning** `pigpiod` may interfere with [LED strip](leds.md) if configured improperly. Make sure that the strip is connected to GPIO21. On [image versions](image.md) lower than 0.17 change the service start string in `/lib/systemd/system/pigpiod.service` to `ExecStart=/usr/bin/pigpiod -l -t 0 -x 0x0FFF3FF0`.
+<!-- > **Warning** `pigpiod` may interfere with [LED strip](leds.md) if configured improperly. Make sure that the strip is connected to GPIO21. On [image versions](image.md) lower than 0.17 change the service start string in `/lib/systemd/system/pigpiod.service` to `ExecStart=/usr/bin/pigpiod -l -t 0 -x 0x0FFF3FF0`. -->
+> **Warning** `pigpiod` may interfere with [LED strip](leds.md) if configured improperly. Make sure that the strip is connected to GPIO21.
 
 Example of working with the library:
 
@@ -75,7 +76,7 @@ pi.set_servo_pulsewidth(13, 2000)
 
 ## Connecting an electromagnet
 
-![GPIO Mosfet Magnet Connection](../assets/gpio_mosfet_magnet.png)
+![GPIO Mosfet Magnet Connection](../assets/gpio_mosfet_magnet.webp)
 
 To connect an electromagnet use a field-effect transistor (MOSFET). Connect the MOSFET to one of GPIO-pins of the Raspberry Pi. To control the magnet connected to the pin 15 use a code like this:
 

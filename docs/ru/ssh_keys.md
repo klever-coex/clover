@@ -38,7 +38,7 @@ exit
 
 В графических программах в Windows у вас будут периодически возникать окошки с похожими предупреждениями.
 
-<img src="../assets/ssh-keys-known_hosts-fingerprint.png" alt="Сохранение отпечатка в Windows" class="border center">
+<img src="../assets/ssh-keys-known_hosts-fingerprint.webp" alt="Сохранение отпечатка в Windows" class="border center">
 
 > **Hint** В Windows 10 появился встроенный SSH-клиент, который можно запускать из командной строки, см. руководство по использованию от Microsoft [по этой ссылке](https://learn.microsoft.com/ru-ru/windows-server/administration/openssh/openssh_install_firstuse).
 

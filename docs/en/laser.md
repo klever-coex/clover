@@ -1,6 +1,6 @@
 # Working with a laser rangefinder
 
-> **Note** Documentation for the [image](image.md), versions, starting with **0.20**. For older versions refer to [documentation for version **0.19**](https://github.com/CopterExpress/clover/blob/v0.19/docs/en/laser.md).
+<!-- > **Note** Documentation for the [image](image.md), versions, starting with **0.20**. For older versions refer to [documentation for version **0.19**](https://github.com/CopterExpress/clover/blob/v0.19/docs/en/laser.md). -->
 
 ## VL53L1X Rangefinder
 
@@ -14,7 +14,7 @@ The [image for Raspberry Pi](image.md) contains pre-installed corresponding ROS 
 
 Connect the rangefinder to the 3V, GND, SCL and SDA pins via the I²C interface:
 
-<img src="../assets/raspberry-vl53l1x.png" alt="Connecting VL53L1X" height=600>
+<img src="../assets/raspberry-vl53l1x.webp" alt="Connecting VL53L1X" height=600>
 
 If the pin marked GND is occupied, you can use any other ground pin (look at the [pinout](https://pinout.xyz) for reference).
 
@@ -36,9 +36,9 @@ rostopic echo /rangefinder/range
 
 ### PX4 settings
 
-> **Hint** We recommend using our [custom PX4 firmware for Clover](firmware.md#modified-firmware-for-clover) for best laser rangefinder support.
+> **Hint** We recommend using our [custom PX4 firmware for Clover](firmware_Pixracer.md) for best laser rangefinder support.
 
-PX4 should be properly [configured](parameters.md) to use the rangefinder data.
+PX4 should be properly [configured](setup.md#parameters) to use the rangefinder data.
 
 Set the following parameters when EKF2 is used (`SYS_MC_EST_GROUP` = `ekf2`):
 
@@ -84,7 +84,7 @@ You may use rqt_multiplot tool to plot rangefinder data.
 
 rviz may be used for data visualization. To do this, add a topic of the `sensor_msgs/Range` type to visualization:
 
-<img src="../assets/rviz-range.png" alt="Range in rviz">
+<img src="../assets/rviz-range.webp" alt="Range in rviz">
 
 Read more [about rviz and rqt](rviz.md).
 

@@ -2,7 +2,7 @@
 
 Хакатон [Copter Hack 2018](https://copterexpress.timepad.ru/event/768108/) прошел 19–21 октября в Технополисе "Москва".
 
-<img src="../assets/copterhack18.jpg" height=400px title="Copter Hack 2018">
+<img src="../assets/copterhack18.webp" height=400px title="Copter Hack 2018">
 
 Чат хакатона: https://t.me/CopterHack.
 
@@ -30,8 +30,8 @@
 
 1. Starshine (Москва) — управление дроном с помощью "умной" перчатки.
 2. Alcopter (Москва) — управление дроном с помощью жестов и смены поз.
-3. Весёлый коптер (Самара) — бот Vkontakte для управления коптером, совместный полет "Жужи" и "Клевера 3".
+<!-- 3. Весёлый коптер (Самара) — бот Vkontakte для управления коптером, совместный полет "Жужи" и "Клевера 3". -->
 4. International Post (Новосибирск) — автоматический разброс листовок с дрона.
 5. ЛАМАР (Екатеринбург) — станция автоматической смены аккумулятора квадрокоптера.
 
-<img src="../assets/alcopter.jpg" title="Команда Alcopter" height=300px>
+<img src="../assets/alcopter.webp" title="Команда Alcopter" height=300px>

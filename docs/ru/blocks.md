@@ -2,7 +2,8 @@
 
 <img src="../assets/blocks/blockly.svg" width=200 align="right">
 
-Возможность блочного визуального программирования автономных полетов Клевера добавлена в [образ для RPi](image.md), начиная с версии **0.21**. Реализация блочного программирования основана на [Google Blockly](https://developers.google.com/blockly). Интеграция Blockly в Клевер позволяет понизить входной порог в программирование автономных полетов до минимального уровня.
+<!-- Возможность блочного визуального программирования автономных полетов Клевера добавлена в [образ для RPi](image.md), начиная с версии **0.21**. Реализация блочного программирования основана на [Google Blockly](https://developers.google.com/blockly). Интеграция Blockly в Клевер позволяет понизить входной порог в программирование автономных полетов до минимального уровня. -->
+Блочное визуальное программирование автономных полетов Клевера основано на [Google Blockly](https://developers.google.com/blockly). Интеграция Blockly в Клевер позволяет понизить входной порог в программирование автономных полетов до минимального уровня.
 
 ## Конфигурация
 
@@ -18,7 +19,7 @@
 
 Интерфейс выглядит следующим образом:
 
-<img src="../assets/blocks/blocks.png" width=600 class=center>
+<img src="../assets/blocks/blocks.webp" width=600 class=center>
 
 Соберите необходимую программу из блоков в меню слева а затем нажмите кнопку *Run* для ее запуска. Также вы можете просмотреть сгенерированный код на языке Python, переключившись во вкладку *Python*.
 
@@ -26,7 +27,7 @@
 
 ## Сохранение и загрузка
 
-<img src="../assets/blocks/save.png" width=300 align=right>
+<img src="../assets/blocks/save.webp" width=300 align=right>
 
 Для сохранения программы откройте меню справа сверху, выберите пункт меню *Save* и введите название программы. Название программы может содержать только латинские буквы, дефис, подчеркивание и точку. Все ранее сохраненные программы будут доступны в этом же меню.
 
@@ -49,7 +50,7 @@
 
 ### take_off
 
-<img src="../assets/blocks/take-off.png" srcset="../assets/blocks/take-off.png 2x">
+<img src="../assets/blocks/take-off.webp" srcset="../assets/blocks/take-off.webp 2x">
 
 Взлететь на указанную высоту в метрах. Высота может быть произвольным блоком, возвращающим числовое значение.
 
@@ -57,7 +58,7 @@
 
 ### navigate
 
-<img src="../assets/blocks/navigate.png" srcset="../assets/blocks/navigate.png 2x">
+<img src="../assets/blocks/navigate.webp" srcset="../assets/blocks/navigate.webp 2x">
 
 Прилететь в заданную точку. Координаты точки задаются в метрах.
 
@@ -76,7 +77,7 @@
 
 ### land
 
-<img src="../assets/blocks/land.png" srcset="../assets/blocks/land.png 2x">
+<img src="../assets/blocks/land.webp" srcset="../assets/blocks/land.webp 2x">
 
 Произвести посадку.
 
@@ -84,31 +85,31 @@
 
 ### wait
 
-<img src="../assets/blocks/wait.png" srcset="../assets/blocks/wait.png 2x">
+<img src="../assets/blocks/wait.webp" srcset="../assets/blocks/wait.webp 2x">
 
 Ожидать заданное время в секундах. Время ожидания может быть произвольным блоком, возвращающим числовое значение.
 
 ### wait_arrival
 
-<img src="../assets/blocks/wait-arrival.png" srcset="../assets/blocks/wait-arrival.png 2x">
+<img src="../assets/blocks/wait-arrival.webp" srcset="../assets/blocks/wait-arrival.webp 2x">
 
 Ожидать, пока дрон долетит до целевой точки (заданной в [navigate](#navigate)-блоке).
 
 ### get_position
 
-<img src="../assets/blocks/get-position.png" srcset="../assets/blocks/get-position.png 2x">
+<img src="../assets/blocks/get-position.webp" srcset="../assets/blocks/get-position.webp 2x">
 
 Блок позволяет получить позицию, скорость и угол по рысканью дрона в заданной [системе координат](#relative_to).
 
 ### set_effect
 
-<img src="../assets/blocks/set-effect.png" srcset="../assets/blocks/set-effect.png 2x">
+<img src="../assets/blocks/set-effect.webp" srcset="../assets/blocks/set-effect.webp 2x">
 
 Блок позволяет устанавливать различные анимации на LED-ленту аналогично [ROS-сервису `set_effect`](leds.md#set_effect).
 
 Пример использования блока для установки случайного цвета (блоки, связанные с цветами находятся в категории *Colour*):
 
-<img src="../assets/blocks/random-color.png" srcset="../assets/blocks/random-color.png 2x">
+<img src="../assets/blocks/random-color.webp" srcset="../assets/blocks/random-color.webp 2x">
 
 ### Работа с GPIO {#GPIO}
 

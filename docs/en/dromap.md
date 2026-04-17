@@ -22,7 +22,7 @@ The use of robots has increased dramatically within the past decade due to their
 
 A questionnaire was conducted for this project to study the need for an indoor mapping drone which involved 72 architects and interior designers. The following question was asked to have an estimate of the time taken by the targeted category for taking the measurements of a large building. According to the survey results, 61% of the sample consume more than 60 minutes to measure a large building. This shows that the measurement taking process is time-consuming.
 
-![](../assets/dromap/Picture1.png)
+![](../assets/dromap/Picture1.webp)
 
 #### Technical Challenges
 
@@ -45,11 +45,11 @@ Measuring a room or a full building along with transforming the collected data t
 
 Generally, the process of mapping an indoor environment is composed of two phases; the first phase is the measurement taking phase and the second phase is the map drawing phase. However, the project introduces another way to create a map that is faster and requires less effort; as the measurements of the surroundings will be taken by the system once it is activated and processed by Simultaneous Localization and Mapping algorithms (SLAM) for building and updating maps as well as positions of an unknown environment in robotics in real-time. According to the survey, 94% of the sample agreed that it would be useful to have a robotic based measuring tool. Therefore, the proposed solution will successfully assist architects and interior designers in mapping indoor areas.
 
-![](../assets/dromap/1.2fig.png)
+![](../assets/dromap/1.2fig.webp)
 
 Based on the conducted survey, accuracy is the most important characteristic to be satisfied with the project. The below figure demonstrates that 48 of the sample sizes care about having high accuracy. Moreover, the second most important feature to be reached is having a short scanning time, which highlights the importance of the project.
 
-![](../assets/dromap/1.3fig.png)
+![](../assets/dromap/1.3fig.webp)
 
 Furthermore, since the project employs multiple concepts related to indoor robots and indoor data processing, it can be extended to assist other fields in Qatar rather than the architecture field only. For example, this project could be a great step towards training drones to handle different tasks related to search and rescue such as entering buildings on fire or finding a missing person in indoor places. This will serve to develop more technologies to process the indoor data in various environments and conditions, also to develop drones that are capable to operate in indoor areas with different functionalities.
 
@@ -57,7 +57,7 @@ Furthermore, since the project employs multiple concepts related to indoor robot
 
 DroMap project consists mainly of two major components: the drone and the drone add-on. The drone is responsible for the physical movement of the entire system. The drone add-ons consist of necessary sensors for mapping, path planning, and mounting equipment such as Raspberry Pi 4, RPLiDAR A1M8, Sonar, and range finder. The Raspberry Pi collects the data from the sensors. While the data is being collected by the Raspberry Pi, the Hector SLAM will process these data in real-time to formulate 2-dimensional maps. After that, the map will be sent wirelessly to a remote PC and visualized through RVIZ software tool.
 
-![](../assets/dromap/HLA.jpg)
+![](../assets/dromap/HLA.webp)
 
 ### Hardware/software to be used
 
@@ -158,7 +158,7 @@ move_forward()
 
 This function was implemented to safely move the drone forward without hitting a wall, or without skipping an outer corner.  The logic behind this algorithm is that it uses the concept of the right angle, and multiple readings which correspond to different angles to measure the safe distances. The bellow flow chat demonstrates the logic of that algorithm in details.
 
-<img src="../assets/dromap/algorth_logic.png" height=600 class="center zoom">
+<img src="../assets/dromap/algorth_logic.webp" height=600 class="center zoom">
 
 When the function ends, the drone will either stop after an inner corner, or an outer corner.
 
@@ -177,15 +177,15 @@ The following video illustrates a ROS Simulation test on Wall Following Algorith
 
 #### Testing
 
-![](../assets/dromap/Maze1.jpg)
+![](../assets/dromap/Maze1.webp)
 
 The above figure demonstrates the drone exploring a maze autonomously while constructing a 2D map in real-time. The terminal shows the safe distances to move forward, these distancing where calculated using the aforementioned flowchart.
 
 The following figures show a constructed 2D map of different environments.
 
-![](../assets/dromap/hectortest1.jpg)
+![](../assets/dromap/hectortest1.webp)
 
-![](../assets/dromap/hectortest2.jpg)
+![](../assets/dromap/hectortest2.webp)
 
 The following video demonstrates an autonomous maze exploration with Hector SLAM responsible for constructing a 2D map:
 
@@ -199,7 +199,7 @@ This section illustrates the progress done regarding the hardware components. Th
 
 The drone is assembled and configured correctly to accomplish the autonomous mapping mission. The RPliDAR A1M8 and all other necessary sensors are mounted on the drone as shown in the figure bellow.
 
-<img src="../assets/dromap/3.jpeg" width=400 class="center zoom">
+<img src="../assets/dromap/3.webp" width=400 class="center zoom">
 
 To set up the drone ready for mapping, the raspberry pi image created by COEX was installed on the micro-SD card. COEX Raspberry Pi image, COEX pixracer image and COEX virtual machine were selected as they contain all the necessary tools and packages to work efficiently with clover platform. The installed platform is based on Raspbian operating system and ROS. After flashing the image on the SD, the next step is to connect clover to Wi-Fi.
 

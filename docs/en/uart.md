@@ -16,6 +16,7 @@ In Linux, there is the concept of POSIX Terminal Interface (read more [here](htt
 
 An example of such abstraction in Raspbian may be `/dev/tty1` – the device for text output to the screen connected via HDMI.
 
+<!--
 ## UART on Raspberry Pi 3
 
 Raspberry Pi 3 has two hardware UART interfaces:
@@ -38,8 +39,9 @@ For the sake of convenience of working with these outputs, aliases exist in Rasp
 
 * `/dev/serial0` – always points to the TTY device that is connected to the GPIO ports.
 * `/dev/serial1` – always points to the TTY device that is connected to the Bluetooth module.
+-->
 
-### Configuration of UART on Raspberry Pi 3
+### Configuration of UART on Raspberry Pi
 
 To configure UART, there are directives located in `/boot/config.txt`.
 
@@ -49,7 +51,7 @@ To enable the UART interface on GPIO:
 enable_uart=1
 ```
 
-To disconnect the UART interface from the Bluetooth module:
+<!-- To disconnect the UART interface from the Bluetooth module:
 
 ```txt
 dtoverlay=pi3-disable-bt
@@ -65,7 +67,7 @@ If the Bluetooth module is disabled, one should disable the hciuart service:
 
 ```bash
 sudo systemctl disable hciuart.service
-```
+``` -->
 
 ## Default image configuration
 
@@ -76,7 +78,7 @@ Bugs
 
 If you use the Mini UART connection to Bluetooth, `hciuart` crashes with the following error:
 
-![hciuart error](../assets/hciuart_error.jpg)
+![hciuart error](../assets/hciuart_error.webp)
 
 In case of Bluetooth disconnection
 

@@ -47,7 +47,7 @@ Clover kits typically use *3S* batteries.
 
 A radio-operated quadcopter remote control. Operation of the remote control requires connecting a receiver to the flight controller.
 
-Clover may also be [controlled from a smartphone](rc.md).
+Clover may also be [controlled from a smartphone](android.md).
 
 ## Telemetry
 

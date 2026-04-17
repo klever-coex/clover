@@ -16,6 +16,7 @@ UART – последовательный асинхронный интерфе�
 
 В качестве примера такой абстракции в Raspbian можно привести `/dev/tty1` – устройство вывода текста на экран подключенный по HDMI.
 
+<!--
 ## UART на Raspberry Pi 3
 
 В Raspberry Pi 3 есть два аппаратных UART интерфейса:
@@ -38,6 +39,7 @@ UART – последовательный асинхронный интерфе�
 
 * `/dev/serial0` – всегда указывает на то TTY устройство, что подключено к GPIO портам.
 * `/dev/serial1` – всегда указывает на то TTY устройство, что подключено к Bluetooth модулю.
+-->
 
 ### Настройка UART на Raspberry Pi
 
@@ -49,7 +51,7 @@ UART – последовательный асинхронный интерфе�
 enable_uart=1
 ```
 
-Для отключения UART интерфейса от Bluetooth модуля:
+<!-- Для отключения UART интерфейса от Bluetooth модуля:
 
 ```txt
 dtoverlay=pi3-disable-bt
@@ -65,7 +67,7 @@ dtoverlay=pi3-miniuart-bt
 
 ```bash
 sudo systemctl disable hciuart.service
-```
+``` -->
 
 ## Настройка образа по умолчанию
 
@@ -75,7 +77,7 @@ sudo systemctl disable hciuart.service
 
 Если использовать подключение `Mini UART` к Bluetooth, `hciuart` падает с ошибкой:
 
-![hciuart error](../assets/hciuart_error.jpg)
+![hciuart error](../assets/hciuart_error.webp)
 
 В случае отключения Bluetooth
 

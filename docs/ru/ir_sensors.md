@@ -8,7 +8,7 @@
 
 Большинство ИК-приемников работают и подключаются одинаково. У таких приемников есть 3 пина для подключения: G/GND – земля, V/VCC – питание 5В, S/OUT – сигнал.
 
-<img src="../assets/IR_reciver_connection.png" height="500px" alt="ir reciver connection to raspberry">
+<img src="../assets/IR_reciver_connection.webp" height="500px" alt="ir reciver connection to raspberry">
 
 > **Hint** Сигнальный порт не обязательно должен подключаться к порту GPIO 17, данный пин можно изменить во время [настройки портов in/out](#in/out).
 
@@ -199,9 +199,9 @@ lirc.deinit()
 
 Для того, что бы работать с ИК-передатчиком, подключите его к тем портам, которые указывали [при настройке](#in/out).
 
-<img src="../assets/IR_transmitter_connection.png" height="500px" alt="IR transmitter connection to raspberry">
+<img src="../assets/IR_transmitter_connection.webp" height="500px" alt="IR transmitter connection to raspberry">
 
-<img src="../assets/IR_transmitter.png" height="200px" alt="IR transmitter scheme">
+<img src="../assets/IR_transmitter.webp" height="200px" alt="IR transmitter scheme">
 
 > **Hint** В случае, если вы используете готовую плату ИК-передатчика, подключите ее к нужным пинам Raspberry в соответствии с маркировкой пинов, точно так же как и с приемником.
 

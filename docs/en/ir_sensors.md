@@ -8,7 +8,7 @@ Infrared sensors are a convenient tool for transmitting any commands to the copt
 
 Most IR receivers operate and are connected the same way. Such receivers have 3 pins for connecting: G/GND — ground V/VCC — 5V power, S/OUT — signal.
 
-<img src="../assets/IR_reciver_connection.png" height="500px" alt="ir receiver connection to raspberry">
+<img src="../assets/IR_reciver_connection.webp" height="500px" alt="ir receiver connection to raspberry">
 
 > **Hint** The signal port doesn't have to be connected to port GPIO 17; this pin may be changed during the [in/out port settings](#in/out).
 
@@ -199,9 +199,9 @@ lirc.deinit()
 
 To work with the IR transmitter, connect it to the ports specified [during setup](#in/out).
 
-<img src="../assets/IR_transmitter_connection.png" height="500px" alt="IR transmitter connection to raspberry">
+<img src="../assets/IR_transmitter_connection.webp" height="500px" alt="IR transmitter connection to raspberry">
 
-<img src="../assets/IR_transmitter.png" height="200px" alt="IR transmitter scheme">
+<img src="../assets/IR_transmitter.webp" height="200px" alt="IR transmitter scheme">
 
 > **Hint** if you are using a ready IR transmitter board, connect it to required pins of Raspberry in accordance with pins marking, in the same way as with the receiver.
 

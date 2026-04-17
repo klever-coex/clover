@@ -18,7 +18,7 @@ Optical Flow publishes data in `/mavros/px4flow/raw/send` topic. In the topic `/
 
 ## Setup of the flight controller
 
-> **Hint** Suggested parameters are applied automatically in [our custom PX4 firmware](firmware.md#modified-firmware-for-clover).
+> **Hint** Suggested parameters are applied automatically in [our custom PX4 firmware](firmware_Pixracer.md).
 
 When using **EKF2** (parameter `SYS_MC_EST_GROUP` = `ekf2`):
 

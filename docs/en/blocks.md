@@ -2,7 +2,8 @@
 
 <img src="../assets/blocks/blockly.svg" width=200 align="right">
 
-Visual blocks programming feature has been added to the [RPi image](image.md), starting with the version **0.21**. Blocks programming is implemented using [Google Blockly](https://developers.google.com/blockly) library. Blocks programming integration can lower the entry barrier to a minimum.
+<!-- Visual blocks programming feature has been added to the [RPi image](image.md), starting with the version **0.21**. Blocks programming is implemented using [Google Blockly](https://developers.google.com/blockly) library. Blocks programming integration can lower the entry barrier to a minimum. -->
+Blocks programming is implemented using [Google Blockly](https://developers.google.com/blockly) library. Blocks programming integration can lower the entry barrier to a minimum.
 
 ## Configuration
 
@@ -18,7 +19,7 @@ To run Clover's blocks programming interface, [connect to Clover's Wi-Fi](wifi.m
 
 The page looks as follows:
 
-<img src="../assets/blocks/blocks.png" width=600 class=center>
+<img src="../assets/blocks/blocks.webp" width=600 class=center>
 
 Assemble your program using blocks in the menu at the left and then click *Run* button for running. You can also view generated Python-code, switching to *Python* tab.
 
@@ -26,7 +27,7 @@ The *Stop* button stops the program. Clicking *Land* button also stops the progr
 
 ## Storing and loading
 
-<img src="../assets/blocks/save.png" width=300 align=right>
+<img src="../assets/blocks/save.webp" width=300 align=right>
 
 To store the program, open the menu at the top right, select *Save* item and input your program's name. The name should contain only Latin characters, hyphen, underline and dot characters. All your stored programs are available at the same menu.
 
@@ -49,7 +50,7 @@ The rest of categories contains standard Blockly's blocks.
 
 ### take_off
 
-<img src="../assets/blocks/take-off.png" srcset="../assets/blocks/take-off.png 2x">
+<img src="../assets/blocks/take-off.webp" srcset="../assets/blocks/take-off.webp 2x">
 
 Take off to specified altitude in meters. The altitude may be an arbitrary block, that returns a number.
 
@@ -57,7 +58,7 @@ The `wait` flag specifies, if the drone should wait until take off is complete, 
 
 ### navigate
 
-<img src="../assets/blocks/navigate.png" srcset="../assets/blocks/navigate.png 2x">
+<img src="../assets/blocks/navigate.webp" srcset="../assets/blocks/navigate.webp 2x">
 
 Navigate to specified point. Coordinates are specified in meters.
 
@@ -77,7 +78,7 @@ This block allows to specify the [coordinate frame](frames.md) of the target poi
 
 ### land
 
-<img src="../assets/blocks/land.png" srcset="../assets/blocks/land.png 2x">
+<img src="../assets/blocks/land.webp" srcset="../assets/blocks/land.webp 2x">
 
 Land the drone.
 
@@ -85,31 +86,31 @@ The `wait` flag specifies, if the drone should wait until landing is complete, b
 
 ### wait
 
-<img src="../assets/blocks/wait.png" srcset="../assets/blocks/wait.png 2x">
+<img src="../assets/blocks/wait.webp" srcset="../assets/blocks/wait.webp 2x">
 
 Wait specified time period in seconds. The time period may be an arbitrary block, that returns a number.
 
 ### wait_arrival
 
-<img src="../assets/blocks/wait-arrival.png" srcset="../assets/blocks/wait-arrival.png 2x">
+<img src="../assets/blocks/wait-arrival.webp" srcset="../assets/blocks/wait-arrival.webp 2x">
 
 Wait, until the drone reaches [navigate](#navigate)-block's target point.
 
 ### get_position
 
-<img src="../assets/blocks/get-position.png" srcset="../assets/blocks/get-position.png 2x">
+<img src="../assets/blocks/get-position.webp" srcset="../assets/blocks/get-position.webp 2x">
 
 The block returns current position, velocity or yaw angle of the drone relative to the specified [coordinate frame](#relative_to).
 
 ### set_effect
 
-<img src="../assets/blocks/set-effect.png" srcset="../assets/blocks/set-effect.png 2x">
+<img src="../assets/blocks/set-effect.webp" srcset="../assets/blocks/set-effect.webp 2x">
 
 The block allows to set animations to LED strip, similarly to [`set_effect`](leds.md#set_effect) ROS-service.
 
 Example of using the block with a random color (colors-related blocks are located in *Colour* category):
 
-<img src="../assets/blocks/random-color.png" srcset="../assets/blocks/random-color.png 2x">
+<img src="../assets/blocks/random-color.webp" srcset="../assets/blocks/random-color.webp 2x">
 
 ### Work with GPIO {#GPIO}
 

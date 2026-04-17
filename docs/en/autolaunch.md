@@ -1,7 +1,7 @@
 Software autorun
 ===
 
-> **Note** In the image version **0.20** `clever` package and service was renamed to `clover`. See [previous version of the article](https://github.com/CopterExpress/clover/blob/v0.19/docs/en/autolaunch.md) for older images.
+<!-- > **Note** In the image version **0.20** `clever` package and service was renamed to `clover`. See [previous version of the article](https://github.com/CopterExpress/clover/blob/v0.19/docs/en/autolaunch.md) for older images. -->
 
 systemd
 ---

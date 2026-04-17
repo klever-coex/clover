@@ -78,7 +78,7 @@ sudo reboot
    nano ~/catkin_ws/src/clover/clover/launch/clover.launch
    ```
 
-   <img src="../assets/nano.png" alt="Редактирование файла в nano" data-action="zoom">
+   <img src="../assets/nano.webp" alt="Редактирование файла в nano" data-action="zoom">
 2. Отредактируйте файл.
 3. Для выхода с сохранением нажмите `Ctrl`+`X`, `Y`, `Enter`.
 4. При изменении .launch-файлов необходимо перезапустить пакет `clover`:

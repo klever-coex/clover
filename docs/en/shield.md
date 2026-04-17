@@ -6,7 +6,7 @@ Probably, everyone who has held a copter has had to fly it indoors. Such flights
 
 All this made us search for a solution. Unfortunately, searching the Internet did not provide a sufficiently simple and, more importantly, cheap solution for ordinary users. For example, propeller guard protects the propellers themselves quite well, but upon the slightest touch upon an obstacle the copter would flip over and fall down. In general, guard either did not protect the copter fully or looked awkward and was too scarcely available.
 
-![safetyball](../assets/safetyball.png)
+![safetyball](../assets/safetyball.webp)
 
 We made a difficult decision: we had to make it entirely ourselves and almost from scratch, and the goal was to make it lightweight and easy to manufacture.
 
@@ -16,7 +16,7 @@ As a result of searching for a solution that would fit all our requirements, we 
 
 In creating such a shape, two types of edges (beams) are used: short and long ones, their length is calculated based on the desired diameter of a polyhedron inscribed into a sphere. For better understanding, I will insert all necessary formulas from Wikipedia below.
 
-![calculation](../assets/en/calculation.png)
+![calculation](../assets/en/calculation.webp)
 
 The corner joints (fittings) were not very easy either. They are of two types as well: with five faces on the vertex (five beams protrude from the vertex) and with six faces (six rays protrude from the vertex).
 
@@ -28,13 +28,13 @@ Making simple calculations for the required size, we built a model in Inventor C
 
 In the progress of designing, we faced problems in modeling corner joints, but they were solved by simplifying the design, and the differences of the angles were compensated for by flexible materials. Thus, all joints fit slightly tightly.
 
-![table](../assets/en/table.png)
+![table](../assets/en/table.webp)
 
-![elements](../assets/elements.png)
+![elements](../assets/elements.webp)
 
 (Elements of guard fasteners to the body)
 
-![elements1](../assets/elements1.png)
+![elements1](../assets/elements1.webp)
 
 ## Materials
 
@@ -44,7 +44,7 @@ Convert ready models to .stl, put them into a slicer (Cura in our case), enter t
 
 To reduce the weight we chose ABC plastic, which is lightweight and available.
 
-![3dmodel](../assets/3dmodel.png)
+![3dmodel](../assets/3dmodel.webp)
 
 The sticks were cut to the calculated length and prepared for subsequent work.
 
@@ -52,7 +52,7 @@ The sticks were cut to the calculated length and prepared for subsequent work.
 
 After everything has been printed and cut, it is time to assemble the guard.
 
-![detal](../assets/detal.png)
+![detal](../assets/detal.webp)
 
 Assembly is the most crucial moment, as it requires a special algorithm.
 
@@ -68,9 +68,9 @@ Assembly:
 
 After assembly, divide the ball into 2 hemispheres and install the mounts on the copter making sure that everything fits.
 
-![detal1](../assets/detal1.png)
+![detal1](../assets/detal1.webp)
 
-![detal2](../assets/detal2.png)
+![detal2](../assets/detal2.webp)
 
 (An example of fasteners installation)
 
@@ -78,11 +78,11 @@ Now, the hemispheres may be glued. The hemispheres are not to be glued to each o
 
 After drying, the guard is ready for installation and for the first test flight!
 
-![finalball](../assets/finalball.png)
+![finalball](../assets/finalball.webp)
 
 (without fasteners yet)
 
-![ball](../assets/ball.png)
+![ball](../assets/ball.webp)
 
 ## First flights
 

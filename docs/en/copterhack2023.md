@@ -81,15 +81,15 @@ Prepare your application and send it as a Draft Pull Request to [Clover reposito
 
 1. Fork the Clover repository:
 
-    <img src="../assets/github_application/github-fork.png" alt="GitHub Fork">
+    <img src="../assets/github_application/github-fork.webp" alt="GitHub Fork">
 
 2. On the web page of your fork, go to the `docs/en` section and create a new file in the [Markdown](http://en.wikipedia.org/wiki/Markdown) format:
 
-    <img src="../assets/github_application/create_new_file.png" alt="GitHub Create New File">
+    <img src="../assets/github_application/create_new_file.webp" alt="GitHub Create New File">
 
 3. Enter the title of your article. For example, `new-article.md`
 
-    <img src="../assets/github_application/new_article.png" alt="GitHub New Article">
+    <img src="../assets/github_application/new_article.webp" alt="GitHub New Article">
 
 4. Fill in your application by the recommended template:
 
@@ -128,7 +128,7 @@ Prepare your application and send it as a Draft Pull Request to [Clover reposito
 
 5. Go to the bottom of the page and create a new branch with the title of your article:
 
-    <img src="../assets/github_application/propose_new_file.png" alt="GitHub Propose New File">
+    <img src="../assets/github_application/propose_new_file.webp" alt="GitHub Propose New File">
 
     > **Note** Don't commit changes directly to the `master` branch, create a new branch.
 
@@ -136,7 +136,7 @@ Prepare your application and send it as a Draft Pull Request to [Clover reposito
 
 7. Send a Draft Pull Request from your branch to Clover:
 
-    <img src="../assets/github_application/github-pull-request-create.png" alt="GitHub Create Pull">
+    <img src="../assets/github_application/github-pull-request-create.webp" alt="GitHub Create Pull">
 
 8. In the Pull Request comments, you will be given feedback on the application.
 

@@ -4,7 +4,7 @@
 
 Examples of ArUco markers:
 
-![ArUco markers](../assets/markers.jpg)
+![ArUco markers](../assets/markers.webp)
 
 > **Hint** Use the most matte paper for printing visual markers. Glossy paper may glitter in the light, severely deteriorating the quality of recognition.
 

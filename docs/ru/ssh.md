@@ -18,10 +18,12 @@ ssh pi@192.168.11.1
 
 Подробнее: https://www.raspberrypi.org/documentation/remote-access/ssh/README.md.
 
+<!--
 ## Веб-доступ
 
 Начиная с версии 0.11.4 [образа](image.md) доступ к шеллу также доступен через веб-браузер (с использованием [Butterfly](https://github.com/paradoxxxzero/butterfly)). Для доступа откройте страницу http://192.168.11.1 и выберите на ней ссылку *Open web terminal*:
 
-<img src="../assets/butterfly.png">
+<img src="../assets/butterfly.webp">
+-->
 
 **Далее**: [Командная строка](cli.md).

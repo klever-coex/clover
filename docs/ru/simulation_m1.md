@@ -6,7 +6,7 @@
 
 ## Установка симулятора с UTM
 
-<img src="../assets/simulation_utm.png" width=500 class="center zoom">
+<img src="../assets/simulation_utm.webp" width=500 class="center zoom">
 
 1. Скачайте UTM с официального сайта [mac.getutm.app](https://mac.getutm.app/) и установите его.
 2. Скачайте исходный образ установщика Ubuntu 20.04 для архитектуры ARM64 по ссылке: https://clovervm.ams3.digitaloceanspaces.com/focal-desktop-arm64.iso.
@@ -27,7 +27,7 @@
     * Тип установки: *Erase disk and install Ubuntu*.
     * Введите параметры учетной записи по желанию, например:
 
-        <img src="../assets/simulation_ubuntu_account.png" width=400 class="center zoom">
+        <img src="../assets/simulation_ubuntu_account.webp" width=400 class="center zoom">
 
 6. Завершите установку и запустите установленную систему.
 7. Установите симулятор согласно [инструкции по сборке симулятора на собственной машине](simulation_native.md).

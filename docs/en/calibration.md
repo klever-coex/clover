@@ -4,7 +4,7 @@ To calibrate the sensors, go to the *Vehicle Setup* tab and select the *Sensors*
 
 ## Gyroscope
 
-<img src="../assets/qgc-cal-gyro.png" alt="QGroundControl gyroscope calibration" class="zoom">
+<img src="../assets/qgc-cal-gyro.webp" alt="QGroundControl gyroscope calibration" class="zoom">
 
 1. Select the *Gyroscope* menu.
 2. Place the quadcopter on a flat surface.
@@ -17,7 +17,7 @@ Additional information: [https://docs.px4.io/master/en/config/gyroscope.html](ht
 
 ## Accelerometer
 
-<img src="../assets/qgc-cal-acc.png" alt="QGroundControl accelerometer calibration" class="zoom">
+<img src="../assets/qgc-cal-acc.webp" alt="QGroundControl accelerometer calibration" class="zoom">
 
 1. Select the *Accelerometer* menu.
 2. Select the flight controller orientation — *ROTATION_NONE* if the flight controller is oriented with its front towards the quadcopter's nose.
@@ -28,7 +28,7 @@ Additional information: [https://docs.px4.io/master/en/config/accelerometer.html
 
 ## Level horizon
 
-<img src="../assets/qgc-cal-level.png" alt="QGroundControl level horizon calibration" class="zoom">
+<img src="../assets/qgc-cal-level.webp" alt="QGroundControl level horizon calibration" class="zoom">
 
 1. Select the *Level Horizon* menu.
 2. Select the flight controller orientation — *ROTATION_NONE* if the flight controller is oriented with its front towards the quadcopter's nose.

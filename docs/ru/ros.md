@@ -48,14 +48,14 @@ rospy.spin()  # входим в бесконечный цикл...
 |-|-|
 |[`std_msgs/Int64`](https://docs.ros.org/api/std_msgs/html/msg/Int64.html)|Целое число.|
 |[`std_msgs/Float64`](https://docs.ros.org/api/std_msgs/html/msg/Float64.html)|Число с плавающей точкой (дробное) двойной точности.|
-|[`std_msgs/String`](https://docs.ros.org/api/std_msgs/html/msg/String.html)|Строка.|
+|[`std_msgs/String`](https://docs.ros.org/en/noetic/api/std_msgs/html/msg/String.html)|Строка.|
 |[`geometry_msgs/PoseStamped`](https://docs.ros.org/api/geometry_msgs/html/msg/PoseStamped.html)|Позиция и ориентация объекта с заданной [системой координат](frames.md) и временной меткой (широко используется для передачи текущей позиции робота и его частей).|
 |[`geometry_msgs/TwistStamped`](https://docs.ros.org/api/geometry_msgs/html/msg/TwistStamped.html)|Линейная и угловая скорость объекта с заданной системой координат и временной меткой.|
 |[`sensor_msgs/Image`](https://docs.ros.org/api/sensor_msgs/html/msg/Image.html)|Изображение (см. [статью о работе с камерой](camera.md))|
 
 > **Info** Смотрите остальные стандартные типы сообщений в пакетах [`common_msgs`](http://wiki.ros.org/common_msgs), [`std_msgs`](https://wiki.ros.org/std_msgs), [`geometry_msgs`](https://wiki.ros.org/geometry_msgs), [`sensor_msgs`](https://wiki.ros.org/sensor_msgs) и других.
 
-Пример публикации сообщения типа [`std_msgs/String`](https://docs.ros.org/api/std_msgs/html/msg/String.html) (строка) в топик `/foo` на языке Python:
+Пример публикации сообщения типа [`std_msgs/String`](https://docs.ros.org/en/noetic/api/std_msgs/html/msg/String.html) (строка) в топик `/foo` на языке Python:
 
 ```python
 import rospy

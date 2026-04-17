@@ -1,7 +1,7 @@
 Coordinate systems (frames)
 ===
 
-![TF2 Clover frames](../assets/frames.png)
+![TF2 Clover frames](../assets/frames.webp)
 
 Main frames in the `clover` package:
 

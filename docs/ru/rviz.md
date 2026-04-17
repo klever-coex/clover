@@ -1,7 +1,7 @@
 Использование rviz и rqt
 ===
 
-![rviz](../assets/rviz.png)
+![rviz](../assets/rviz.webp)
 
 Инструмент [rviz](http://wiki.ros.org/rviz) позволяет в реальном времени визуализировать на 3D-сцене все компоненты робототехнической системы — системы координат, движущиеся части, показания датчиков, изображения с камер.
 
@@ -33,7 +33,7 @@ ROS_MASTER_URI=http://192.168.11.1:11311 rviz
 
 Результат визуализации коптера и камеры представлен ниже:
 
-![rviz](../assets/copter_visualization.png)
+![rviz](../assets/copter_visualization.webp)
 
 ### Визуализация окружения
 
@@ -52,7 +52,7 @@ sudo apt-get install ros-melodic-jsk-visualization
 Запуск инструментов rqt
 ---
 
-![rqt](../assets/rqt.png)
+![rqt](../assets/rqt.webp)
 
 Для запуска rqt для мониторинга состояния Клевера используйте команду:
 

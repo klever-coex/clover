@@ -115,9 +115,9 @@
 
 Ниже представлены графики угловых скоростей и углов при хороших настройках регулятора.
 
-<img src="../assets/pid_angular_rate.png" alt="angular rate graph">
+<img src="../assets/pid_angular_rate.webp" alt="angular rate graph">
 
-<img src="../assets/pid_roll_angle.png" alt="angle graph">
+<img src="../assets/pid_roll_angle.webp" alt="angle graph">
 
 На графиках красной линией отмечено рассчитанное значение, а зеленой требуемое.
 

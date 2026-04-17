@@ -1,4 +1,5 @@
-# Advanced Clover 3: The Platform
+<!-- # Advanced Clover 3: The Platform -->
+# Advanced Clover: The Platform
 
 [CopterHack-2023](copterhack2023.md), team **FTL**.
 
@@ -47,7 +48,7 @@ The CloverSim platform offers a seamless workflow for users:
 1. Users can effortlessly select or create a workspace and task and
    launch them with ease.
 
-   ![Step 1 screenshot](../assets/ftl/acp_workflow1.png)
+   ![Step 1 screenshot](../assets/ftl/acp_workflow1.webp)
 
 2. After launching the simulation, users are presented with CloverSim WebUI that
    provides them with an intuitive way to view their scores and progress,
@@ -55,18 +56,18 @@ The CloverSim platform offers a seamless workflow for users:
    From it users can open terminal, gzweb and more importantly they can easily
    access the CloverSim IDE to solve task.
 
-   ![Step 2 screenshot](../assets/ftl/acp_workflow2.png)
+   ![Step 2 screenshot](../assets/ftl/acp_workflow2.webp)
 
 3. The IDE provides a full suite of tools and features for writing and
    debugging code. One example is autocompletion to help streamline the
    development process, making it more efficient and effective.
 
-   ![Step 3 screenshot](../assets/ftl/acp_workflow3.png)
+   ![Step 3 screenshot](../assets/ftl/acp_workflow3.webp)
 
 4. Users can launch their programs with ease and monitor its progress via
    the GZWeb, CopterStatus, and SimulatorStatus views of the IDE.
 
-   ![Step 4 screenshot](../assets/ftl/acp_workflow4.png)
+   ![Step 4 screenshot](../assets/ftl/acp_workflow4.webp)
 
 5. Users can track their progress and scores in real-time and effortlessly
   restart the simulator if necessary. Additionally, different randomization

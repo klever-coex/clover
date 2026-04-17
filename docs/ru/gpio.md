@@ -20,7 +20,8 @@ sudo systemctl start pigpiod.service
 sudo systemctl enable pigpiod.service
 ```
 
-> **Warning** При одновременном использовании `pigpiod` и [LED-ленты](leds.md) возможны конфликты. Для подключения ленты используйте пин GPIO21. На версиях [образа](image.md) ниже 0.17 измените в файле `/lib/systemd/system/pigpiod.service` строку запуска сервиса на `ExecStart=/usr/bin/pigpiod -l -t 0 -x 0x0FFF3FF0`.
+<!-- > **Warning** При одновременном использовании `pigpiod` и [LED-ленты](leds.md) возможны конфликты. Для подключения ленты используйте пин GPIO21. На версиях [образа](image.md) ниже 0.17 измените в файле `/lib/systemd/system/pigpiod.service` строку запуска сервиса на `ExecStart=/usr/bin/pigpiod -l -t 0 -x 0x0FFF3FF0`. -->
+> **Warning** При одновременном использовании `pigpiod` и [LED-ленты](leds.md) возможны конфликты. Для подключения ленты используйте пин GPIO21.
 
 Пример работы с библиотекой:
 
@@ -79,7 +80,7 @@ pi.set_servo_pulsewidth(13, 2000)
 
 ## Подключение электромагнита
 
-![GPIO Mosfet Magnet Connection](../assets/gpio_mosfet_magnet.png)
+![GPIO Mosfet Magnet Connection](../assets/gpio_mosfet_magnet.webp)
 
 Для подключения электромагнита используйте полевой транзистор (MOSFET). Подключите транзистор к одному из GPIO-пинов Raspberry Pi. Для управления магнитом, подключенным к 18 пину, используйте такой код:
 

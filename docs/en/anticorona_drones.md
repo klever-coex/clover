@@ -25,7 +25,7 @@ Since we do not have the Clover drone, we will use an airframe built and designe
 
 The main idea is to use truss structure, because it works well against twisting and warping, besides, it can be assembled out of carbon tubes relatively easily.
 
-<img src="../assets/anticorona/drone_frame.jpg" title="Frame">
+<img src="../assets/anticorona/drone_frame.webp" title="Frame">
 
 The main advantage of such a system is that it distributes the impact between beams and effectively dissipates it. Engine mounts, however, are not impact-proof because they are specifically designed to break but save much more expensive and not-readily-available engines. This is why mounts are quickly-replaceable (only 3 screws) and made of cheap PLA plastic.
 
@@ -33,17 +33,17 @@ The space inside the central rhombus is occupied by the on-board equipment: batt
 
 As it is shown on this picture, computers can be mounted on the bottom and completely protected by legs and the truss structure from any collision damage. Jetson AGX is marked with arrow. Almost invisible, isn't it?
 
-<img src="../assets/anticorona/drone_with_jetson.jpg" title="AGX is safe">
+<img src="../assets/anticorona/drone_with_jetson.webp" title="AGX is safe">
 
 All sensory equipment, like cameras, rangefinder, etc can be easily mounted on the beams with special bracket connectors. This type of connection provides flexibility because you can fine-tune camera angle or position before tightening screws and fixing it firmly in place, which is especially relevant for tracker-cameras.
 
 We used one T-265 camera for visual odometry and one D-435 depth camera for both video input for neural net and for map-building (collision avoidance). T-265 suffers from "odometry drift" especially when engines are beat-up, which eventually happens after a number of crashes, so we have incorporated dampers to solve this problem.
 
-<img src="../assets/anticorona/camera.jpg" title="Begone odometry drift" width=400 class="zoom center">
+<img src="../assets/anticorona/camera.webp" title="Begone odometry drift" width=400 class="zoom center">
 
 Finally, the drone with all equipment installed looks like this
 
-<img src="../assets/anticorona/drone_assembled.jpg" title="Assembled drone" width=400 class="zoom center">
+<img src="../assets/anticorona/drone_assembled.webp" title="Assembled drone" width=400 class="zoom center">
 
 ## Software
 
@@ -81,8 +81,8 @@ We use a path planner, described in [^2]. In this paper Receding
 Horizon Next-Best-View Planner is presented, which uses Rapidly-exploring Random trees to navigate and explore the environment. It yields the following results, here is the occupancy map and the corresponding tunnel as it is seen by human being:
 
 <div class="image-group">
-  <img src="../assets/anticorona/robot_view.jpg" title="Mask release manufactured" width=300 class="zoom center">
-  <img src="../assets/anticorona/human_view.jpg" title="Mask release in cad" width=300 class="zoom center">
+  <img src="../assets/anticorona/robot_view.webp" title="Mask release manufactured" width=300 class="zoom center">
+  <img src="../assets/anticorona/human_view.webp" title="Mask release in cad" width=300 class="zoom center">
 </div>
 
 The algorithm is lightweight, so even the small computer like Latte Panda can run it with high enough frequency, and since it is CPU-bound, it will not compete for resources with the neural net, which is almost entirely GPU-bound.
@@ -91,13 +91,13 @@ The algorithm is lightweight, so even the small computer like Latte Panda can ru
 
 Detecting people without masks is cool, no doubt.
 
-<img src="../assets/anticorona/masks.jpg" title="Master and his apprentice" width=400 class="zoom center">
+<img src="../assets/anticorona/masks.webp" title="Master and his apprentice" width=400 class="zoom center">
 
 But we want not only to detect them but to give him a mask as well, so, we have built this system that can give a mask to person.
 
 <div class="image-group">
-  <img src="../assets/anticorona/release.jpg" title="Mask release in cad" width=300 class="zoom center">
-  <img src="../assets/anticorona/release_Cad.jpg" title="Mask release manufactured" width=300 class="zoom center">
+  <img src="../assets/anticorona/release.webp" title="Mask release in cad" width=300 class="zoom center">
+  <img src="../assets/anticorona/release_Cad.webp" title="Mask release manufactured" width=300 class="zoom center">
 </div>
 
 This device looks like a regular firearm mag, and functions exactly in the same way. Masks can be loaded into containers made out of 20ml syringe barrels.
@@ -114,7 +114,7 @@ We all hope that Corona crisis will soon be over, and when it will be finally ov
 
 This is an MVP, so some improvements are to be done. For example, payload refill and battery swaps are done manually for now, but this task should be automated. Actually, some work is already done in this direction:
 
-<img src="../assets/anticorona/charging_drone.jpg" title="Mask release manufactured" width=300 class="zoom center">
+<img src="../assets/anticorona/charging_drone.webp" title="Mask release manufactured" width=300 class="zoom center">
 
 Drone lands on a landing platform with special hooks which will connect to four metallic contacts (highlighted) and charge the battery. In future we want to change battery, not just charge it, but the mechanism is very complex and requires making custom batteries and battery mounts, also, it constraints placement of cameras, payload and so on.
 

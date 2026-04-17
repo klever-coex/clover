@@ -14,15 +14,15 @@ Timepad event page: https://copterexpress.timepad.ru/event/1017592/.
 
 Be sure to set the *Autopilot orientation* parameter to `ROTATION_ROLL_180_YAW_90` if you're using the *COEX Pix* flight controller. This parameter should be applied during calibration of each sensor.
 
-<img src="../assets/autopilot_orientation.png" class="center" width="600">
+<img src="../assets/autopilot_orientation.webp" class="center" width="600">
 
 This parameter is used for *IMU* orientation correction.
 
-### Suggested image versions
+<!-- ### Suggested image versions
 
 Raspberry Pi versions 3B+ and lower: [v0.18](https://github.com/CopterExpress/clover/releases/tag/v0.18)
 
-Raspberry Pi version 4: [v0.19-alpha.1](https://github.com/CopterExpress/clover/releases/tag/v0.19-alpha.1)
+Raspberry Pi version 4: [v0.19-alpha.1](https://github.com/CopterExpress/clover/releases/tag/v0.19-alpha.1) -->
 
 ### Camera orientation
 
@@ -58,7 +58,7 @@ The v1.8.2-clever.7 FCU firmware has a potential bug that manifests during VPE (
 
 ### `navigate` service problem
 
-The 0.18 Raspberry Pi image has a potential bug that makes the drone fly through waypoints too fast. Try setting the `nav_from_sp` parameter to `false` in `~/catkin_ws/src/clever/clever/launch/clever.launch` if you are affected by it:
+<!-- The 0.18 Raspberry Pi image has a potential bug that makes the drone fly through waypoints too fast. Try setting the `nav_from_sp` parameter to `false` in `~/catkin_ws/src/clever/clever/launch/clever.launch` if you are affected by it: -->
 
 ```xml
 <!-- simplified offboard control -->
