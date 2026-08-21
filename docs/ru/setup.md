@@ -6,7 +6,7 @@
 
 <img src="../assets/qgc.webp" alt="QGroundControl" class="zoom">
 
-Скачайте и установите установочный файл для Windows/Linux/macOS с [официального сайта QGroundControl](http://qgroundcontrol.com/downloads/). В случае необходимости согласитесь с установкой дополнительных драйверов при установке.
+Скачайте и установите установочный файл для Windows/Linux/macOS с [официального сайта QGroundControl](https://docs.qgroundcontrol.com/Stable_V5.1/en/qgc-user-guide/getting_started/download_and_install.html). В случае необходимости согласитесь с установкой дополнительных драйверов при установке.
 
 См. также [основную документацию по QGroundControl](https://docs.qgroundcontrol.com/en/).
 
