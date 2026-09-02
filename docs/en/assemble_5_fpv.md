@@ -51,10 +51,6 @@
   </tr>
 </table></div>
 
-## Wiring Diagram
-
-<div align="center"><img src="../assets/assembling_clever5_fpv/en/layout.webp" width=700 class="zoom border center"></div>
-
 ## Frame Assembly
 
 1. Align the 4 arms between the middle and bottom plates, installing the spacer between them.
