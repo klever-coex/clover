@@ -51,10 +51,6 @@
   </tr>
 </table></div>
 
-## Схема подключения электроники
-
-<div align="center"><img src="../assets/assembling_clever5_fpv/ru/layout.webp" width=700 class="zoom border center"></div>
-
 ## Сборка рамы
 
 1. Совместите 4 луча между средней и нижней декой, между ними установите проставку.
