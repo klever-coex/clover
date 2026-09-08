@@ -12,10 +12,10 @@
 
 ## Загрузка прошивки в полетный контроллер
 
-Скачайте актуальную стабильную версию прошивки на GitHub — **<a class="latest-firmware v4" href="https://github.com/PX4/PX4-Autopilot/releases">скачать</a>**.
+Скачайте прошивку PX4 для полётного контроллера. Актуальные версии:
 
-- Для полётного контроллера micoair_h743-v2 - micoair_h743-v2_default.px4  
-- Для полётного контроллера pixracer_R15 - px4fmu-v4_default.px4
+- Для `micoair_h743-v2` — **1.16.0**, файл [`micoair_h743-v2_default.px4`](https://github.com/PX4/PX4-Autopilot/releases/download/v1.16.0/micoair_h743-v2_default.px4).
+- Для `pixracer_R15` — **1.13.3**, файл [`px4fmu-v4_default.px4`](https://github.com/PX4/PX4-Autopilot/releases/download/v1.13.3/px4fmu-v4_default.px4).
 
 Инструкция по прошивке:
 

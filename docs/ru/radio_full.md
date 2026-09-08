@@ -5,8 +5,8 @@
 2. [Настройка аппаратуры](#настройка-аппаратуры)
 3. [Создание модели дрона](#создание-модели-дрона)
 4. [Загрузка модели](#загрузка-модели)
-5. [Сопряжение аппаратуры управления с приемником](#сопряжение-аппаратуры-управления-с-приемником)
-6. [Сопряжение аппаратуры управления с приемником через Bind Phrase](#сопряжение-аппаратуры-управления-с-приемником-через-bind-phrase)
+5. [Сопряжение аппаратуры управления с приемником через Bind Phrase](#сопряжение-аппаратуры-управления-с-приемником-через-bind-phrase)
+6. [Сопряжение аппаратуры управления с приемником](#сопряжение-аппаратуры-управления-с-приемником)
 
 ## Обзор аппаратуры
 
@@ -70,38 +70,16 @@
 
     <div align="center"><img src="../assets/radio/steps_model/step_8.webp"  height=300 class="zoom border center"><img src="../assets/radio/steps_model/step_9.webp" height=300 class="zoom border center"><p>Рисунок 10 – Копирование файла модели в папку MODELS</p></div>
 
-## Сопряжение аппаратуры управления с приемником
-
-1. Переведите приемник в режим **bind**, трижды подключив и отключив питание полетного контроллера, к которому подключен приемник ELRS.
-
-  > **Note** При переходе приемника в режим сопряжения, светодиод на приемнике начнет **мигать дважды с паузой**.
-
-2. Нажмите кнопку **SYS** и перейдите в меню **ExpressLRS**, как показано на рисунке 11.
-
-    <div align="center"><img src="../assets/radio/rx/elrs_step_1.webp" width=350 class="zoom border center"><p>Рисунок 11 – Переход в меню ExpressLRS</p></div>
-
-3. Выставьте **TX Power** на **100mW**, как показано на рисунке 12.
-
-    <div align="center"><img src="../assets/radio/rx/elrs_step_2.webp" width=350 class="zoom border center"><p>Рисунок 12 – Установка мощности передатчика 100mW</p></div>
-
-4. Нажмите кнопку **bind**, дождитесь сопряжения, как показано на рисунке 13.
-
-    <div align="center"><img src="../assets/radio/rx/elrs_step_3.webp" width=350 class="zoom border center"><img src="../assets/radio/rx/elrs_bind.webp" width=350 class="zoom border center"><p>Рисунок 13 – Запуск сопряжения в меню ExpressLRS</p></div>
-
-5. После чего зажмите кнопку **RTN**, и в основном меню появится индикатор связи с приемником, как на рисунке 14.
-
-    <div align="center"><img src="../assets/radio/main_menu.webp" width=350 class="zoom border center"><p>Рисунок 14 – Главное меню аппаратуры после успешного сопряжения</p></div>
-
 ## Сопряжение аппаратуры управления с приемником через Bind Phrase
 
 ### Настройка аппаратуры (передатчика)
 
 1. Включите аппаратуру, зажав кнопку **POWER**.
-2. Нажмите кнопку **SYS** и перейдите в меню **ExpressLRS**, как показано на рисунке 15.
+2. Нажмите кнопку **SYS** и перейдите в меню **ExpressLRS**, как показано на рисунке 11.
 
-    <div align="center"><img src="../assets/radio/rx/elrs_step_1.webp" width=350 class="zoom border center"><p>Рисунок 15 – Переход в меню ExpressLRS для настройки передатчика</p></div>
+    <div align="center"><img src="../assets/radio/rx/elrs_step_1.webp" width=350 class="zoom border center"><p>Рисунок 11 – Переход в меню ExpressLRS для настройки передатчика</p></div>
 
-3. Перейдите во вкладку **WiFi Connectivity** и активируйте подключение **Enable WiFi**, как показано на рисунках 16 и 17.
+3. Перейдите во вкладку **WiFi Connectivity** и активируйте подключение **Enable WiFi**, как показано на рисунках 12 и 13.
 
   <div align="center">
     <img src="../assets/radio/bind_phrase/elrs_step_1.webp" width=350 class="zoom border center">
@@ -111,50 +89,74 @@
   </div>
   <div align="center">
     <img src="../assets/radio/bind_phrase/elrs_step_3.webp" width=350 class="zoom border center">
-    <p>Рисунок 16 – Переход к настройкам WiFi Connectivity</p>
-    <p>Рисунок 17 – Включение WiFi на передатчике ExpressLRS</p>
+    <p>Рисунок 12 – Переход к настройкам WiFi Connectivity</p>
+    <p>Рисунок 13 – Включение WiFi на передатчике ExpressLRS</p>
   </div>
 
-4. Подключитесь с компьютера или смартфона к появившейся сети **ExpressLRS TX**. Пароль по умолчанию: **expresslrs**. Пример подключения показан на рисунке 18.
+4. Подключитесь с компьютера или смартфона к появившейся сети **ExpressLRS TX**. Пароль по умолчанию: **expresslrs**. Пример подключения показан на рисунке 14.
 
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_step_4.webp" width=350 class="zoom border center"><p>Рисунок 18 – Подключение к сети ExpressLRS TX</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/elrs_step_4.webp" width=350 class="zoom border center"><p>Рисунок 14 – Подключение к сети ExpressLRS TX</p></div>
 
-5. Откройте браузер и перейдите по адресу `10.0.0.1`. Стартовый экран показан на рисунке 19.
+5. Откройте браузер и перейдите по адресу `10.0.0.1`. Стартовый экран показан на рисунке 15.
 
     > **Note** **Обратите внимание на версию прошивки:** если она меньше 3.3.1, то её следует обновить через [ExpressLRS Web Flasher](https://expresslrs.github.io/web-flasher/).
 
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_logo_tx.webp" width=350 class="zoom border center"><p>Рисунок 19 – Веб-интерфейс передатчика ExpressLRS</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/elrs_logo_tx.webp" width=350 class="zoom border center"><p>Рисунок 15 – Веб-интерфейс передатчика ExpressLRS</p></div>
 
-6. Введите уникальную **Binding Phrase** и нажмите **SAVE**, как показано на рисунке 20.
+6. Введите уникальную **Binding Phrase** и нажмите **SAVE**, как показано на рисунке 16.
 
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_settings.webp" width=700 class="zoom border center"><p>Рисунок 20 – Ввод Binding Phrase в настройках передатчика</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/elrs_settings.webp" width=700 class="zoom border center"><p>Рисунок 16 – Ввод Binding Phrase в настройках передатчика</p></div>
 
-7. В появившемся окне нажмите кнопку **REBOOT**, как показано на рисунке 21.
+7. В появившемся окне нажмите кнопку **REBOOT**, как показано на рисунке 17.
 
-    <div align="center"><img src="../assets/radio/bind_phrase/reboot.webp" width=350 class="zoom border center"><p>Рисунок 21 – Перезагрузка передатчика после сохранения настроек</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/reboot.webp" width=350 class="zoom border center"><p>Рисунок 17 – Перезагрузка передатчика после сохранения настроек</p></div>
 
 ### Настройка приемника
 
 1. Переведите приемник в режим **WiFi**, подав питание на полетный контроллер, к которому подключен приемник ELRS и подождав 60 секунд, после чего приемник будет непрерывно моргать.
 
-2. Подключитесь с компьютера или смартфона к появившейся сети **ExpressLRS RX**. Пароль по умолчанию: **expresslrs**. Пример подключения показан на рисунке 22.
+2. Подключитесь с компьютера или смартфона к появившейся сети **ExpressLRS RX**. Пароль по умолчанию: **expresslrs**. Пример подключения показан на рисунке 18.
 
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_step_5.webp" width=350 class="zoom border center"><p>Рисунок 22 – Подключение к сети ExpressLRS RX</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/elrs_step_5.webp" width=350 class="zoom border center"><p>Рисунок 18 – Подключение к сети ExpressLRS RX</p></div>
 
-3. Откройте браузер и перейдите по адресу `10.0.0.1`. Стартовый экран показан на рисунке 23.
+3. Откройте браузер и перейдите по адресу `10.0.0.1`. Стартовый экран показан на рисунке 19.
 
     > **Note** **Обратите внимание** на версию прошивки: если она меньше 3.0.0, то её следует обновить через ["ExpressLRS Web Flasher"](https://expresslrs.github.io/web-flasher/).
 
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_logo_rx.webp" width=350 class="zoom border center"><p>Рисунок 23 – Веб-интерфейс приемника ExpressLRS</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/elrs_logo_rx.webp" width=350 class="zoom border center"><p>Рисунок 19 – Веб-интерфейс приемника ExpressLRS</p></div>
 
-4. Введите **ТАКУЮ ЖЕ** уникальную **Binding Phrase**, как и на передатчике, и нажмите **SAVE & REBOOT**, как показано на рисунке 24.
+4. Введите **ТАКУЮ ЖЕ** уникальную **Binding Phrase**, как и на передатчике, и нажмите **SAVE & REBOOT**, как показано на рисунке 20.
 
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_settings_2.webp" width=700 class="zoom border center"><p>Рисунок 24 – Ввод Binding Phrase в настройках приемника</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/elrs_settings_2.webp" width=700 class="zoom border center"><p>Рисунок 20 – Ввод Binding Phrase в настройках приемника</p></div>
 
-5. В появившемся окне нажмите кнопку **REBOOT**, как показано на рисунке 25.
+5. В появившемся окне нажмите кнопку **REBOOT**, как показано на рисунке 21.
 
-    <div align="center"><img src="../assets/radio/bind_phrase/reboot.webp" width=350 class="zoom border center"><p>Рисунок 25 – Перезагрузка приемника после сохранения настроек</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/reboot.webp" width=350 class="zoom border center"><p>Рисунок 21 – Перезагрузка приемника после сохранения настроек</p></div>
 
-6. Настройка завершена. После перезагрузки связь должна появиться, как на рисунке 26.
+6. Настройка завершена. После перезагрузки связь должна появиться, как на рисунке 22.
 
-    <div align="center"><img src="../assets/radio/main_menu.webp" width=350 class="zoom border center"><p>Рисунок 26 – Главное меню аппаратуры после настройки через Bind Phrase</p></div>
+    <div align="center"><img src="../assets/radio/main_menu.webp" width=350 class="zoom border center"><p>Рисунок 22 – Главное меню аппаратуры после настройки через Bind Phrase</p></div>
+
+## Сопряжение аппаратуры управления с приемником
+
+Альтернативный способ — сопряжение через режим **bind** приемника.
+
+1. Переведите приемник в режим **bind**, трижды подключив и отключив питание полетного контроллера, к которому подключен приемник ELRS.
+
+  > **Note** При переходе приемника в режим сопряжения, светодиод на приемнике начнет **мигать дважды с паузой**.
+
+2. Нажмите кнопку **SYS** и перейдите в меню **ExpressLRS**, как показано на рисунке 23.
+
+    <div align="center"><img src="../assets/radio/rx/elrs_step_1.webp" width=350 class="zoom border center"><p>Рисунок 23 – Переход в меню ExpressLRS</p></div>
+
+3. Выставьте **TX Power** на **100mW**, как показано на рисунке 24.
+
+    <div align="center"><img src="../assets/radio/rx/elrs_step_2.webp" width=350 class="zoom border center"><p>Рисунок 24 – Установка мощности передатчика 100mW</p></div>
+
+4. Нажмите кнопку **bind**, дождитесь сопряжения, как показано на рисунке 25.
+
+    <div align="center"><img src="../assets/radio/rx/elrs_step_3.webp" width=350 class="zoom border center"><img src="../assets/radio/rx/elrs_bind.webp" width=350 class="zoom border center"><p>Рисунок 25 – Запуск сопряжения в меню ExpressLRS</p></div>
+
+5. После чего зажмите кнопку **RTN**, и в основном меню появится индикатор связи с приемником, как на рисунке 26.
+
+    <div align="center"><img src="../assets/radio/main_menu.webp" width=350 class="zoom border center"><p>Рисунок 26 – Главное меню аппаратуры после успешного сопряжения</p></div>

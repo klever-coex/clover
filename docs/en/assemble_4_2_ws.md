@@ -152,23 +152,9 @@ Dimensional drawing – [clover-4.2-ws.pdf](https://github.com/CopterExpress/cl
 
 ## Installing the flight controller
 
-The *Clover 4* set allows you to install various flight controllers, for example *COEX Pix* and *Pixracer*.
+Install the Pixracer flight controller.
 
-> **Caution** When installing the flight controller, pay attention to the arrow located on the board, when installing it must be directed towards the nose of the aircraft.
-
-### COEX Pix
-
-> **Hint** Before installing the damper struts, screw in 2 layers of nylon nuts for a stronger hold or bite off excess threads with side cutters.
-
-1. Secure the power distribution board with nylon nuts and mount the damper posts on top.
-
-2. Install the flight controller and secure with nylon nuts.
-
-    <img id="prop_rotation" src="../assets/assembling_soldering_clever_4/coex_pix_1.webp" width=300 class="zoom border center">
-
-3. Insert the flash card for logging into the flight controller.
-
-    <img id="prop_rotation" src="../assets/assembling_soldering_clever_4/coex_pix_2.webp" width=300 class="zoom border center">
+> **Caution** The arrow on the flight controller board must point towards the front of the drone.
 
 ### Pixracer
 

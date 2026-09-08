@@ -5,8 +5,8 @@
 2. [Radio controller setup](#radio-controller-setup)
 3. [Creating a drone model](#creating-a-drone-model)
 4. [Loading the model](#loading-the-model)
-5. [Binding the radio controller to the receiver](#binding-the-radio-controller-to-the-receiver)
-6. [Binding the radio controller to the receiver via Bind Phrase](#binding-the-radio-controller-to-the-receiver-via-bind-phrase)
+5. [Binding the radio controller to the receiver via Bind Phrase](#binding-the-radio-controller-to-the-receiver-via-bind-phrase)
+6. [Binding the radio controller to the receiver](#binding-the-radio-controller-to-the-receiver)
 
 ## Hardware overview
 
@@ -70,38 +70,16 @@ After you return the switches and sticks to their default positions, the main me
 
     <div align="center"><img src="../assets/radio/steps_model/step_8.webp" height=300 class="zoom border center"><img src="../assets/radio/steps_model/step_9.webp" height=300 class="zoom border center"><p>Figure 10 - Copying the model file into the MODELS folder</p></div>
 
-## Binding the radio controller to the receiver
-
-1. Put the receiver into **bind** mode by powering the flight controller connected to the ELRS receiver on and off three times.
-
-  > **Note** When the receiver enters bind mode, the LED on the receiver starts **blinking twice with a pause**.
-
-2. Press **SYS** and open the **ExpressLRS** menu, as shown in Figure 11.
-
-    <div align="center"><img src="../assets/radio/rx/elrs_step_1.webp" width=350 class="zoom border center"><p>Figure 11 - Opening the ExpressLRS menu</p></div>
-
-3. Set **TX Power** to **100mW**, as shown in Figure 12.
-
-    <div align="center"><img src="../assets/radio/rx/elrs_step_2.webp" width=350 class="zoom border center"><p>Figure 12 - Setting transmitter power to 100mW</p></div>
-
-4. Press **Bind** and wait for binding to complete, as shown in Figure 13.
-
-    <div align="center"><img src="../assets/radio/rx/elrs_step_3.webp" width=350 class="zoom border center"><img src="../assets/radio/rx/elrs_bind.webp" width=350 class="zoom border center"><p>Figure 13 - Starting binding from the ExpressLRS menu</p></div>
-
-5. Then press **RTN**, and the receiver link indicator will appear in the main menu, as shown in Figure 14.
-
-    <div align="center"><img src="../assets/radio/main_menu.webp" width=350 class="zoom border center"><p>Figure 14 - Radio controller main menu after successful binding</p></div>
-
 ## Binding the radio controller to the receiver via Bind Phrase
 
 ### Radio controller setup (transmitter)
 
 1. Turn on the radio controller by holding the **POWER** button.
-2. Press **SYS** and open the **ExpressLRS** menu, as shown in Figure 15.
+2. Press **SYS** and open the **ExpressLRS** menu, as shown in Figure 11.
 
-    <div align="center"><img src="../assets/radio/rx/elrs_step_1.webp" width=350 class="zoom border center"><p>Figure 15 - Opening the ExpressLRS menu for transmitter setup</p></div>
+    <div align="center"><img src="../assets/radio/rx/elrs_step_1.webp" width=350 class="zoom border center"><p>Figure 11 - Opening the ExpressLRS menu for transmitter setup</p></div>
 
-3. Open the **WiFi Connectivity** tab and enable **Enable WiFi**, as shown in Figures 16 and 17.
+3. Open the **WiFi Connectivity** tab and enable **Enable WiFi**, as shown in Figures 12 and 13.
 
   <div align="center">
     <img src="../assets/radio/bind_phrase/elrs_step_1.webp" width=350 class="zoom border center">
@@ -111,50 +89,74 @@ After you return the switches and sticks to their default positions, the main me
   </div>
   <div align="center">
     <img src="../assets/radio/bind_phrase/elrs_step_3.webp" width=350 class="zoom border center">
-    <p>Figure 16 - Opening WiFi Connectivity settings</p>
-    <p>Figure 17 - Enabling WiFi on the ExpressLRS transmitter</p>
+    <p>Figure 12 - Opening WiFi Connectivity settings</p>
+    <p>Figure 13 - Enabling WiFi on the ExpressLRS transmitter</p>
   </div>
 
-4. Connect from a PC or smartphone to the **ExpressLRS TX** network. The default password is **expresslrs**. An example is shown in Figure 18.
+4. Connect from a PC or smartphone to the **ExpressLRS TX** network. The default password is **expresslrs**. An example is shown in Figure 14.
 
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_step_4.webp" width=350 class="zoom border center"><p>Figure 18 - Connecting to the ExpressLRS TX network</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/elrs_step_4.webp" width=350 class="zoom border center"><p>Figure 14 - Connecting to the ExpressLRS TX network</p></div>
 
-5. Open a browser and go to `10.0.0.1`. The start page is shown in Figure 19.
+5. Open a browser and go to `10.0.0.1`. The start page is shown in Figure 15.
 
     > **Note** Pay attention to the firmware version. If it is lower than 3.3.1, update it with [ExpressLRS Web Flasher](https://expresslrs.github.io/web-flasher/).
 
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_logo_tx.webp" width=350 class="zoom border center"><p>Figure 19 - ExpressLRS transmitter web interface</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/elrs_logo_tx.webp" width=350 class="zoom border center"><p>Figure 15 - ExpressLRS transmitter web interface</p></div>
 
-6. Enter a unique **Binding Phrase** and press **SAVE**, as shown in Figure 20.
+6. Enter a unique **Binding Phrase** and press **SAVE**, as shown in Figure 16.
 
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_settings.webp" width=700 class="zoom border center"><p>Figure 20 - Entering the Binding Phrase in the transmitter settings</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/elrs_settings.webp" width=700 class="zoom border center"><p>Figure 16 - Entering the Binding Phrase in the transmitter settings</p></div>
 
-7. In the pop-up window, press **REBOOT**, as shown in Figure 21.
+7. In the pop-up window, press **REBOOT**, as shown in Figure 17.
 
-    <div align="center"><img src="../assets/radio/bind_phrase/reboot.webp" width=350 class="zoom border center"><p>Figure 21 - Rebooting the transmitter after saving settings</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/reboot.webp" width=350 class="zoom border center"><p>Figure 17 - Rebooting the transmitter after saving settings</p></div>
 
 ### Receiver setup
 
 1. Put the receiver into **WiFi** mode by powering the flight controller connected to the ELRS receiver and waiting 60 seconds. After that, the receiver LED will blink continuously.
 
-2. Connect from a PC or smartphone to the **ExpressLRS RX** network. The default password is **expresslrs**. An example is shown in Figure 22.
+2. Connect from a PC or smartphone to the **ExpressLRS RX** network. The default password is **expresslrs**. An example is shown in Figure 18.
 
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_step_5.webp" width=350 class="zoom border center"><p>Figure 22 - Connecting to the ExpressLRS RX network</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/elrs_step_5.webp" width=350 class="zoom border center"><p>Figure 18 - Connecting to the ExpressLRS RX network</p></div>
 
-3. Open a browser and go to `10.0.0.1`. The start page is shown in Figure 23.
+3. Open a browser and go to `10.0.0.1`. The start page is shown in Figure 19.
 
     > **Note** Pay attention to the firmware version. If it is lower than 3.0.0, update it with [ExpressLRS Web Flasher](https://expresslrs.github.io/web-flasher/).
 
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_logo_rx.webp" width=350 class="zoom border center"><p>Figure 23 - ExpressLRS receiver web interface</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/elrs_logo_rx.webp" width=350 class="zoom border center"><p>Figure 19 - ExpressLRS receiver web interface</p></div>
 
-4. Enter the **same** unique **Binding Phrase** that was used on the transmitter, then press **SAVE & REBOOT**, as shown in Figure 24.
+4. Enter the **same** unique **Binding Phrase** that was used on the transmitter, then press **SAVE & REBOOT**, as shown in Figure 20.
 
-    <div align="center"><img src="../assets/radio/bind_phrase/elrs_settings_2.webp" width=700 class="zoom border center"><p>Figure 24 - Entering the Binding Phrase in the receiver settings</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/elrs_settings_2.webp" width=700 class="zoom border center"><p>Figure 20 - Entering the Binding Phrase in the receiver settings</p></div>
 
-5. In the pop-up window, press **REBOOT**, as shown in Figure 25.
+5. In the pop-up window, press **REBOOT**, as shown in Figure 21.
 
-    <div align="center"><img src="../assets/radio/bind_phrase/reboot.webp" width=350 class="zoom border center"><p>Figure 25 - Rebooting the receiver after saving settings</p></div>
+    <div align="center"><img src="../assets/radio/bind_phrase/reboot.webp" width=350 class="zoom border center"><p>Figure 21 - Rebooting the receiver after saving settings</p></div>
 
-6. Setup is complete. After reboot, the link should appear as shown in Figure 26.
+6. Setup is complete. After reboot, the link should appear as shown in Figure 22.
 
-    <div align="center"><img src="../assets/radio/main_menu.webp" width=350 class="zoom border center"><p>Figure 26 - Radio controller main menu after setup through Bind Phrase</p></div>
+    <div align="center"><img src="../assets/radio/main_menu.webp" width=350 class="zoom border center"><p>Figure 22 - Radio controller main menu after setup through Bind Phrase</p></div>
+
+## Binding the radio controller to the receiver
+
+An alternative method uses the receiver’s **bind** mode.
+
+1. Put the receiver into **bind** mode by powering the flight controller connected to the ELRS receiver on and off three times.
+
+  > **Note** When the receiver enters bind mode, the LED on the receiver starts **blinking twice with a pause**.
+
+2. Press **SYS** and open the **ExpressLRS** menu, as shown in Figure 23.
+
+    <div align="center"><img src="../assets/radio/rx/elrs_step_1.webp" width=350 class="zoom border center"><p>Figure 23 - Opening the ExpressLRS menu</p></div>
+
+3. Set **TX Power** to **100mW**, as shown in Figure 24.
+
+    <div align="center"><img src="../assets/radio/rx/elrs_step_2.webp" width=350 class="zoom border center"><p>Figure 24 - Setting transmitter power to 100mW</p></div>
+
+4. Press **Bind** and wait for binding to complete, as shown in Figure 25.
+
+    <div align="center"><img src="../assets/radio/rx/elrs_step_3.webp" width=350 class="zoom border center"><img src="../assets/radio/rx/elrs_bind.webp" width=350 class="zoom border center"><p>Figure 25 - Starting binding from the ExpressLRS menu</p></div>
+
+5. Then press **RTN**, and the receiver link indicator will appear in the main menu, as shown in Figure 26.
+
+    <div align="center"><img src="../assets/radio/main_menu.webp" width=350 class="zoom border center"><p>Figure 26 - Radio controller main menu after successful binding</p></div>

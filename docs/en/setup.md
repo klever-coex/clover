@@ -12,10 +12,10 @@ See also the [official QGroundControl documentation](https://docs.qgroundcontrol
 
 ## Flashing the flight controller
 
-Download the latest stable firmware version from GitHub — **[download](https://github.com/PX4/PX4-Autopilot/releases)**.
+Download the PX4 firmware for your flight controller. Current versions:
 
-- For the `micoair_h743-v2` flight controller: `micoair_h743-v2_default.px4`
-- For the `pixracer_R15` flight controller: `px4fmu-v4_default.px4`
+- For `micoair_h743-v2` — **1.16.0**, file [`micoair_h743-v2_default.px4`](https://github.com/PX4/PX4-Autopilot/releases/download/v1.16.0/micoair_h743-v2_default.px4).
+- For `pixracer_R15` — **1.13.3**, file [`px4fmu-v4_default.px4`](https://github.com/PX4/PX4-Autopilot/releases/download/v1.13.3/px4fmu-v4_default.px4).
 
 Flashing instructions:
 
