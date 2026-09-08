@@ -114,17 +114,9 @@ Dimensional drawing – [clover-4.2.pdf](https://github.com/CopterExpress/clove
 
 ## Installing Flight Controller
 
-Clover 4 drone kit allows you to install various flight controllers, for example COEX Pix and Pixracer.
+Install the Pixracer flight controller.
 
-> **Caution** During installation the flight controller, pay attention to the arrow located on the board, it should be directed to the copter bow.
-
-### COEX Pix
-
-> **Hint** Before installing the damper struts, screw 2 layers of nylon nuts, for a stronger fix or bite off the excess thread using side cutters.
-
-Install the damper struts, fix COEX Pix on them with nylon nuts.
-
-<img src="../assets/assembling_clever4_2/coex_pix.webp" width=300 class="zoom border center">
+> **Caution** The arrow on the flight controller board must point towards the front of the drone.
 
 ### Pixracer
 
