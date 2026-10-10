@@ -6,9 +6,9 @@
 
 <img src="../assets/qgc.webp" alt="QGroundControl" class="zoom">
 
-Скачайте и установите установочный файл для Windows/Linux/macOS с [официального сайта QGroundControl](https://docs.qgroundcontrol.com/Stable_V5.1/en/qgc-user-guide/getting_started/download_and_install.html). В случае необходимости согласитесь с установкой дополнительных драйверов при установке.
+Для настройки используйте QGroundControl версии 5.1.4. Скачайте установщик для Windows, Linux или macOS на странице [релиза QGroundControl v5.1.4](https://github.com/mavlink/QGroundControl/releases/tag/v5.1.4). Если установщик предложит поставить дополнительные драйверы, согласитесь с установкой.
 
-См. также [основную документацию по QGroundControl](https://docs.qgroundcontrol.com/en/).
+См. также [основную документацию по QGroundControl](https://docs.qgroundcontrol.com/Stable_V5.1/en/qgc-user-guide/).
 
 ## Загрузка прошивки в полетный контроллер
 

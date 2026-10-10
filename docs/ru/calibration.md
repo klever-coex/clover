@@ -13,7 +13,7 @@
 
 > **Warning** Во время калибровки гироскопа квадрокоптер не должен менять своего положения, шататься и т. д.
 
-Дополнительная информация: https://docs.px4.io/master/en/config/gyroscope.html.
+Дополнительная информация: https://docs.px4.io/main/en/config/gyroscope.html.
 
 ## Акселерометр
 
@@ -24,7 +24,7 @@
 3. Последовательно устанавливайте квадрокоптер в каждую из указанных ориентаций до появления желтой рамки.
 4. Держите квадрокоптер неподвижно до появления зеленой рамки.
 
-Дополнительная информация: https://docs.px4.io/master/en/config/accelerometer.html.
+Дополнительная информация: https://docs.px4.io/main/en/config/accelerometer.html.
 
 ## Уровень горизонта
 
@@ -36,6 +36,6 @@
 4. Нажмите *OK*.
 5. Дождитесь окончания калибровки.
 
-Дополнительная информация: https://docs.px4.io/master/en/config/level_horizon_calibration.html.
+Дополнительная информация: https://docs.px4.io/main/en/config/level_horizon_calibration.html.
 
 **Далее**: [Настройка пульта](radio.md).

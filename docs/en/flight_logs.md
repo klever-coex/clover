@@ -1,7 +1,7 @@
 PX4 Logs and Topics
 ===
 
-For detailed analysis of the PX4 firmware behavior, you can view flight logs. Flight logs are messages in [uORB topics](https://dev.px4.io/en/middleware/uorb.html) written to a file with extension `.ulg`. The log file can be downloaded using QGroundControl via Wi-Fi or USB in the *Download Log* tab:
+For detailed analysis of the PX4 firmware behavior, you can view flight logs. Flight logs are messages in [uORB topics](https://docs.px4.io/main/en/middleware/uorb.html) written to a file with extension `.ulg`. The log file can be downloaded using QGroundControl via Wi-Fi or USB in the *Download Log* tab:
 
 ![Logs in QGroundControl](../assets/download-log.webp)
 
@@ -19,9 +19,9 @@ In the application, you can view the full list of recorded topics (*Fields List*
 Main topics in PX4
 ---
 
-[uORB](https://dev.px4.io/en/middleware/uorb.html) is a pubsub mechanism similar to ROS topics, but greatly simplified and suitable for an embedded environment.
+[uORB](https://docs.px4.io/main/en/middleware/uorb.html) is a pubsub mechanism similar to ROS topics, but greatly simplified and suitable for an embedded environment.
 
-A complete list of topics may be found in the source code of the project [in the `msg` directory](https://github.com/PX4/Firmware/tree/master/msg).
+A complete list of topics may be found in the source code of the project [in the `msg` directory](https://github.com/PX4/PX4-Autopilot/tree/main/msg).
 
 Here are some topics:
 

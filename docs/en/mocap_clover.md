@@ -139,7 +139,7 @@ In summary, trajectory tracking is crucial for UAV applications as it enables pr
     <img title="Figure-8" alt="Alt text" src="../assets/mocap_clover/px4_control_structure.webp" width="80%" height="80%">
     </p>
     <p align = "center">
-    <em>Fig.3 - Cascaded PX4 control system [<a href="https://docs.px4.io/v1.12/en/flight_stack/controller_diagrams.html#multicopter-control-architecture">reference</a>].</em>
+    <em>Fig.3 - Cascaded PX4 control system [<a href="https://docs.px4.io/main/en/flight_stack/controller_diagrams.html#multicopter-control-architecture">reference</a>].</em>
 </p>
 
 This is a much faster and easier way to tune a real drone and provides good tuning for most air frames. Manual tuning is recommended when auto-tuning dos not work, or when fine-tuning is essential. However, the process is tedious and not easy especially for users with limited control background and experience. The Clover airframe provides sufficient base settings where auto-tuning can further improve performance depending on the Clover being used.

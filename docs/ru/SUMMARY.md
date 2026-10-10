@@ -66,6 +66,7 @@
   * [Калибровка камеры](camera_calibration.md)
   * [Интерфейс UART](uart.md)
   * [Работа с логами PX4](flight_logs.md)
+  * [Настройка FPV в Betaflight](betaflight_fpv_setup.md)
   * [Прошивка Betaflight в MicoAir743v2](firmware_Betaflight_MicoAir743v2.md)
   * [Прошивка PX4 в MicoAir743v2](firmware_PX4_MicoAir743v2.md)
   * [Прошивка PX4 в Pixracer](firmware_Pixracer.md)

@@ -29,7 +29,7 @@ Pixhawk, Pixracer и COEX Pix можно прошить, используя QGro
 </ul>
 </div>
 
-> **Warning** Если вы используете прошивку с версией ниже, чем *v1.10* (например `v1.8.2-clover.13`), то во избежание ошибок конфигурирования полётного контроллера, используйте [QGroundControl версии *v4.2.0*](https://github.com/mavlink/qgroundcontrol/releases/tag/v4.2.0) (или ниже). См. [подробную информацию](https://docs.px4.io/v1.11/en/config/battery.html#parameter-migration-notes) об изменениях в параметрах, которые вызывают ошибки в более новых версиях QGroundControl.
+> **Warning** Если вы используете прошивку с версией ниже, чем *v1.10* (например `v1.8.2-clover.13`), то во избежание ошибок конфигурирования полётного контроллера, используйте [QGroundControl версии *v4.2.0*](https://github.com/mavlink/qgroundcontrol/releases/tag/v4.2.0) (или ниже). См. [подробную информацию](https://docs.px4.io/main/en/config/battery.html) об изменениях в параметрах, которые вызывают ошибки в более новых версиях QGroundControl.
 
 <script type="text/javascript">
     // get latest release from GitHub

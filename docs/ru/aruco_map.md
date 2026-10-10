@@ -112,7 +112,6 @@ rosrun aruco_pose genmap.py 0.33 2 4 1 1 0 -o test_map.txt
 
 Для проверки правильности всех настроек можно [воспользоваться утилитой `selfcheck.py`](selfcheck.md).
 
-> **Info** Для использования LPE в Pixhawk необходимо [скачать прошивку с названием `px4fmu-v2_lpe.px4`](https://github.com/PX4/Firmware/releases).
 
 ## Полет
 

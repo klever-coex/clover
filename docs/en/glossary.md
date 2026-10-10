@@ -105,6 +105,6 @@ Inertial measurement unit. A set of inertial sensors (a gyroscope and an acceler
 
 A process of current state (position, rotation, velocity, angular rates, etc.) estimation performed by the flight controller software. A [Kalman Filter](https://en.wikipedia.org/wiki/Kalman_filter) is typically used for sensor fusion; other filters are typically applied to raw sensor data.
 
-PX4 has two estimation modules: LPE and [ECL EKF](https://dev.px4.io/en/tutorials/tuning_the_ecl_ekf.html) (EKF2).
+PX4 has two estimation modules: LPE and [ECL EKF](https://docs.px4.io/main/en/advanced_config/tuning_the_ecl_ekf.html) (EKF2).
 
 APM utilizes its [EKF2](http://ardupilot.org/dev/docs/ekf2-estimation-system.html) subsystem.

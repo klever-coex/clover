@@ -105,6 +105,6 @@ Inertial measurement unit. Комбинация датчиков (гироско
 
 Процесс определения ПО полетного контроллера состояния квадрокоптера: положения в пространстве, скоростей, углов наклона и т. д. Для этого используется смешивание данных с установленных датчиков и различные алгоритмы фильтрации, например [фильтр Калмана](https://ru.wikipedia.org/wiki/Фильтр_Калмана).
 
-В прошивке PX4 есть два модуля для estimation'а: LPE и [ECL EKF](https://dev.px4.io/en/tutorials/tuning_the_ecl_ekf.html) (EKF2).
+В прошивке PX4 есть модуль для estimation' [EKF2](https://docs.px4.io/main/en/advanced_config/tuning_the_ecl_ekf.html).
 
 В прошивке APM эту функцию выполняет подсистема [EKF2](http://ardupilot.org/dev/docs/ekf2-estimation-system.html).

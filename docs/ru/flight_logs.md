@@ -1,7 +1,7 @@
 Логи и топики PX4
 ===
 
-Для детального анализа поведения прошивки PX4 можно просмотреть полетные логи. Полетные логи представляют собой сообщения в [uORB-топиках](https://dev.px4.io/en/middleware/uorb.html), записанные в файл с расширением `.ulg`. Лог-файл можно скачать с помощью QGroundControl по Wi-Fi или USB во вкладке *Log Download*:
+Для детального анализа поведения прошивки PX4 можно просмотреть полетные логи. Полетные логи представляют собой сообщения в [uORB-топиках](https://docs.px4.io/main/en/middleware/uorb.html), записанные в файл с расширением `.ulg`. Лог-файл можно скачать с помощью QGroundControl по Wi-Fi или USB во вкладке *Log Download*:
 
 ![Логи в QGroundControl](../assets/download-log.webp)
 
@@ -25,9 +25,9 @@
 Основные топики в PX4
 ---
 
-[uORB](https://dev.px4.io/en/middleware/uorb.html) представляет собой pub/sub механизм, аналогичный ROS-топикам, однако сильно упрощенный и подходящий для embedded-среды.
+[uORB](https://docs.px4.io/main/en/middleware/uorb.html) представляет собой pub/sub механизм, аналогичный ROS-топикам, однако сильно упрощенный и подходящий для embedded-среды.
 
-Полный список топиков можно узнать в исходном коде проекта [в каталоге `msg`](https://github.com/PX4/Firmware/tree/master/msg).
+Полный список топиков можно узнать в исходном коде проекта [в каталоге `msg`](https://github.com/PX4/PX4-Autopilot/tree/main/msg).
 
 Список некоторых топиков:
 

@@ -2,9 +2,9 @@
 
 > **Warning** Это статья описывает только установку PX4 и **является устаревшей**. Используйте официальную [конфигурацию для Gazebo](simulation.md) или [образ виртуальной машины](simulation_vm.md) со всем необходимым для запуска симуляции Клевера.
 
-Основная статья: https://dev.px4.io/en/simulation/
+Основная статья: https://docs.px4.io/main/en/simulation/
 
-Симуляция PX4 возможна в ОС GNU/Linux и macOS с использованием систем симуляции физической среды [jMAVSim](https://docs.px4.io/master/en/simulation/jmavsim.html) и [Gazebo](http://gazebosim.org).
+Симуляция PX4 возможна в ОС GNU/Linux и macOS с использованием систем симуляции физической среды [jMAVSim](https://docs.px4.io/main/en/sim_jmavsim/) и [Gazebo](http://gazebosim.org).
 
 jMAVSim является легковесной средой, предназначенной только для тестирование мультироторных летательных систем; Gazebo – универсальная среда для любых типов роботов.
 
@@ -13,13 +13,13 @@ jMAVSim является легковесной средой, предназна
 1. Склонировать репозиторий с PX4.
 
 ```bash
-git clone https://github.com/PX4/Firmware.git
+git clone https://github.com/PX4/PX4-Autopilot.git Firmware
 cd Firmware
 ```
 
 ## jMAVSim
 
-Основная статья: https://dev.px4.io/en/simulation/jmavsim.html
+Основная статья: https://docs.px4.io/main/en/sim_jmavsim/
 
 Для симуляции с использованием легковесной среды jMAVSim используйте команду:
 
@@ -35,7 +35,7 @@ make posix_sitl_lpe jmavsim
 
 ## Gazebo
 
-Основная статья: https://dev.px4.io/en/simulation/gazebo.html
+Основная статья: https://docs.px4.io/main/en/sim_gazebo_classic/
 
 Для начала установите Gazebo 7. На Mac:
 
@@ -127,7 +127,7 @@ wget -qO- https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts
 Склонируйте себе папку содержащую программное обеспечение PX4 и верните ее к стабильной версии v1.8.2:
 
 ```bash
-git clone https://github.com/PX4/Firmware.git
+git clone https://github.com/PX4/PX4-Autopilot.git Firmware
 cd Firmware/
 git checkout v1.8.2
 ```

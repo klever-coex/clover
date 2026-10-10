@@ -30,7 +30,7 @@
 
 * [Gazebo](http://gazebosim.org/), универсальная среда симуляции для любых типов роботов;
 * [PX4](https://px4.io/), в частности, его компонент SITL (software-in-the-loop);
-* [`sitl_gazebo`](https://github.com/PX4/sitl_gazebo) пакет, содержащий плагины Gazebo для PX4;
+* [`sitl_gazebo`](https://github.com/PX4/PX4-SITL_gazebo-classic) пакет, содержащий плагины Gazebo для PX4;
 * пакеты ROS и плагины Gazebo;
 
 <!-- TODO: Write more, add a diagram, etc -->

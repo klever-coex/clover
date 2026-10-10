@@ -28,7 +28,6 @@ The simulation environment is based on the following components:
 
 * [Gazebo](http://gazebosim.org/), a state-of-the-art robotics simulator;
 * [PX4](https://px4.io/), specifically its SITL (software-in-the-loop) components;
-* [`sitl_gazebo`](https://github.com/PX4/sitl_gazebo) package containing Gazebo plugins for PX4;
 * ROS packages and Gazebo plugins.
 
 <!-- TODO: Write more, add a diagram, etc -->

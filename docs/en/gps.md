@@ -9,7 +9,7 @@ Upon connecting GPS, the following possibilities appear:
 
 Useful links:
 
-* https://docs.px4.io/en/assembly/quick_start_pixhawk.html
+* https://docs.px4.io/main/en/assembly/quick_start_pixhawk.html
 * http://ardupilot.org/copter/docs/common-pixhawk-wiring-and-quick-start.html
 * http://ardupilot.org/copter/docs/common-installing-3dr-ublox-gps-compass-module.html
 

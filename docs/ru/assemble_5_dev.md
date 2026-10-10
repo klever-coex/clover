@@ -1,23 +1,23 @@
 # Сборка Клевера 5 ДЕВ
 
 ## Содержание
-1. [Схема подключения электроники](#схема-подключения-электроники)
+1. [Схема подключения электронных компонентов](#схема-подключения-электронных-компонентов)
 2. [Сборка рамы](#сборка-рамы)
-3. [Установка моторов и ESC](#установка-моторов-и-esc)
+3. [Установка бесколлекторных электродвигателей и регуляторов оборотов](#установка-бесколлекторных-электродвигателей-и-регуляторов-оборотов)
 4. [Установка алюминиевых стоек](#установка-алюминиевых-стоек)
 5. [Установка полетного контроллера](#установка-полетного-контроллера)
-6. [Установка Raspberry Pi](#установка-raspberry-pi)
-7. [Установка защиты, ножек и LED ленты](#установка-защиты-ножек-и-led-ленты)
+6. [Установка одноплатного компьютера Raspberry Pi 5](#установка-одноплатного-компьютера-raspberry-pi-5)
+7. [Установка защиты, ножек и светодиодной ленты](#установка-защиты-ножек-и-светодиодной-ленты)
 
-## Размер крепежа
+## Крепежные элементы
 
-> **Success** При сборке применяются крепёжные элементы разных типоразмеров. Установка винтов или стоек несоответствующего размера может привести к повреждению квадрокоптера.
+> **Success** Используйте крепежные элементы только в соответствии с настоящей инструкцией. Установка винтов или стоек несоответствующего размера может привести к повреждению квадрокоптера.
 
 <div align="center"> <table class="type_table">
   <tr>
     <td id="cell1"><div align="center"><strong>Ячейка 1</strong><br><img src="../assets/assembling_clever5_dev/fasteners/nut_press.webp" width="20"/><br>Гайка запрессовочная М3</div></td>
     <td id="cell2"><div align="center"><strong>Ячейка 2</strong><br><img src="../assets/assembling_clever5_dev/fasteners/nut_nylon.webp" width="20"/><br>Гайка нейлоновая М3</div></td>
-    <td id="cell3"><div align="center"><strong>Ячейка 3</strong><br><img src="../assets/assembling_clever5_dev/fasteners/hts-m2,5.webp" width="35"/><br>Стойка нейлоновая M2.5</div></td>
+    <td id="cell3"><div align="center"><strong>Ячейка 3</strong><br><img src="../assets/assembling_clever5_dev/fasteners/hts-m2,5.webp" width="35"/><br>Стойка нейлоновая M2.5х6</div></td>
     <td id="cell4"><div align="center"><strong>Ячейка 4</strong><br><img src="../assets/assembling_clever5_dev/fasteners/nut_nylon.webp" width="16"/><br>Гайка нейлоновая М2.5</div></td>
     <td id="cell5"><div align="center"><strong>Ячейка 5</strong><br><img src="../assets/assembling_clever5_dev/fasteners/nut_nylon.webp" width="12"/><br>Гайка нейлоновая М2</div></td>
   </tr>
@@ -30,7 +30,7 @@
   </tr>
   <tr>
     <td id="cell11"><div align="center"><strong>Ячейка 11</strong><br><img src="../assets/assembling_clever5_dev/fasteners/aluminium_40.webp" width="130" height="15"/><br>Стойка алюминиевая M3x40</div></td>
-    <td id="cell12"><div align="center"><strong>Ячейка 12</strong><br><img src="../assets/assembling_clever5_dev/fasteners/dumper.webp" width="50"/><br>Стойка демпферная М3</div></td>
+    <td id="cell12"><div align="center"><strong>Ячейка 12</strong><br><img src="../assets/assembling_clever5_dev/fasteners/dumper.webp" width="50"/><br>Стойка антивибрационная</div></td>
     <td id="cell13"><div align="center"><strong>Ячейка 13</strong><br><img src="../assets/assembling_clever5_dev/fasteners/m3x10.webp" width="80" height='30'/><br>Винт M3x10</div></td>
     <td id="cell14"><div align="center"><strong>Ячейка 14</strong><br><img src="../assets/assembling_clever5_dev/fasteners/aluminium_10.webp" width="40" height="15"/><br>Стойка алюминиевая M3x10</div></td>
     <td id="cell15"><div align="center"><strong>Ячейка 15</strong><br><img src="../assets/assembling_clever5_dev/fasteners/aluminium_40.webp" width="100" height="15"/><br>Стойка алюминиевая M3x30</div></td>
@@ -47,41 +47,43 @@
     <td id="cell22"><div align="center"><strong>Ячейка 22</strong><br><img src="../assets/assembling_clever5_dev/fasteners/htp-20.webp" width="70" height="15"/><br>Стойка нейлоновая M3x20</div></td>
     <td id="cell23"><div align="center"><strong>Ячейка 23</strong><br><img src="../assets/assembling_clever5_dev/fasteners/htp-40.webp" width="130" height="15"/><br>Стойка нейлоновая M3x40</div></td>
     <td id="cell24"><div align="center"><strong>Ячейка 24</strong><br><img src="../assets/assembling_clever5_dev/fasteners/m1,4x10.webp" width="60"/><br>Саморез M1.4x10</div></td>
-    <td id="cell25"><div align="center"><strong>Ячейка 25</strong><br><img src="../assets/assembling_clever5_dev/fasteners/tpu-spacer.webp" width="60"/><br>Ножка из TPU</div></td>
+    <td id="cell25"><div align="center"><strong>Ячейка 25</strong><br><img src="../assets/assembling_clever5_dev/fasteners/m2,5x25.webp" width="120"/><br>Винт М2.5х25</div></td>
   </tr>
 </table></div>
 
-## Схема подключения электроники
+## Схема подключения электронных компонентов
+
+> **Success** Подключайте электронные компоненты согласно приведенной схеме.
 
 <div align="center"><img src="../assets/assembling_clever5_dev/ru/layout.webp" width=700 class="zoom border center"></div>
 
 ## Сборка рамы
 
-1. Совместите 4 луча между средней и нижней декой.
+1. Совместите четыре луча между верхней и нижней декой рамы.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/frame/frame_step_1.webp" width=700 class="zoom border center"></div>
 
-2. Установите винты M3x12 (<a href="#cell7">Ячейка 7</a>) и M3x40 (<a href="#cell6">Ячейка 6</a>) со стороны нижней деки: M3x12 (<a href="#cell7">Ячейка 7</a>) в крайние отверстия лучей, M3x40 (<a href="#cell6">Ячейка 6</a>) в центральные отверстия нижней деки.
+2. Установите винты M3x12 (<a href="#cell7">Ячейка 7</a>) в крайние отверстия лучей. Установите винты M3x40 (<a href="#cell6">Ячейка 6</a>) в центральные отверстия нижней деки.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/frame/frame_step_2.webp" width=700 class="zoom border center"></div>
 
-3. На средней деке установите запрессовочные гайки М3 (<a href="#cell1">Ячейка 1</a>) и зафиксируйте их винтами.
+3. Установите запрессовочные гайки М3 (<a href="#cell1">Ячейка 1</a>) в предусмотренные отверстия нижней деки. Закрутите ранее установленные винты до надежной фиксации нижней деки и лучей рамы.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/frame/frame_step_3.webp" width=700 class="zoom border center"></div>
 
-## Установка моторов и ESC
+## Установка бесколлекторных электродвигателей и регуляторов оборотов
 
-1. Установите моторы в соответствующие отверстия в луче с помощью **винтов М3х8** (<a href="#cell8">Ячейка 8</a>).
+1. Установите электродвигатели в предусмотренные отверстия лучей и закрепите их **винтами М3х8** (<a href="#cell8">Ячейка 8</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/motor_step_4.webp" width=700 class="zoom border center"></div>
 
-    > **Caution** Убедитесь, что моторы закреплены с помощью винтов М3х8, в противном случае может возникнуть короткое замыкание между обмотками.
+    > **Caution** Убедитесь, что винты надежно закреплены и не выступают в область обмоток электродвигателей. Использование винтов неправильной длины может привести к повреждению обмоток и короткому замыканию.
 
-2. Установите защитные кожухи проводов моторов на лучи.
+2. Установите защиту проводов моторов на лучи.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/motor_step_5.webp" width=700 class="zoom border center"></div>
 
-3. С верхней стороны контактов регулятора оборотов припаяйте силовые провода с конденсатором, на провода наденьте защитный колпачок и припаяйте разъём XT60. С нижней стороны контактов регулятора оборотов припаяйте разъём XT30.
+3. С верхней стороны контактов регулятора оборотов припаяйте силовые провода с конденсатором. Установите защитный колпачок на провода и припаяйте разъем XT60. С нижней стороны контактов регулятора оборотов припаяйте разъем XT30.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/esc_step_6.webp" width=700 class="zoom border center"></div>
 
@@ -89,28 +91,27 @@
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/esc_step_7.webp" width=700 class="zoom border center"></div>
 
-5. Установите регулятор оборотов (ESC) разъемом назад и припаяйте моторы так, как показано на изображении ниже.
+5. Установите регулятор оборотов (ESC) разъемом назад. Припаяйте провода электродвигателей к регулятору оборотов, как показано на изображении ниже.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/motor_step_8.webp" width=700 class="zoom border center"></div>
 
 ## Установка алюминиевых стоек
 
-1. Установите алюминиевые стойки M3x40 (<a href="#cell11">Ячейка 11</a>) на среднюю деку с помощью демпферных стоек М3 (<a href="#cell12">Ячейка 12</a>).
+1. Установите алюминиевые стойки M3x40 (<a href="#cell11">Ячейка 11</a>) на нижнюю деку с использованием антивибрационных стоек (<a href="#cell12">Ячейка 12</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/aluminium_40_step_9.webp" width=700 class="zoom border center"></div>
 
-2. Закрутите демпферные стойки со стороны нижней деки.
+2. Закрутите антивибрационные стойки со стороны нижней деки и надежно зафиксируйте их.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/aluminium_40_step_10.webp" width=700 class="zoom border center"></div>
 
 ## Установка полетного контроллера
 
-1. Перед установкой полетного контроллера накрутите нейлоновые гайки M3 (<a href="#cell2">Ячейка 2</a>) на винты M3x40 (<a href="#cell6">Ячейка 6</a>), после чего установите полетный контроллер стрелкой вперед.
-Установите нейлоновые гайки для фиксации полетного контроллера.
+1. Закрутите нейлоновые гайки M3 (<a href="#cell2">Ячейка 2</a>) на установленные винты M3x40 (<a href="#cell6">Ячейка 6</a>). Установите полетный контроллер стрелкой вперед и зафиксируйте его нейлоновыми гайками М3 (<a href="#cell2">Ячейка 2</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/flight_controller_step_11.webp" width=700 class="zoom border center"></div>
 
-2. Установите 6-пиновый шлейф между полетным контроллером и регулятором оборотов (ESC).
+2. Установите 8-пиновый шлейф между полетным контроллером и регулятором оборотов (ESC).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/flight_controller_step_12.webp" width=700 class="zoom border center"></div>
 
@@ -118,9 +119,9 @@
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/flight_controller_step_13.webp" width=700 class="zoom border center"></div>
 
-## Установка Raspberry Pi
+## Установка одноплатного компьютера Raspberry Pi 5
 
-1. Установите на монтажную деку из поликарбоната стойки M2.5 (<a href="#cell3">Ячейка 3</a>) с помощью винтов M2.5x4 (<a href="#cell17">Ячейка 17</a>).
+1. Установите на пластиковую монтажную деку нейлоновые стойки M2.5 (<a href="#cell3">Ячейка 3</a>) с помощью винтов M2.5x4 (<a href="#cell17">Ячейка 17</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_14.webp" width=700 class="zoom border center"></div>
 
@@ -128,15 +129,15 @@
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_15.webp" width=700 class="zoom border center"></div>
 
-3. Установите Raspberry Pi 5 поверх стоек M2.5 и зафиксируйте плату Raspberry Pi 5 с помощью винтов М2.5х4 (<a href="#cell17">Ячейка 17</a>).
+3. Установите Raspberry Pi 5 на установленные стойки M2.5х6 и зафиксируйте его винтами M2.5x4 (<a href="#cell17">Ячейка 17</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_16.webp" width=700 class="zoom border center"></div>
 
-4. Вид с установленной Raspberry Pi 5.
+4. Вид с установленным одноплатным компьютером Raspberry Pi 5.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_17.webp" width=700 class="zoom border center"></div>
 
-5. Снимите пленки с термопрокладок и установите их на выделенные позиции на изображении. Установите радиатор охлаждения на Raspberry Pi, для этого вставьте фиксирующие клипсы через радиатор в Raspberry Pi. Подключите систему охлаждения в порт, отмеченный на изображении.
+5. Снимите защитные пленки с обеих сторон термопрокладок. Установите термопрокладки на позиции, выделенные красными рамками на изображении. Установите радиатор охлаждения на Raspberry Pi 5. Для этого вставьте фиксирующие клипсы через радиатор в предусмотренные отверстия Raspberry Pi 5. Подключите систему охлаждения в предусмотренный разъем, расположенный под защитной крышкой.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_18.webp" width=700 class="zoom border center"></div>
 
@@ -144,7 +145,7 @@
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_19.webp" width=700 class="zoom border center"></div>
 
-7. Установите нейлоновые стойки 30мм (<a href="#cell21">Ячейка 21</a>) на деку с Raspberry Pi с помощью винтов M3x8 (<a href="#cell8">Ячейка 8</a>).
+7. Установите нейлоновые стойки 30мм (<a href="#cell21">Ячейка 21</a>) на деку с Raspberry Pi 5 с помощью винтов M3x8 (<a href="#cell8">Ячейка 8</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_20.webp" width=700 class="zoom border center"></div>
 
@@ -152,24 +153,24 @@
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_21.webp" width=700 class="zoom border center"></div>
 
-9. Установите собранную деку c Raspberry Pi на нижнюю часть квадрокоптера на демпферные стойки, зафиксируйте на винты M3x4 (<a href="#cell10">Ячейка 10</a>).
+9. Установите собранную деку c Raspberry Pi 5 на антивибрационные стойки собранной рамы конструктора. Зафиксируйте деку винтами M3x4 (<a href="#cell10">Ячейка 10</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_22.webp" width=700 class="zoom border center"></div>
 
-10. Подключите к Raspberry шлейф передачи данных. Подключение производится во внешнюю линию гребенки, начиная с 4 порта относительно порта SD карты (черный провод в 14-м порту, см. pinout). Подключение ответной части производится в порт UART 4 на полетном контроллере (черный провод располагается в крайнем правом углу).
+10. Подключите к Raspberry Pi 5 шлейф телеметрии. Подключение выполните во внешнюю линию гребенки, начиная с пина 8 (GPIO 14). Черный провод подключите к пину 14 (Ground) (см. pinout). Ответную часть шлейфа подключите к порту UART4 полетного контроллера (черный провод — в крайний правый угол).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_23.webp" width=700 class="zoom border center"></div>
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI_pinout.webp" width=400 class="zoom border center"></div>
 
-11. На малую монтажную деку установите камеру так, как показано на изображении ниже, после чего зафиксируйте ее с помощью двух саморезов М1.4х4 (<a href="#cell19">Ячейка 19</a>), в верхнем левом и нижнем правом углах. Бита для сборки PH1.
+11. Установите камеру компьютерного зрения на малую монтажную деку. Зафиксируйте камеру саморезами М1.4х4 (<a href="#cell19">Ячейка 19</a>) в предусмотренных отверстиях. Используйте биту PH1.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_24.webp" width=700 class="zoom border center"></div>
 
-12. На малую монтажную деку установите нейлоновые стойки 20мм (<a href="#cell22">Ячейка 22</a>) и зафиксируйте винтами M3x6 (<a href="#cell9">Ячейка 9</a>).
+12. На малую монтажную деку установите нейлоновые стойки M3x20 (<a href="#cell22">Ячейка 22</a>) и зафиксируйте их винтами M3x6 (<a href="#cell9">Ячейка 9</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_25.webp" width=700 class="zoom border center"></div>
 
-13. Установите малую монтажную деку с камерой на деку захвата с помощью винтов M3x6 (<a href="#cell9">Ячейка 9</a>).
+13. Установите малую монтажную деку с камерой компьютерного зрения на деку захвата с помощью винтов M3x6 (<a href="#cell9">Ячейка 9</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_26.webp" width=700 class="zoom border center"></div>
 
@@ -181,69 +182,69 @@
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_28.webp" width=700 class="zoom border center"></div>
 
-16. Установите деку захвата на квадрокоптер с помощью винтов M3x8 (<a href="#cell8">Ячейка 8</a>).
+16. Установите деку захвата на раму конструктора с помощью винтов M3x8 (<a href="#cell8">Ячейка 8</a>). Подключите шлейф камеры к компьютеру согласно схеме подключения.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_29.webp" width=700 class="zoom border center"></div>
 
-17. Подключите шлейф дальномера в порт UART 1 на полетном контроллере (черный провод в левый крайний пин).
+17. Подключите шлейф дальномера к порту UART1 полетного контроллера (вставьте черный провод в крайний левый пин). Протяните кабель через отверстие в кожухе полетного контроллера.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_30.webp" width=700 class="zoom border center"></div>
 
-18. Установите экран на кожух дрона при помощи винтов M2.5x6 (<a href="#cell18">Ячейка 18</a>) и нейлоновых гаек M2.5 (<a href="#cell4">Ячейка 4</a>).
+18. Установите экран на кожух полетного контроллера при помощи винтов M2.5x6 (<a href="#cell18">Ячейка 18</a>) и нейлоновых гаек M2.5 (<a href="#cell4">Ячейка 4</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_31.webp" width=700 class="zoom border center"></div>
 
-19. Припаяйте разъём Dupont к одному UBEC и JST к другому, с другой стороны соедините входные провода и припаяйте разъём XT30. Склейте UBEC между собой, используя двухсторонний скотч.
+19. Припаяйте разъём Dupont к одному преобразователю напряжения (UBEC), а разъем JST — к другому UBEC. С другой стороны соедините входные провода и припаяйте разъем XT30. Соедините преобразователи напряжения между собой с помощью двухсторонней клейкой ленты.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_32.webp" width=700 class="zoom border center"></div>
 
-20. Установите UBEC на деку с Raspberry Pi, применив двухсторонний скотч. Подключите UBEC к регулятору оборотов (ESC) через разъем XT30. Подключите первый провод UBEC в Raspberry Pi, как указано на картинке (4 и 6 пины, см. pinout выше).
+20. Установите UBEC на деку с Raspberry Pi 5 с помощью двухсторонней клейкой ленты. Подключите UBEC к регулятору оборотов (ESC) через разъем XT30. Подключите первый провод UBEC в Raspberry Pi 5 в пины 4 (5V power) и 6 (Ground) (см. pinout выше).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_33.webp" width=700 class="zoom border center"></div>
 
-21. Подключите приемник в порт SBUS/CRSF (UART 6) на полетном контроллере (черный провод в левый крайний пин).
+21. Подключите приемник в порт SBUS/CRSF (UART6) полетного контроллера — вставьте черный провод в левый крайний пин.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_34.webp" width=700 class="zoom border center"></div>
 
-22. Установите кожух поверх алюминиевых стоек и закрепите приемник на пластиковый хомут в выделенные отверстия на изображении. Уложите провода в вырез для проводов. Подключите экран к Raspberry Pi: красный провод подключается в левый крайний пин внутренней части гребенки относительно SD карты (красный — 1 пин, чёрный — 9 пин).
+22. Установите кожух полетного контроллера на алюминиевые стойки. Закрепите приемник пластиковым хомутом в предусмотренных отверстиях. Уложите провода в вырез для проводов. Подключите экран к Raspberry Pi 5: красный провод подключите к пину 1 (3V3), черный — к пину 9 (Ground) (см. pinout выше).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_35.webp" width=700 class="zoom border center"></div>
 
-## Установка защиты, ножек и LED ленты
+## Установка защиты, ножек и светодиодной ленты
 
-1. Проденьте ремешок в верхнюю деку, после чего закрепите ее на винты M3x8 (<a href="#cell8">Ячейка 8</a>) в алюминиевые стойки, закрепите разъем питания с помощью винтов M2.5x6 (<a href="#cell18">Ячейка 18</a>). Бита для сборки деки — H2.0/HEX2.0, для разъема — H1.5/HEX1.5.
+1. Проденьте ремешок аккумуляторной батареи через предусмотренные отверстия карбоновой монтажной деки. Установите деку на алюминиевые стойки и закрепите ее винтами M3x8 (<a href="#cell8">Ячейка 8</a>). Используйте H2.0/HEX2.0.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/RPI5_step_36.webp" width=700 class="zoom border center"></div>
 
-2. Расположите снизу в виде квадрата перемычки защиты, после чего на углы выложите нижние дуги защиты, зафиксируйте на винты M3x10 (<a href="#cell13">Ячейка 13</a>) сверху, снизу нейлоновые стойки 40мм (<a href="#cell23">Ячейка 23</a>).
+2. Расположите перемычки защиты в форме квадрата. Установите на углы нижние дуги защиты. Закрепите элементы винтами M3x10 (<a href="#cell13">Ячейка 13</a>) сверху и нейлоновыми стойками M3x40 (<a href="#cell23">Ячейка 23</a>) снизу.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/other_step_37.webp" width=700 class="zoom border center"></div>
 
-3. Зафиксируйте винтами M3x8 (<a href="#cell8">Ячейка 8</a>) верхние дуги и перемычки в обратном порядке: должно получиться так, что перемычки направлены внутрь, а дуги наружу.
+3. Зафиксируйте винтами M3x8 (<a href="#cell8">Ячейка 8</a>) верхние дуги и перемычки защиты. Расположите элементы так, чтобы перемычки были направлены внутрь, а дуги — наружу.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/other_step_38.webp" width=700 class="zoom border center"></div>
 
-4. Установите и зафиксируйте запрессовочные гайки М3 (<a href="#cell1">Ячейка 1</a>) в отверстия по краям лучей.
+4. Установите запрессовочные гайки М3 (<a href="#cell1">Ячейка 1</a>) в предусмотренные отверстия по краям лучей.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/other_step_39.webp" width=700 class="zoom border center"></div>
 
-5. Установите с нижней стороны защиту и зафиксируйте её на винты M3x10 (<a href="#cell13">Ячейка 13</a>).
+5. Установите собранную защиту с нижней стороны конструктора и зафиксируйте ее винтами M3x10 (<a href="#cell13">Ячейка 13</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/other_step_40.webp" width=700 class="zoom border center"></div>
 
-6. С одной стороны большой ножки вкрутите винты M3x6 (<a href="#cell9">Ячейка 9</a>) во все отверстия, с другой стороны зафиксируйте их на алюминиевые стойки 10мм (<a href="#cell14">Ячейка 14</a>). В нижнем отверстии поверх стойки наденьте ножку (проставку) из TPU (<a href="#cell25">Ячейка 25</a>).
+6. С одной стороны большой ножки вкрутите винты M3x6 (<a href="#cell9">Ячейка 9</a>) в предусмотренные отверстия. С другой стороны установите алюминиевые стойки 10мм (<a href="#cell14">Ячейка 14</a>). Установите антискользящую проставку поверх алюминиевой стойки. Повторите действия для сборки остальных ножек.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/other_step_41.webp" width=700 class="zoom border center"></div>
 
-7. Разместите большую ножку на луче, как показано на изображении, и зафиксируйте винтами M3x6 (<a href="#cell9">Ячейка 9</a>). Выполните то же самое для остальных ножек.
+7. Установите большую ножку на луч и зафиксируйте ее винтами M3x6 (<a href="#cell9">Ячейка 9</a>). Повторите действия с остальными ножками.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/other_step_42.webp" width=700 class="zoom border center"></div>
 
-8. Наклейте LED ленту на пластиковое кольцо (кольцо для крепежа LED ленты), после чего установите его в крючки на ножках и зафиксируйте провода пластиковым хомутом. Подключите питание во второй свободный UBEC, а сигнальный провод подключите в GPIO 9 (21 пин).
+8. Наклейте светодиодную (LED) ленту на пластиковое кольцо для LED-ленты. Установите кольцо в предусмотренные крючки на ножках и зафиксируйте провода пластиковым хомутом. Подключите питание LED-ленты ко второму свободному UBEC. Подключите сигнальный провод к пину 21 (GPIO 9).
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/other_step_43.webp" width=700 class="zoom border center"></div>
 
-9. Установите пропеллеры в соответствии с классическим вращением, как представлено на изображении.
+9. Установите пропеллеры в соответствии с направлениями вращения, указанными на изображении.
 
     <div align="center"><img src="../assets/assembling_clever5_dev/ru/other_step_44.webp" width=700 class="zoom border center"></div>
 

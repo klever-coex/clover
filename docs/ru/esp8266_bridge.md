@@ -1,6 +1,6 @@
 # Модуль ESP8266
 
-> **Note** Более подробную информацию можно найти в [основной статье](https://docs.px4.io/en/telemetry/esp8266_wifi_module.html) в официальной документации и в [репозитории с прошивкой](https://github.com/dogmaphobic/mavesp8266) для ESP8266.
+> **Note** Более подробную информацию можно найти в [основной статье](https://docs.px4.io/main/en/telemetry/esp8266_wifi_module.html) в официальной документации и в [репозитории с прошивкой](https://github.com/dogmaphobic/mavesp8266) для ESP8266.
 
 ![ESP8266 on top of Pixracer](../assets/esp8266_pixracer_top_wifi.webp)
 
