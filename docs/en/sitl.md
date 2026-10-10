@@ -3,9 +3,9 @@ PX4 Simulation
 
 > **Warning** This article is about running a standalone PX4 simulation with a generic quadcopter and **is outdated**. Consider using [our configuration](simulation.md) for a more Clover-like experience.
 
-Main article: https://dev.px4.io/en/simulation/
+Main article: https://docs.px4.io/main/en/simulation/
 
-PX4 simulation is possible in Linux and macOS with the use of physical environment simulation systems [jMAVSim](https://docs.px4.io/master/en/simulation/jmavsim.html) and [the Gazebo](http://gazebosim.org).
+PX4 simulation is possible in Linux and macOS with the use of physical environment simulation systems [jMAVSim](https://docs.px4.io/main/en/sim_jmavsim/) and [the Gazebo](http://gazebosim.org).
 
 jMAVSim is a lightweight environment intended only for testing multi-rotor aircraft systems; Gazebo is a versatile environment for all types of robots.
 
@@ -15,14 +15,14 @@ Launching PX4 SITL
 1. Clone repository from PX4.
 
 ```(bash)
-git clone https://github.com/PX4/Firmware.git
+git clone https://github.com/PX4/PX4-Autopilot.git Firmware
 cd Firmware
 ```
 
 jMAVSim
 --
 
-Main article: https://dev.px4.io/en/simulation/jmavsim.html
+Main article: https://docs.px4.io/main/en/sim_jmavsim/
 
 For simulation using the jMAVSim lightweight environment, use the following command:
 
@@ -39,7 +39,7 @@ make posix_sitl_lpe jmavsim
 Gazebo
 --
 
-Main article: https://dev.px4.io/en/simulation/gazebo.html
+Main article: https://docs.px4.io/main/en/sim_gazebo_classic/
 
 To get started, install Gazebo 7. On a Mac:
 

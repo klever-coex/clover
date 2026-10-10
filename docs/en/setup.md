@@ -8,7 +8,7 @@
 
 Download and install the installer for Windows/Linux/macOS [from the official QGroundControl website](https://docs.qgroundcontrol.com/Stable_V5.1/en/qgc-user-guide/getting_started/download_and_install.html). Agree to install additional drivers if prompted.
 
-See also the [official QGroundControl documentation](https://docs.qgroundcontrol.com/en/).
+See also the [official QGroundControl documentation](https://docs.qgroundcontrol.com/Stable_V5.1/en/qgc-user-guide/).
 
 ## Flashing the flight controller
 

@@ -94,13 +94,13 @@
 
 ### FMU
 
-При первом запуске, в микроконтроллер придётся загрузить PX4-bootloader через порт JTAG. Подробная инструкция [здесь](https://docs.px4.io/master/en/software_update/stm32_bootloader.html#stm32-bootloader).
+При первом запуске, в микроконтроллер придётся загрузить PX4-bootloader через порт JTAG. Подробная инструкция [здесь](https://docs.px4.io/main/en/software_update/stm32_bootloader.html#stm32-bootloader).
 
 Для подключения к компьютеру:
 
 1. Замкните перемычку 19.
 2. Подключите USB Type-C к компьютеру.
-3. Устройство должно появиться в [QGC](http://qgroundcontrol.com).
+3. Устройство должно появиться в [QGC](https://qgroundcontrol.com/).
 
 Также прошивку можно произвести через RPi:
 

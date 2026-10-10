@@ -18,6 +18,6 @@ If there is no voltage indicator or manual calibration is not possible, set the 
 
 <img src="../assets/qgc-voltage-divider.webp" class="zoom">
 
-Additional information: [https://docs.qgroundcontrol.com/en/SetupView/Power.html](https://docs.qgroundcontrol.com/en/SetupView/Power.html).
+Additional information: [https://docs.qgroundcontrol.com/Stable_V5.1/en/qgc-user-guide/setup_view/power.html](https://docs.qgroundcontrol.com/Stable_V5.1/en/qgc-user-guide/setup_view/power.html).
 
 **Next**: [Failsafe setup](failsafe.md).

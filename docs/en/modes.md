@@ -45,6 +45,6 @@ In autonomous flight modes the quadcopter ignores the control signals from the t
 * **AUTO.RTL** – the copter automatically returns to the takeoff (launch) point.
 * **AUTO.LAND** – the copter lands at the current position.
 
-Additional information: https://dev.px4.io/en/concept/flight_modes.html.
+Additional information: https://docs.px4.io/main/en/concept/flight_modes.html.
 
 **Next**: [Power setup](power.md).

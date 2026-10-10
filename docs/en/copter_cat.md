@@ -94,13 +94,13 @@ At the stage of the project: debugging and demonstration of capabilities. After:
 
 ### FMU
 
-When you first start, the microcontroller will have to load the PX4-bootloader through the JTAG port. detailed instructions [here](https://docs.px4.io/master/en/software_update/stm32_bootloader.html#stm32-bootloader).
+When you first start, the microcontroller will have to load the PX4-bootloader through the JTAG port. detailed instructions [here](https://docs.px4.io/main/en/software_update/stm32_bootloader.html#stm32-bootloader).
 
 To connect to a computer:
 
 1. Close jumper 19.
 2. Connect USB Type-C to your computer.
-3. The device should appear in [QGC](http://qgroundcontrol.com).
+3. The device should appear in [QGC](https://qgroundcontrol.com/).
 
 You can also flash firmware via RPi:
 

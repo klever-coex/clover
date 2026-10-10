@@ -1,6 +1,6 @@
 # Failsafe configuration
 
-Main article is available at https://docs.px4.io/master/en/config/safety.html.
+Main article is available at https://docs.px4.io/main/en/config/safety.html.
 
 The *Safety* panel allows you to configure actions that should be performed when a failsafe is triggered. You should at the very least configure the RC Loss failsafe, which is triggered when the RC transmitter link is lost:
 

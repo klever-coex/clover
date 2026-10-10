@@ -92,7 +92,7 @@ Landing is performed in 3 stages:
 
 Due to limitations of opportunities to test the code on a real drone, we decided to use the Gazebo simulator.
 
-To run the Clover software package in the simulator, you can use [this set of scripts](https://github.com/vas0x59/clever_sim) or [original instruction from PX4](https://dev.px4.io/v1.9.0/en/simulation/ros_interface.html).
+To run the Clover software package in the simulator, you can use [this set of scripts](https://github.com/vas0x59/clever_sim) or [original instruction from PX4](https://docs.px4.io/main/en/simulation/ros_interface.html).
 
 For Innopolis Open we have prepared several test scenes.  [ior2020_uav_L22_AERO_sim](https://github.com/vas0x59/ior2020_uav_L22_AERO_sim).
 

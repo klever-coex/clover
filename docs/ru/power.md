@@ -18,7 +18,7 @@
 
 <img src="../assets/qgc-voltage-divider.webp" class="zoom">
 
-Дополнительная информация: https://docs.qgroundcontrol.com/en/SetupView/Power.html.
+Дополнительная информация: https://docs.qgroundcontrol.com/Stable_V5.1/en/qgc-user-guide/setup_view/power.html.
 
 
 **Далее**: [настройка Failsafe](failsafe.md).

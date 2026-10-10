@@ -45,6 +45,6 @@
 * **AUTO.RTL** – коптер автоматически возвращается в точку взлета.
 * **AUTO.LAND** – коптер выполняет посадку.
 
-Дополнительная информация: https://dev.px4.io/en/concept/flight_modes.html.
+Дополнительная информация: https://docs.px4.io/main/en/concept/flight_modes.html.
 
 **Далее**: [Настройка питания](power.md).

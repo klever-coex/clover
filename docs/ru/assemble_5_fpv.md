@@ -1,23 +1,23 @@
 # Сборка Клевера 5 FPV
 
 ## Содержание
-1. [Схема подключения электроники](#схема-подключения-электроники)
+1. [Схема подключения электронных компонентов](#схема-подключения-электронных-компонентов)
 2. [Сборка рамы](#сборка-рамы)
-3. [Установка моторов](#установка-моторов)
-4. [Установка ESC](#установка-esc)
+3. [Установка бесколлекторных электродвигателей](#установка-бесколлекторных-электродвигателей)
+4. [Установка регулятора оборотов](#установка-регулятора-оборотов)
 5. [Установка полетного контроллера](#установка-полетного-контроллера)
 6. [Установка видеопередатчика](#установка-видеопередатчика)
 7. [Сборка квадрокоптера](#сборка-квадрокоптера)
 
-## Размер крепежа
+## Крепежные элементы
 
-> **Success** При сборке применяются крепёжные элементы разных типоразмеров. Установка винтов или стоек несоответствующего размера может привести к повреждению квадрокоптера.
+> **Success** Используйте крепежные элементы только в соответствии с настоящей инструкцией. Установка винтов или стоек несоответствующего размера может привести к повреждению квадрокоптера.
 
 <div align="center"> <table class="type_table">
   <tr>
     <td id="cell1"><div align="center"><strong>Ячейка 1</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/nut_press.webp" width="20"/><br>Гайка запрессовочная М3</div></td>
     <td id="cell2"><div align="center"><strong>Ячейка 2</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/nut_nylon.webp" width="20"/><br>Гайка нейлоновая М3</div></td>
-    <td id="cell3"><div align="center"><strong>Ячейка 3</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/hts-m2,5.webp" width="35"/><br>Стойка нейлоновая M2.5</div></td>
+    <td id="cell3"><div align="center"><strong>Ячейка 3</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/hts-m2,5.webp" width="35"/><br>Стойка нейлоновая M2.5х6</div></td>
     <td id="cell4"><div align="center"><strong>Ячейка 4</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/nut_nylon.webp" width="16"/><br>Гайка нейлоновая М2.5</div></td>
     <td id="cell5"><div align="center"><strong>Ячейка 5</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/nut_nylon.webp" width="12"/><br>Гайка нейлоновая М2</div></td>
   </tr>
@@ -30,7 +30,7 @@
   </tr>
   <tr>
     <td id="cell11"><div align="center"><strong>Ячейка 11</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/aluminium_40.webp" width="130" height="15"/><br>Стойка алюминиевая M3x40</div></td>
-    <td id="cell12"><div align="center"><strong>Ячейка 12</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/dumper.webp" width="50"/><br>Стойка демпферная М3</div></td>
+    <td id="cell12"><div align="center"><strong>Ячейка 12</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/dumper.webp" width="50"/><br>Стойка антивибрационная</div></td>
     <td id="cell13"><div align="center"><strong>Ячейка 13</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/m3x10.webp" width="80" height='30'/><br>Винт M3x10</div></td>
     <td id="cell14"><div align="center"><strong>Ячейка 14</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/aluminium_10.webp" width="40" height="15"/><br>Стойка алюминиевая M3x10</div></td>
     <td id="cell15"><div align="center"><strong>Ячейка 15</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/aluminium_40.webp" width="100" height="15"/><br>Стойка алюминиевая M3x30</div></td>
@@ -47,42 +47,42 @@
     <td id="cell22"><div align="center"><strong>Ячейка 22</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/htp-20.webp" width="70" height="15"/><br>Стойка нейлоновая M3x20</div></td>
     <td id="cell23"><div align="center"><strong>Ячейка 23</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/htp-40.webp" width="130" height="15"/><br>Стойка нейлоновая M3x40</div></td>
     <td id="cell24"><div align="center"><strong>Ячейка 24</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/m1,4x10.webp" width="60"/><br>Саморез M1.4x10</div></td>
-    <td id="cell25"><div align="center"><strong>Ячейка 25</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/tpu-spacer.webp" width="60"/><br>Ножка из TPU</div></td>
+    <td id="cell25"><div align="center"><strong>Ячейка 25</strong><br><img src="../assets/assembling_clever5_fpv/fasteners/m2,5x25.webp" width="120"/><br>Винт М2.5х25</div></td>
   </tr>
 </table></div>
 
 ## Сборка рамы
 
-1. Совместите 4 луча между средней и нижней декой, между ними установите проставку.
+1. Совместите четыре луча между верхней и нижней декой рамы, между ними установите проставку.
 
     <div align="center"><img src="../assets/assembling_clever5_fpv/ru/frame/frame_step_1.webp" width=700 class="zoom border center"></div>
 
-2. Установите винты M3x12 (<a href="#cell7">Ячейка 7</a>) и M3x40 (<a href="#cell6">Ячейка 6</a>) со стороны нижней деки, M3x12 (<a href="#cell7">Ячейка 7</a>) в крайние отверстия лучей, M3x40 (<a href="#cell6">Ячейка 6</a>) в центральные отверстия нижней деки.
+2. Установите винты M3x12 (<a href="#cell7">Ячейка 7</a>) в крайние отверстия лучей. Установите винты M3x40 (<a href="#cell6">Ячейка 6</a>) в центральные отверстия нижней деки.
 
     <div align="center"><img src="../assets/assembling_clever5_fpv/ru/frame/frame_step_2.webp" width=700 class="zoom border center"></div>
 
-3. На средней деке установите запрессовочные гайки М3 (<a href="#cell1">Ячейка 1</a>) и зафиксируйте их винтами.
+3. Установите запрессовочные гайки М3 (<a href="#cell1">Ячейка 1</a>) в предусмотренные отверстия нижней деки. Закрутите ранее установленные винты до надежной фиксации нижней деки и лучей рамы.
 
     <div align="center"><img src="../assets/assembling_clever5_fpv/ru/frame/frame_step_3.webp" width=700 class="zoom border center"></div>
 
-## Установка моторов
+## Установка бесколлекторных электродвигателей
 
 1. Установите накладки на лучи, так, как показано на изображении.
 
     <div align="center"><img src="../assets/assembling_clever5_fpv/ru/arm_guard_step_4.webp" width=700 class="zoom border center"></div>
 
-2. Установите моторы в соответствующие отверстия в луче с помощью **винтов М3х10** (<a href="#cell13">Ячейка 13</a>).
+2. Установите электродвигатели в предусмотренные отверстия лучей и закрепите их **винтами М3х10** (<a href="#cell13">Ячейка 13</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_fpv/ru/motor_step_5.webp" width=700 class="zoom border center"></div>
 
-> **Caution** Убедитесь, что моторы закреплены с помощью винтов М3х10, в противном случае может возникнуть короткое замыкание между обмотками.
+> **Caution** Убедитесь, что винты надежно закреплены и не выступают в область обмоток электродвигателей. Использование винтов неправильной длины может привести к повреждению обмоток и короткому замыканию.
 
-## Установка ESC
+## Установка регулятора оборотов
 1. Установите регулятор оборотов (ESC) поверх винтов M3x40 (<a href="#cell6">Ячейка 6</a>) на средней деке. Контакты питания аккумулятора должны быть направлены назад.
 
     <div align="center"><img src="../assets/assembling_clever5_fpv/ru/esc_step_6.webp" width=700 class="zoom border center"></div>
 
-2. Приклейте защитные кожухи и проденьте в них провода моторов. Припаяйте силовые провода и конденсатор на контакты питания ESC, также припаяйте моторы на контакты моторов (см. изобр. ниже).
+2. Установите защиту проводов моторов и проденьте в нее провода. Припаяйте силовые провода и конденсатор к контактам питания регулятора оборотов, затем припаяйте провода электродвигателей к соответствующим контактам, как показано на изображении ниже.
 
     <div align="center"><img src="../assets/assembling_clever5_fpv/ru/esc_step_7.webp" width=700 class="zoom border center"></div>
 
@@ -92,11 +92,11 @@
 
 ## Установка полетного контроллера
 
-1. Установите полётный контроллер стрелкой вперед, после чего установите нейлоновые гайки M3 (<a href="#cell2">Ячейка 2</a>) для фиксации полетного контроллера.
+1. Установите полетный контроллер стрелкой вперед и зафиксируйте его нейлоновыми гайками M3 (<a href="#cell2">Ячейка 2</a>).
 
     <div align="center"><img src="../assets/assembling_clever5_fpv/ru/fcu_step_9.webp" width=700 class="zoom border center"></div>
 
-2. Установите 6-пиновый шлейф между полетным контроллером и регулятором оборотов (ESC).
+2. Установите 8-пиновый шлейф между полетным контроллером и регулятором оборотов (ESC).
 
     <div align="center"><img src="../assets/assembling_clever5_fpv/ru/fcu_to_esc_step_10.webp" width=700 class="zoom border center"></div>
 
@@ -168,7 +168,7 @@
 
     <div align="center"><img src="../assets/assembling_clever5_fpv/ru/vtx_antenna_step_26.webp" width=700 class="zoom border center"></div>
 
-15. Установите пропеллеры в соответствии с обратным вращением, как представлено на изображении.
+15. Установите пропеллеры в соответствии с направлениями обратного вращения, указанными на изображении.
 
     <div align="center"><img src="../assets/assembling_clever5_fpv/ru/props_step_27.webp" width=700 class="zoom border center"></div>
 

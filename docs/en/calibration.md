@@ -13,7 +13,7 @@ To calibrate the sensors, go to the *Vehicle Setup* tab and select the *Sensors*
 
 > **Warning** During gyroscope calibration, the quadcopter must not change position, wobble, etc.
 
-Additional information: [https://docs.px4.io/master/en/config/gyroscope.html](https://docs.px4.io/master/en/config/gyroscope.html).
+Additional information: [https://docs.px4.io/main/en/config/gyroscope.html](https://docs.px4.io/main/en/config/gyroscope.html).
 
 ## Accelerometer
 
@@ -24,7 +24,7 @@ Additional information: [https://docs.px4.io/master/en/config/gyroscope.html](ht
 3. Sequentially place the quadcopter in each of the indicated orientations until the yellow frame appears.
 4. Hold the quadcopter motionless until the green frame appears.
 
-Additional information: [https://docs.px4.io/master/en/config/accelerometer.html](https://docs.px4.io/master/en/config/accelerometer.html).
+Additional information: [https://docs.px4.io/main/en/config/accelerometer.html](https://docs.px4.io/main/en/config/accelerometer.html).
 
 ## Level horizon
 
@@ -36,6 +36,6 @@ Additional information: [https://docs.px4.io/master/en/config/accelerometer.html
 4. Press *OK*.
 5. Wait for the calibration to complete.
 
-Additional information: [https://docs.px4.io/master/en/config/level_horizon_calibration.html](https://docs.px4.io/master/en/config/level_horizon_calibration.html).
+Additional information: [https://docs.px4.io/main/en/config/level_horizon_calibration.html](https://docs.px4.io/main/en/config/level_horizon_calibration.html).
 
 **Next**: [RC setup](radio.md).
