@@ -26,7 +26,7 @@ jobs:
 
       - name: Build and push image
         run: |
-          IMAGE=ghcr.io/${{ github.repository_owner }}/clover-docs
+          IMAGE=ghcr.io/${{ github.repository_owner }}/clover/clover-docs
           IMAGE_TAG=$(echo "${{ github.sha }}" | cut -c1-8)
           docker build -t "$IMAGE:$IMAGE_TAG" -f docker/docs/Dockerfile .
           docker push "$IMAGE:$IMAGE_TAG"
