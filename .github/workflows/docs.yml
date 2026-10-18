@@ -2,7 +2,7 @@ name: Documentation
 
 on:
   push:
-    branches: [clover5]
+    branches: [clover5, freeze-klever4]
   pull_request:
   workflow_dispatch:
 
@@ -31,6 +31,14 @@ jobs:
           docker build -t "$IMAGE:$IMAGE_TAG" -f docker/docs/Dockerfile .
           docker push "$IMAGE:$IMAGE_TAG"
           if [ "${{ github.event_name }}" = 'push' ]; then
-            docker tag "$IMAGE:$IMAGE_TAG" "$IMAGE:latest"
-            docker push "$IMAGE:latest"
+            case "${{ github.ref_name }}" in
+              clover5) BRANCH_TAG=klever5 ;;
+              freeze-klever4) BRANCH_TAG=klever4 ;;
+              *)
+                echo "No image tag configured for branch '${{ github.ref_name }}'"
+                exit 1
+                ;;
+            esac
+            docker tag "$IMAGE:$IMAGE_TAG" "$IMAGE:$BRANCH_TAG"
+            docker push "$IMAGE:$BRANCH_TAG"
           fi
