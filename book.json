@@ -7,6 +7,7 @@
     "gitbook": "^3.2.2",
     "plugins": [
         "richquotes@https://github.com/okalachev/gitbook-plugin-richquotes.git",
+        "yametrika",
         "anchors",
         "collapsible-menu",
         "validate-links@https://github.com/okalachev/gitbook-plugin-validate-links.git",
@@ -18,6 +19,9 @@
         "language-picker@https://github.com/okalachev/gitbook-plugin-language-picker.git"
     ],
     "pluginsConfig": {
+        "yametrika": {
+            "id": 108186280
+        },
         "bulk-redirect": {
             "basepath": "",
             "redirectsFile": "redirects.json",
